@@ -1,0 +1,6 @@
+rootProject.name = 'root'
+
+
+include 'bo'
+include 'fo'
+include 'cmm'

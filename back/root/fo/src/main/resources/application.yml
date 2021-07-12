@@ -1,0 +1,60 @@
+debug: true
+
+server:
+  port: 9402
+  servlet:
+    context-path: /gsnpass/
+
+spring:
+  profiles:
+    active: local
+    
+---
+spring:
+  profiles: local
+  
+mybatis:
+  # mapperLocations: classpath:/mapper/**/*.xml,classpath:/mapper2/**/*.xml
+  type-aliases-package: com.gsitm.ustra.java.management.models
+  configuration:
+    jdbc-type-for-null: "NULL"
+   #   mapUnderscoreToCamelCase: true
+
+ustra:
+  core:
+    cache:
+      map:
+        additional-cache-names: USTRA-TEST-CACHE
+      caffeine:
+        caffeine-test:
+          maximum-size: 200
+          initial-capacity: 100
+          # refresh-seconds: 600
+          expire-after-write-seconds: 1800
+          expire-after-access-seconds: 1800
+        #eh:
+        #  eh-test:
+        #    config-location: classpath:/ehcache.xml
+  data:
+    file:
+      enabled: false
+    procedure-manager:
+      enabled: true
+    datasource:
+      default-datasource-name: rds2
+      datasources:
+        rds1:
+          url: jdbc:log4jdbc:sqlserver://framework-sqlserver.c0uiyan5ae24.ap-northeast-2.rds.amazonaws.com:1433;databaseName=USTRA_FW_SPL
+          driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+          username: ENC(p6rIPoShJklFLPxHKNJYFLooNCd2xnkayNZ2f+GexyA17qEMS77u8g==)
+          password: ENC(ohS/a1/Q/lKriwUq3rqJqht76fQ0Bnge)
+        rds2:
+          url: jdbc:log4jdbc:oracle:thin:@framework-oracle.c0uiyan5ae24.ap-northeast-2.rds.amazonaws.com:1521/GSITMSI
+          driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+          username: gsitm_si_admin
+          password: gsitmsi6700!
+  mvc:
+    view:
+      api-prefix: api
+      client-crypto-key: Z3NjLWNyeXB0by1rZXkxMQ==
+      type: STATIC_THYEMELEAF

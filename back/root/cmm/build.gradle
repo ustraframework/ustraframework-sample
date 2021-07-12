@@ -1,0 +1,21 @@
+bootJar.enabled = true
+jar.enabled = false
+
+repositories {
+
+}
+
+
+dependencies {
+    compile 'com.gsitm.ustra.java.starter:ustra-starter-vue-front:2.0.14.RELEASE'
+}
+
+
+task shadowJar {
+
+	dependsOn 'jar'
+    doLast {
+        delete fileTree(dir: "build", exclude: "libs")
+        delete fileTree(dir: "build/libs", exclude: "*.jar")
+    }
+}

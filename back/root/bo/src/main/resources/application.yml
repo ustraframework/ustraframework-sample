@@ -1,0 +1,98 @@
+
+debug: true
+
+server:
+  port: 9401
+  servlet:
+    context-path: /gsgroup/
+
+spring:
+  profiles:
+    active: local
+
+
+mybatis:
+  mapperLocations: classpath:/mapper/**/*.xml,classpath:/mapper2/**/*.xml
+  type-aliases-package: com.gsitm.ustra.java.management.models
+  configuration:
+    jdbc-type-for-null: "NULL"
+   #   mapUnderscoreToCamelCase: true
+   
+---
+spring:
+  profiles: local
+  
+ustra:
+  core:
+    process-info:
+      default-system-code: BO
+    cache:
+      map:
+        additional-cache-names: USTRA-TEST-CACHE
+      caffeine:
+        caffeine-test:
+          maximum-size: 200
+          initial-capacity: 100
+          # refresh-seconds: 600
+          expire-after-write-seconds: 1800
+          expire-after-access-seconds: 1800
+        #eh:
+        #  eh-test:
+        #    config-location: classpath:/ehcache.xml
+  data:
+    procedure-manager:
+      enabled: true
+    datasource:
+      default-datasource-name: rds2
+      datasources:
+        rds1:
+          url: jdbc:log4jdbc:sqlserver://framework-sqlserver.c0uiyan5ae24.ap-northeast-2.rds.amazonaws.com:1433;databaseName=USTRA_FW_SPL
+          driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#          username: gsitm_si_ustra_fw_spl_user
+#          password: itm@6700
+          username: ENC(p6rIPoShJklFLPxHKNJYFLooNCd2xnkayNZ2f+GexyA17qEMS77u8g==)
+          password: ENC(ohS/a1/Q/lKriwUq3rqJqht76fQ0Bnge)
+        rds2:
+          url: jdbc:log4jdbc:oracle:thin:@framework-oracle.c0uiyan5ae24.ap-northeast-2.rds.amazonaws.com:1521/GSITMSI
+          driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+          username: gsitm_si_admin
+          password: gsitmsi6700!
+    file:
+      enabled: true
+      include-default: true
+      fileGrpId: test
+  mvc:
+    view:
+      api-prefix: api
+      client-crypto-key: Z3NjLWNyeXB0by1rZXkxMQ==
+      type: STATIC_THYEMELEAF
+  management:
+    bo:
+      app:
+        use-auth-approval: true
+        use-user-approval: true
+      authentication:
+        enabled: true
+        allow-anoymous-athentication: true
+        system-name: management-bo
+        system-key: BO
+        token-key: acc-token
+        refresh-token-key: ref-token
+        client-crypto-secret: fapoisudf2103984hj
+        password-change-days: 90
+        system-informations:
+          bo:
+            enable-refresh-token: true
+            refresh-valid-second: 6000
+            valid-second: 20
+            max-use-refresh-token: 5
+            system-properties:
+              v001:
+                version: v001
+                issue-start-dttm: 2021-05-01 00:00
+                issue-end-dttm: 2021-12-31 23:59
+                valid-start-dttm: 2021-05-01 00:00
+                valid-end-dttm: 2021-12-31 23:59
+                secret-key: asddflkhjasd
+    
+
