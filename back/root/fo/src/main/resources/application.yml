@@ -1,9 +1,7 @@
 debug: true
 
 server:
-  port: 9402
-  servlet:
-    context-path: /gsnpass/
+  port: 9902
 
 spring:
   profiles:
@@ -14,11 +12,9 @@ spring:
   profiles: local
   
 mybatis:
-  # mapperLocations: classpath:/mapper/**/*.xml,classpath:/mapper2/**/*.xml
   type-aliases-package: com.gsitm.ustra.java.management.models
   configuration:
     jdbc-type-for-null: "NULL"
-   #   mapUnderscoreToCamelCase: true
 
 ustra:
   core:
@@ -29,12 +25,8 @@ ustra:
         caffeine-test:
           maximum-size: 200
           initial-capacity: 100
-          # refresh-seconds: 600
           expire-after-write-seconds: 1800
           expire-after-access-seconds: 1800
-        #eh:
-        #  eh-test:
-        #    config-location: classpath:/ehcache.xml
   data:
     file:
       enabled: false

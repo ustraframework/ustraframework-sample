@@ -2,9 +2,7 @@
 debug: true
 
 server:
-  port: 9401
-  servlet:
-    context-path: /gsgroup/
+  port: 9901
 
 spring:
   profiles:
