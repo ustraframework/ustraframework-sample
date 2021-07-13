@@ -1,6 +1,7 @@
 import { configProperties, env } from '@ustra/core'
 import NuxtConfigLoader from '@ustra/nuxt/src/config/nuxt-config-loader'
 import NuxtAppProperties from '@ustra/nuxt/src/config/nuxt-app-properties'
+import { NuxtModuleType } from '@ustra/nuxt/src/config/modules/nuxt-modules'
 
 export default async () => {
   const config: NuxtAppProperties = {
@@ -39,7 +40,7 @@ export default async () => {
         useUstraDx: {},
         useUstraMngBo: {
           uiConfig: {
-            appTitle: 'GSC Bo',
+            appTitle: 'U.STRA Node Framework Sample - BO',
             useMaskingForList: true,
           },
           useInitialDataCache: true,
@@ -47,6 +48,23 @@ export default async () => {
         useUstraDxMngBo: {
           importSystemPage: true,
         },
+        extends: [
+          {
+            type: NuxtModuleType.BUILD_MODULE,
+            moduleName: 'nuxt-fontagon',
+            enabled: true,
+            option: {
+              iconFont: {
+                fontName: 'fontagon-icons',
+                style: 'sass',
+                classOptions: {
+                  baseClass: 'nf-icons',
+                  classPrefix: 'nft',
+                },
+              },
+            },
+          },
+        ],
       },
       head: {
         titleTemplate: 'U.STRA Node Framework Sample - BO',
