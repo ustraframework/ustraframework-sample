@@ -17,9 +17,9 @@
     "test": "jest --detectOpenHandles --forceExit"
   },
   "dependencies": {
-    "@ustra/nuxt": "^2.0.14-stable",
-    "@ustra/nuxt-dx-mng-bo": "^2.0.14-stable",
-    "@ustra/nuxt-mng-bo": "^2.0.14-stable",
+    "@ustra/nuxt": "^2.0.15-stable",
+    "@ustra/nuxt-dx-mng-bo": "^2.0.15-stable",
+    "@ustra/nuxt-mng-bo": "^2.0.15-stable",
     "@ustra-sample/cmm": "1.0.0"
   }
 }

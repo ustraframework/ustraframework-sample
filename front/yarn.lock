@@ -2215,10 +2215,10 @@
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-"@ustra/core@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/core/-/core-2.0.14-stable.tgz#3054149230e31acc836936c22a8a4a1e33ab4e9d"
-  integrity sha512-S46D4B9GaDen2nQcalrqAUEitnECB2jXiSI21ERTR+628JmO+DAAjss0O09VVFGnFSJyryw+0Kb9UvgmpEAcag==
+"@ustra/core@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/core/-/core-2.0.15-stable.tgz#aba759b8f56089acb38b88ca1447c59f3fb525ee"
+  integrity sha512-PsYCCUpQy0hZd9pbX0zPs7XysdkQklixLDD4v8xSW8KaGuR+HT3F/Irs8+kcv56DbhsUFyOoX1oxoyrqApxXtw==
   dependencies:
     axios "0.21.1"
     axios-jsonp-pro "1.1.8"
@@ -2243,59 +2243,59 @@
     winston "3.3.3"
     winston-daily-rotate-file "4.5.2"
 
-"@ustra/data@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/data/-/data-2.0.14-stable.tgz#48d26cc7f34f3526746a7d46e24b26f84fc2db24"
-  integrity sha512-HLkuMZaqsMYaNPdX9hFWBEHde8s9lx7iL0uouOkEX2930Fni66kkPyI4f6sKVuYBM/GiJxdOyHNHYOXsF5/WHw==
+"@ustra/data@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/data/-/data-2.0.15-stable.tgz#bafef43117385e18fb48099a1ac178f778e64090"
+  integrity sha512-6p/nRlPNxl88CS7o+6qdeqMlDPYHDN4H+LhFeUNLuuHjPu28L18dCPgcpn0/H0soUa/A8AOcO2GXx9bT50gZOA==
   dependencies:
-    "@ustra/core" "^2.0.14-stable"
+    "@ustra/core" "^2.0.15-stable"
 
-"@ustra/nuxt-buefy@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-buefy/-/nuxt-buefy-2.0.14-stable.tgz#f5aa1733be48af354e99ca5bba991f743fc74598"
-  integrity sha512-uJxCjKmw/gilB/XlCfa5lfBbejQwplss82yAq2C0EVJR5MCfzr2FF1gV216eDdY8fTi86xgHoLQ7+2lLGu/eFg==
+"@ustra/nuxt-buefy@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-buefy/-/nuxt-buefy-2.0.15-stable.tgz#0f6bb02fc76679fc250f416663b68c31735d82db"
+  integrity sha512-nDD8K/gMFWQCfwM/BoM6Nawclqe/7yV7RVJczew4k1ZGaggFkik+p2Cz8nqbgImB9wePyPOllAM0YDZTMA8anQ==
   dependencies:
-    "@ustra/nuxt" "^2.0.14-stable"
+    "@ustra/nuxt" "^2.0.15-stable"
     nuxt-buefy "^0.4.7"
 
-"@ustra/nuxt-dx-mng-bo@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx-mng-bo/-/nuxt-dx-mng-bo-2.0.14-stable.tgz#a09cd33c4a1840121d2adfc6f1a5f292bc36d009"
-  integrity sha512-nP1cS6p++B8CjA52XHMbLF270UDjYUPD4kh+MZ5wfeVwGp6TWlGoZO3mgoa0q6Pny74ifpjJwhYEKxpCedWv6w==
+"@ustra/nuxt-dx-mng-bo@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx-mng-bo/-/nuxt-dx-mng-bo-2.0.15-stable.tgz#944e083be6ab8f925ad69ca0522ed2d4ac9c7e93"
+  integrity sha512-IrwZg+q7CfvBY/+ZQP2Mt2nJOvExwIZ7hxz1+/+usB0932VK4FmuxYsD3NUypygGwm4H0GfRkyYGI9akVjakow==
   dependencies:
-    "@ustra/nuxt-dx" "^2.0.14-stable"
-    "@ustra/nuxt-mng-bo" "^2.0.14-stable"
+    "@ustra/nuxt-dx" "^2.0.15-stable"
+    "@ustra/nuxt-mng-bo" "^2.0.15-stable"
 
-"@ustra/nuxt-dx@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx/-/nuxt-dx-2.0.14-stable.tgz#f18f4858ac129aac40b481b7e1316f79cf999f62"
-  integrity sha512-W+XowZf9EOcsD+MLha/umhGx6DZHfLu2KOrMS8Pl7JoJwHACzHctFJTYDsNMOAIVHUv1IxiPakIg+FpxdQ3k7Q==
+"@ustra/nuxt-dx@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx/-/nuxt-dx-2.0.15-stable.tgz#f7ca7df2a93dd98ce39175b4dac06a8c73cccfcb"
+  integrity sha512-gUsAqgI6FHRT1HP2EZ/73FOlN9onY1QuDmy2GN2OazfrrUqzOPVoo0P2/TCtPj/msuZ2kv+aaIThiKBN3sscEg==
   dependencies:
-    "@ustra/nuxt" "^2.0.14-stable"
+    "@ustra/nuxt" "^2.0.15-stable"
     devextreme "20.1-stable"
     devextreme-cldr-data "^1.0.3"
     devextreme-vue "20.1-stable"
     globalize "^1.6.0"
     material-icons "^0.3.1"
 
-"@ustra/nuxt-mng-bo@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng-bo/-/nuxt-mng-bo-2.0.14-stable.tgz#5e65e02a5801ba2654d56ea394e67460b71f3dec"
-  integrity sha512-WPuADWZOhm8UC3TyMHXG5x27+mYoL0QAb2J9bThNzrrltkdkeBN50nxqZ6mqekIEUVOvTta6MH3UvWP9hpOR/Q==
+"@ustra/nuxt-mng-bo@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng-bo/-/nuxt-mng-bo-2.0.15-stable.tgz#0d22b0159426799c9b4c46c55400c0383ea08b37"
+  integrity sha512-ghqY1WgnYbBw7C1CTZ57k2xNRoth1C20gECAhyAhiusmml8SOf4IKCKt0GMs4w0Cg1PFD8dlz1FBh6xXDapZew==
   dependencies:
-    "@ustra/nuxt-mng" "^2.0.14-stable"
+    "@ustra/nuxt-mng" "^2.0.15-stable"
 
-"@ustra/nuxt-mng@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng/-/nuxt-mng-2.0.14-stable.tgz#622009264c37c9dc342805f14b05507df021b3d6"
-  integrity sha512-aBMGhbNtQ8JZ8bZrr3t4Q+XE0ZYtwyeXWAhFVTHifYH9zBXid/9v1W1rwey/iMJFhpo/2ELXAiR/Wvy0o2L4lg==
+"@ustra/nuxt-mng@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng/-/nuxt-mng-2.0.15-stable.tgz#9288deb217d8d42dcc1e18e366030912e72f777c"
+  integrity sha512-TjQDeUUHTxW60er6KSIlcE9rVrnkBdaOxEi+vV5am6v1EhEpax1aOFQ3gUMvbTOyv3mZUgiDaA8xFJ77ON09qg==
   dependencies:
-    "@ustra/nuxt" "^2.0.14-stable"
+    "@ustra/nuxt" "^2.0.15-stable"
 
-"@ustra/nuxt@^2.0.14-stable":
-  version "2.0.14-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt/-/nuxt-2.0.14-stable.tgz#e8cc8bd407ce6dc17e0055194fb333f000bb2aaa"
-  integrity sha512-zVJJ5nj1KoOdzTkRafkuMgFPQlDxYxs86Ei469sVkaJVV5Djjxus75JUsagEeOdr3R6PFLcRX2i057ECit8L5A==
+"@ustra/nuxt@^2.0.15-stable":
+  version "2.0.15-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt/-/nuxt-2.0.15-stable.tgz#aa1d6018df96182a15e12dd12bd86dec54e81123"
+  integrity sha512-9flipaRPMuAo9zuZH6mK7HifN6LeNOcrxqRiQ8uYKLvswLhvNBSegzk/T80SyfMkiAB0tJ5m+6AN+Tt5QQTDlA==
   dependencies:
     "@nuxt/typescript-runtime" "0.4.10"
     "@nuxtjs/axios" "5.13.1"
@@ -2303,8 +2303,8 @@
     "@nuxtjs/proxy" "2.1.0"
     "@nuxtjs/redirect-module" "0.3.1"
     "@nuxtjs/router" "1.6.1"
-    "@ustra/core" "^2.0.14-stable"
-    "@ustra/data" "^2.0.14-stable"
+    "@ustra/core" "^2.0.15-stable"
+    "@ustra/data" "^2.0.15-stable"
     add "2.0.6"
     bluebird "3.7.2"
     body-parser "1.19.0"
