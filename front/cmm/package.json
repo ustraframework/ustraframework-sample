@@ -15,6 +15,10 @@
     "test": "jest --detectOpenHandles --forceExit"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@ustra/nuxt": "^2.0.17-stable"
+=======
+    "@ustra/nuxt": "^2.0.15-stable"
+>>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
   }
 }
