@@ -23,15 +23,12 @@ export default async () => {
     },
     logger: {
       level: configProperties.LogLevel.Debug,
-      file: true,
-      datePattern: 'YYYY-MM-DD-HH',
     },
     server: {
       type: configProperties.ServerType.NONE,
       middleware: {
         compress: true,
         bodyParser: true,
-        multipart: { enabled: true, excludeUrlPatterns: ['/external-if/billkey-register-result*'] },
       },
     },
     nuxt: {
@@ -48,6 +45,7 @@ export default async () => {
         },
         useUstraDxMngBo: {
           importSystemPage: true,
+          useDefaultScreen: false,
         },
         extends: [
           {

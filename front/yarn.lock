@@ -2460,17 +2460,10 @@
     "@typescript-eslint/types" "4.28.5"
     eslint-visitor-keys "^2.0.0"
 
-<<<<<<< HEAD
-"@ustra/core@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/core/-/core-2.0.17-stable.tgz#723b91a7f1f268f6f5f133de82dfe87cd31a6e94"
-  integrity sha512-KUs+L/ChQdCq2J2AaF8i1Dr5x8TfPSKmCEh818A6Rj9ShlF0XBuG05qJrQS/dXYGznPAbjhPBEwfY0W607+D/w==
-=======
-"@ustra/core@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/core/-/core-2.0.15-stable.tgz#aba759b8f56089acb38b88ca1447c59f3fb525ee"
-  integrity sha512-PsYCCUpQy0hZd9pbX0zPs7XysdkQklixLDD4v8xSW8KaGuR+HT3F/Irs8+kcv56DbhsUFyOoX1oxoyrqApxXtw==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/core@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/core/-/core-2.0.19-stable.tgz#01f69e81d321bfed6bb58334e019c286d4d74213"
+  integrity sha512-ga0HbN9fjBc2IKFOnsF33BulvDglvIL7BXwlEo17z4xSg5iMvqVIVYjNC/3Jqh90QqXl7Nzy2qzbZuMV6wNoZQ==
   dependencies:
     axios "0.21.1"
     axios-jsonp-pro "1.1.8"
@@ -2494,133 +2487,59 @@
     winston "3.3.3"
     winston-daily-rotate-file "4.5.2"
 
-<<<<<<< HEAD
-"@ustra/data@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/data/-/data-2.0.17-stable.tgz#38ed92b63ddaa393eec98fdd63b34fcbfbc783d1"
-  integrity sha512-1VMIVmxoPHmKvT3Aec2KOCw1NyHWPebFTOlB/ZqSo9sB+gosMOElY/iLYNzTysMc4mWvyOl1g5IR+23cZbdhMQ==
-=======
-"@ustra/data@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/data/-/data-2.0.15-stable.tgz#bafef43117385e18fb48099a1ac178f778e64090"
-  integrity sha512-6p/nRlPNxl88CS7o+6qdeqMlDPYHDN4H+LhFeUNLuuHjPu28L18dCPgcpn0/H0soUa/A8AOcO2GXx9bT50gZOA==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/data@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/data/-/data-2.0.19-stable.tgz#e42405336ab12d048b64b41abf0d453b638ead51"
+  integrity sha512-t3J/m+mafF5ZqVPSwp9yaXjiWf8gLFdOrnVtr+ommZOhawtOdsg5SsdWHkgRRD37R2iqH5T3zdREtvsCStzCBA==
   dependencies:
-<<<<<<< HEAD
-    "@ustra/core" "^2.0.17-stable"
-=======
-    "@ustra/core" "^2.0.15-stable"
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+    "@ustra/core" "^2.0.19-stable"
 
-<<<<<<< HEAD
-"@ustra/nuxt-buefy@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-buefy/-/nuxt-buefy-2.0.17-stable.tgz#cb9dd7706adf1515452e0660c29421a0a890258f"
-  integrity sha512-KTYlCCb9mJWIF8RvV2JR7/oLneTv8+Xg9HcetZCqrPAa3l6WmompeVRn4pTg5BPTNp7cNUfttsBWMmN1LGe0Xw==
-=======
-"@ustra/nuxt-buefy@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-buefy/-/nuxt-buefy-2.0.15-stable.tgz#0f6bb02fc76679fc250f416663b68c31735d82db"
-  integrity sha512-nDD8K/gMFWQCfwM/BoM6Nawclqe/7yV7RVJczew4k1ZGaggFkik+p2Cz8nqbgImB9wePyPOllAM0YDZTMA8anQ==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/nuxt-buefy@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-buefy/-/nuxt-buefy-2.0.19-stable.tgz#f448cadbf2ea0e86d152dc974144b66d3dfbf08e"
+  integrity sha512-AmEIqK4NOSpyrnzrU9hwAmGRbe+IwShxX/Dfagd5Herbk5PxcD/N3btthAl1xGpEWxCqEsTzMKtKeaMcTu7vCA==
   dependencies:
-<<<<<<< HEAD
-    "@ustra/nuxt" "^2.0.17-stable"
-=======
-    "@ustra/nuxt" "^2.0.15-stable"
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+    "@ustra/nuxt" "^2.0.19-stable"
     nuxt-buefy "^0.4.7"
 
-<<<<<<< HEAD
-"@ustra/nuxt-dx-mng-bo@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx-mng-bo/-/nuxt-dx-mng-bo-2.0.17-stable.tgz#eebb58f986784d69caa269e0beae50e215e16f6d"
-  integrity sha512-1S9nz+GaJKErjp9lGkctwMPqqHHWRl5tXuG9LUpCUCJ32SX6tnHtcgdyyqj/8Z/Qhd7WldHevHSgC2cm7EjLsw==
-=======
-"@ustra/nuxt-dx-mng-bo@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx-mng-bo/-/nuxt-dx-mng-bo-2.0.15-stable.tgz#944e083be6ab8f925ad69ca0522ed2d4ac9c7e93"
-  integrity sha512-IrwZg+q7CfvBY/+ZQP2Mt2nJOvExwIZ7hxz1+/+usB0932VK4FmuxYsD3NUypygGwm4H0GfRkyYGI9akVjakow==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/nuxt-dx-mng-bo@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx-mng-bo/-/nuxt-dx-mng-bo-2.0.19-stable.tgz#1d0c4e3442af32e3928fc53b0b2b73d694fb802d"
+  integrity sha512-lCLhIH+nkGMv4TnprQIpneAEOME19/ZOxewFgJXE7K4RhIz+cVxEj8bIlf8nwOCt9IP9oiJFo6oWyWqdtmsFfA==
   dependencies:
-<<<<<<< HEAD
-    "@ustra/nuxt-dx" "^2.0.17-stable"
-    "@ustra/nuxt-mng-bo" "^2.0.17-stable"
-=======
-    "@ustra/nuxt-dx" "^2.0.15-stable"
-    "@ustra/nuxt-mng-bo" "^2.0.15-stable"
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+    "@ustra/nuxt-dx" "^2.0.19-stable"
+    "@ustra/nuxt-mng-bo" "^2.0.19-stable"
 
-<<<<<<< HEAD
-"@ustra/nuxt-dx@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx/-/nuxt-dx-2.0.17-stable.tgz#e5377f32b62e939b7919f62f862ab79c4214ba8e"
-  integrity sha512-WHvOD1uDfIM8xfoRQw+I8v00NzWo8QP1mfttix2BLmAXkl0/jNVDM6un/USDqNAxkwCSRMEg1qsAak5iexeS4Q==
-=======
-"@ustra/nuxt-dx@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx/-/nuxt-dx-2.0.15-stable.tgz#f7ca7df2a93dd98ce39175b4dac06a8c73cccfcb"
-  integrity sha512-gUsAqgI6FHRT1HP2EZ/73FOlN9onY1QuDmy2GN2OazfrrUqzOPVoo0P2/TCtPj/msuZ2kv+aaIThiKBN3sscEg==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/nuxt-dx@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx/-/nuxt-dx-2.0.19-stable.tgz#1529258564bcd66f2671ae126e0deb68511be3cc"
+  integrity sha512-7Px/c5pM367sEKIzx2RhXRJ+l+zmfHzkmXfrYzTHMYo/0EKlBMARL4ANiCgKfaM6lFFdnjyAiQUTiDlgOqKVFw==
   dependencies:
-<<<<<<< HEAD
-    "@ustra/nuxt" "^2.0.17-stable"
-=======
-    "@ustra/nuxt" "^2.0.15-stable"
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+    "@ustra/nuxt" "^2.0.19-stable"
     devextreme "20.1-stable"
     devextreme-cldr-data "^1.0.3"
     devextreme-vue "20.1-stable"
     globalize "^1.6.0"
     material-icons "^0.3.1"
 
-<<<<<<< HEAD
-"@ustra/nuxt-mng-bo@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng-bo/-/nuxt-mng-bo-2.0.17-stable.tgz#7b8e37d4b24c48d825c01c98a44cbe5d77448543"
-  integrity sha512-F+NdwnlS4LmHzpuDp99kIak+pehrXu5NQyDn7hmSekhwMNEYtNiMDqAVQRUb8EBp5yNJRnfbELLrsEJF6IrGlg==
-=======
-"@ustra/nuxt-mng-bo@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng-bo/-/nuxt-mng-bo-2.0.15-stable.tgz#0d22b0159426799c9b4c46c55400c0383ea08b37"
-  integrity sha512-ghqY1WgnYbBw7C1CTZ57k2xNRoth1C20gECAhyAhiusmml8SOf4IKCKt0GMs4w0Cg1PFD8dlz1FBh6xXDapZew==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/nuxt-mng-bo@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng-bo/-/nuxt-mng-bo-2.0.19-stable.tgz#24ceeb2c0ac4b00376c4e9ad4243da81dbd8b175"
+  integrity sha512-yDz/fZe3gXtAYs/Mx/jJ39fmwKTsQPHZGJKxOW7A0tO22T1ktiSrqiASutbgZ7s4258t1lok2heNtvOhUrWU6Q==
   dependencies:
-<<<<<<< HEAD
-    "@ustra/nuxt-mng" "^2.0.17-stable"
-=======
-    "@ustra/nuxt-mng" "^2.0.15-stable"
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+    "@ustra/nuxt-mng" "^2.0.19-stable"
 
-<<<<<<< HEAD
-"@ustra/nuxt-mng@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng/-/nuxt-mng-2.0.17-stable.tgz#4c8363c00df7921a1ace5f6f9afb01866fe575bd"
-  integrity sha512-bMu/xRy/4bMjMf+pgTmBTQI2CjYyK7H+Sp4zd1OXotC0VrWdzy2twbmyI5rObfnB667XX+/4SVmDmX/ctx0ZiQ==
-=======
-"@ustra/nuxt-mng@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng/-/nuxt-mng-2.0.15-stable.tgz#9288deb217d8d42dcc1e18e366030912e72f777c"
-  integrity sha512-TjQDeUUHTxW60er6KSIlcE9rVrnkBdaOxEi+vV5am6v1EhEpax1aOFQ3gUMvbTOyv3mZUgiDaA8xFJ77ON09qg==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/nuxt-mng@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng/-/nuxt-mng-2.0.19-stable.tgz#39ddf1c3a2a4886cec1887203ad90ac335591913"
+  integrity sha512-XkszBlMyytMs30I38d3qyGuJEhWR0z2iD8nWVrUgiy4Tu1EmeEJlrxnz8Q2mOVJzecNTr5uY6vk7H2uXgepIbw==
   dependencies:
-<<<<<<< HEAD
-    "@ustra/nuxt" "^2.0.17-stable"
-=======
-    "@ustra/nuxt" "^2.0.15-stable"
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+    "@ustra/nuxt" "^2.0.19-stable"
 
-<<<<<<< HEAD
-"@ustra/nuxt@^2.0.17-stable":
-  version "2.0.17-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt/-/nuxt-2.0.17-stable.tgz#4e175a6d2509c0e6f0f545dfeb1e6212fc1ff291"
-  integrity sha512-mHIVDqK+Yx3NYIxGO/SADD4cSKdzLRk9v4/hSar05l+J6NTeigNCbiLrRSSm+obBRUNGzm20fCh+8s+U6+xLqA==
-=======
-"@ustra/nuxt@^2.0.15-stable":
-  version "2.0.15-stable"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt/-/nuxt-2.0.15-stable.tgz#aa1d6018df96182a15e12dd12bd86dec54e81123"
-  integrity sha512-9flipaRPMuAo9zuZH6mK7HifN6LeNOcrxqRiQ8uYKLvswLhvNBSegzk/T80SyfMkiAB0tJ5m+6AN+Tt5QQTDlA==
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+"@ustra/nuxt@^2.0.19-stable":
+  version "2.0.19-stable"
+  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt/-/nuxt-2.0.19-stable.tgz#b96d9a5f26492818ad0f5a3ecb858df605064573"
+  integrity sha512-doR0+hDIobDZCaK8/lcjxjSBpBmSbYbHak/Zl14gU15SU2oOYkcXZPUSdc2p4TOf3qwq19KfPnOP7cyrn/vDEw==
   dependencies:
     "@nuxt/typescript-runtime" "0.4.10"
     "@nuxtjs/axios" "5.13.1"
@@ -2628,13 +2547,8 @@
     "@nuxtjs/proxy" "2.1.0"
     "@nuxtjs/redirect-module" "0.3.1"
     "@nuxtjs/router" "1.6.1"
-<<<<<<< HEAD
-    "@ustra/core" "^2.0.17-stable"
-    "@ustra/data" "^2.0.17-stable"
-=======
-    "@ustra/core" "^2.0.15-stable"
-    "@ustra/data" "^2.0.15-stable"
->>>>>>> branch 'master' of https://github.com/ustraframework/ustraframework-sample.git
+    "@ustra/core" "^2.0.19-stable"
+    "@ustra/data" "^2.0.19-stable"
     add "2.0.6"
     bluebird "3.7.2"
     body-parser "1.19.0"

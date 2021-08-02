@@ -7,7 +7,7 @@ repositories {
 
 
 dependencies {
-    compile 'com.gsitm.ustra.java.starter:ustra-starter-vue-front:2.0.15.RELEASE'
+    compile 'com.gsitm.ustra.java.starter:ustra-starter-vue-front:2.0.19.RELEASE'
 }
 
 

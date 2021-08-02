@@ -48,11 +48,6 @@ ustra:
           driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
           username: ENC(p6rIPoShJklFLPxHKNJYFLooNCd2xnkayNZ2f+GexyA17qEMS77u8g==)
           password: ENC(ohS/a1/Q/lKriwUq3rqJqht76fQ0Bnge)
-        rds2:
-          url: jdbc:log4jdbc:oracle:thin:@framework-oracle.c0uiyan5ae24.ap-northeast-2.rds.amazonaws.com:1521/GSITMSI
-          driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-          username: gsitm_si_admin
-          password: gsitmsi6700!
     file:
       enabled: true
       include-default: true
@@ -67,6 +62,7 @@ ustra:
       app:
         use-auth-approval: true
         use-user-approval: true
+        password-change-days: 0
       authentication:
         enabled: true
         allow-anoymous-athentication: true
