@@ -1,5 +1,7 @@
 <template>
-  <div style="display: flex; align-items: stretch; flex: 1; flex-grow: 1; flex-direction: column"></div>
+  <div style="display: flex; align-items: stretch; flex: 1; flex-grow: 1; flex-direction: column">
+    <i class="nf-icons" style="font-size: 25px; color: blue">favicon</i>
+  </div>
 </template>
 <script lang="ts">
 import { Component } from 'vue-property-decorator'

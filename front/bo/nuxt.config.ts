@@ -35,6 +35,7 @@ export default async () => {
       },
     },
     nuxt: {
+      css: ['~/assets/font/fontagon-icons.sass'],
       module: {
         useCookie: true,
         useUstraDx: {},
@@ -54,13 +55,11 @@ export default async () => {
             moduleName: 'nuxt-fontagon',
             enabled: true,
             option: {
-              iconFont: {
-                fontName: 'fontagon-icons',
-                style: 'sass',
-                classOptions: {
-                  baseClass: 'nf-icons',
-                  classPrefix: 'nft',
-                },
+              fontName: 'fontagon-icons',
+              style: 'sass',
+              classOptions: {
+                baseClass: 'nf-icons',
+                classPrefix: 'nft',
               },
             },
           },
@@ -79,6 +78,15 @@ export default async () => {
 
   return await NuxtConfigLoader.nuxtConfig(config, (_prop, _config) => {
     _config.env.SERVER_PROP_ENC_KEY = 'Z3NjLWNyeXB0by1rZXkxMQ=='
+
+    _config.iconFont = {
+      fontName: 'fontagon-icons',
+      style: 'sass',
+      classOptions: {
+        baseClass: 'nf-icons',
+        classPrefix: 'nft',
+      },
+    }
 
     _config.build.transpile.push('@ustra-sample/cmm')
   })
