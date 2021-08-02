@@ -9,7 +9,8 @@ public class SampleController {
 
 	@PostMapping("/api/npass/test")
 	public String test(@RequestBody SampleVo in) {
-		return in.getTest();
+		//return in.getTest();
+		return "api test ok";
 	}
 
 }
