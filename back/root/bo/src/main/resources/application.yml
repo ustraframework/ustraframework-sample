@@ -63,6 +63,7 @@ ustra:
         use-auth-approval: true
         use-user-approval: true
         password-change-days: 0
+        maximum-auth-group-depth: 5
       authentication:
         enabled: true
         allow-anoymous-athentication: true
