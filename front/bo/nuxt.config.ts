@@ -32,7 +32,7 @@ export default async () => {
       },
     },
     nuxt: {
-      css: ['~/assets/font/fontagon-icons.sass'],
+      // css: ['~/assets/font/fontagon-icons.sass'],
       module: {
         useCookie: true,
         useUstraDx: {},
@@ -87,5 +87,6 @@ export default async () => {
     }
 
     _config.build.transpile.push('@ustra-sample/cmm')
+    _config.build.extractCSS = false
   })
 }
