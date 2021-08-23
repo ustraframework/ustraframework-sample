@@ -77,5 +77,11 @@ subprojects {
       	compileOnly 'org.projectlombok:lombok'
         compileOnly 'org.springframework.boot:spring-boot-devtools'
         compile 'org.springframework.boot:spring-boot-starter-aop'
+
+        annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+        annotationProcessor 'org.projectlombok:lombok'
+
+        testAnnotationProcessor 'org.projectlombok:lombok'
+        testCompileOnly 'org.projectlombok:lombok'
     }
 }
