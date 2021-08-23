@@ -9,6 +9,10 @@
         <b-input type="password" v-model="password" password-reveal> </b-input>
       </b-field>
 
+      <article class="message is-primary">
+        <div class="message-body">샘플 로그인 화면입니다. sample/sample 계정을 사용하여 로그인이 가능합니다.</div>
+      </article>
+
       <b-button type="is-primary" @click="login">Login</b-button>
     </div>
   </section>
@@ -37,7 +41,7 @@ export default class extends CustomFoComponent {
       },
     })
 
-    this.$router.push('/')
+    this.$router.push((this.$route.query.rtnUrl as string) || '/')
   }
   // #endregion
   // #region watches

@@ -12,7 +12,7 @@ export default async () => {
       title: 'U.STRA Node Framework Sample - FO',
       auth: {
         enabled: true,
-        loginUrl: '/',
+        loginUrl: '/customer',
         jwt: {
           useCookie: false,
           accessTokenKey: 'sample-fo-token',
@@ -40,6 +40,7 @@ export default async () => {
           css: true,
           materialDesignIcons: true,
         },
+        useMarkdown: true,
       },
       css: ['~/assets/global.scss'],
       head: {
@@ -49,6 +50,22 @@ export default async () => {
       generation: {
         generateDirPath: '../../../back/root/fo/src/main/resources/static',
         generateProfiles: [env.Profile.DEV, env.Profile.STAGING, env.Profile.PRODUCTION],
+      },
+      interfaces: {
+        initialDataApiUrl: '/api/interface/all',
+      },
+      mobile: {
+        enabled: true,
+        hybrid: {
+          nativeAgent: {
+            android: 'client1',
+            ios: 'client2',
+          },
+          bridge: {
+            enabled: true,
+            useTokenSecurity: false,
+          },
+        },
       },
     },
   }

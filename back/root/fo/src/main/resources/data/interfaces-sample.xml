@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interfaceInfos>
+	<interfaceInfo>
+		<id>IF-INBOUD-MOBILE01</id>
+		<version>1.0</version>
+		<name>모바일 인바운드 API</name>
+		<type>MOBILE_BRIDGE</type>
+		<logType>ALL</logType>
+		<direction>INBOUND</direction>
+		<systemCode>FO</systemCode>
+		<rmk>샘플로 정의된 모바일 인바운드 API</rmk>
+		<keys>
+			<key id="key1">value1</key>
+			<key id="key2">value2</key>
+		</keys>
+	</interfaceInfo>
+	<interfaceInfo>
+		<id>IF-OUTBOUND-MOBILE01</id>
+		<version>1.0</version>
+		<name>모바일 아웃바운드 API</name>
+		<type>MOBILE_BRIDGE</type>
+		<logType>ALL</logType>
+		<direction>OUTBOUND</direction>
+		<systemCode>FO</systemCode>
+		<rmk>샘플로 정의된 모바일 아웃바운드 API</rmk>
+		<keys>
+			<key id="key1">value1</key>
+			<key id="key2">value2</key>
+		</keys>
+	</interfaceInfo>
+</interfaceInfos>

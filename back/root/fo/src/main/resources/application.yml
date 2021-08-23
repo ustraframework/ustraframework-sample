@@ -34,6 +34,9 @@ ustra:
           driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
           username: ENC(p6rIPoShJklFLPxHKNJYFLooNCd2xnkayNZ2f+GexyA17qEMS77u8g==)
           password: ENC(ohS/a1/Q/lKriwUq3rqJqht76fQ0Bnge)
+    logging:
+      interfaces:
+        enabled: true
   mvc:
     view:
       api-prefix: api

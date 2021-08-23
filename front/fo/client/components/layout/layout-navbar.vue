@@ -10,11 +10,13 @@
       <b-navbar-item :active="isActiveHome" type="div" @click="goHome">Home</b-navbar-item>
       <b-navbar-item :active="isActiveIntroduce" @click="$router.push('/introduce')">Introduce</b-navbar-item>
       <b-navbar-item :active="isActiveCustomer" @click="$router.push('/customer')">Customer</b-navbar-item>
+      <b-navbar-item :active="isActiveSample" @click="$router.push('/sample')">Sample</b-navbar-item>
     </template>
 
     <template #end>
-      <b-navbar-item v-show="!isAuthenticated" @click="$router.push('/customer')">Login</b-navbar-item>
-      <b-navbar-item v-show="isAuthenticated" @click="logout">Logout</b-navbar-item>
+      <b-navbar-item v-if="isAuthenticated" type="div">{{ $ustra.auth.getTokenClaim().displayName }}</b-navbar-item>
+      <b-navbar-item v-if="!isAuthenticated" @click="$router.push('/customer')">Login</b-navbar-item>
+      <b-navbar-item v-if="isAuthenticated" @click="logout">Logout</b-navbar-item>
     </template>
   </b-navbar>
 </template>
@@ -36,6 +38,10 @@ export default class extends CustomFoComponent {
 
   get isActiveCustomer() {
     return startsWith(this.$route.path, '/customer')
+  }
+
+  get isActiveSample() {
+    return startsWith(this.$route.path, '/sample')
   }
 
   get isAuthenticated() {
