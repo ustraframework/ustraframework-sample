@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "@ustra-sample/cmm": "1.0.0",
-    "@ustra/nuxt": "^2.0.19-stable",
-    "@ustra/nuxt-buefy": "^2.0.19-stable",
+    "@ustra/nuxt": "^2.0.23-stable",
+    "@ustra/nuxt-buefy": "^2.0.23-stable",
     "animejs": "^3.2.1"
   }
 }

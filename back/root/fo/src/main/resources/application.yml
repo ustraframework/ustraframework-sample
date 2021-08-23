@@ -13,6 +13,14 @@ mybatis:
     jdbc-type-for-null: "NULL"
 
 ustra:
+  core:
+    cache:
+      caffeine:
+        authentication:
+          maximum-size: 200 # 최대적재사이즈
+          initial-capacity: 100 # 초기사이즈
+          expire-after-write-seconds: 1800 # 캐시 적재 후 제거될 초수
+          expire-after-access-seconds: 1800 # 캐시 조회 후 제거될 초수
   data:
     file:
       enabled: false
@@ -30,4 +38,12 @@ ustra:
     view:
       api-prefix: api
       client-crypto-key: Z3NjLWNyeXB0by1rZXkxMQ==
-      type: STATIC_THYEMELEAF
+      type: STATIC_THYEMELEAF
+      
+  sample:
+    authentication: 
+      secret-key: zjajhz829110y
+      token-key: sample-fo-token
+      enable-refresh-token: false
+      access-valid-second: 1800
+      allow-anonymous-authentication: true

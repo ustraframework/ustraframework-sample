@@ -3,8 +3,6 @@ package sample.ustraframework.java.fo.sample.user;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
-import com.gsitm.ustra.java.management.models.base.UstraManagementBaseModel;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -13,7 +11,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class UserModel extends UstraManagementBaseModel {
+public class UserModel {
 
 	/**
 	 * 사용자 아이디

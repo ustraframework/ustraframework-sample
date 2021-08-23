@@ -15,6 +15,6 @@
     "test": "jest --detectOpenHandles --forceExit"
   },
   "dependencies": {
-    "@ustra/nuxt": "^2.0.19-stable"
+    "@ustra/nuxt": "^2.0.23-stable"
   }
 }

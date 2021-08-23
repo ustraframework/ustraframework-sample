@@ -7,16 +7,11 @@ repositories {
 
 
 dependencies {
-	compile 'com.gsitm.ustra.java.starter:ustra-starter-vue-front:2.0.19.RELEASE'
+	compile 'com.gsitm.ustra.java.starter:ustra-starter-restapi:2.0.24.RELEASE'
+	compile 'com.gsitm.ustra.java:ustra-mvc-view:2.0.24.RELEASE'
+	compile 'com.gsitm.ustra.java:ustra-data-mybatis:2.0.24.RELEASE'
+	compile 'com.gsitm.ustra.java:ustra-security-jwt:2.0.24.RELEASE'
     compile project(":cmm")
 }
 
 
-task shadowJar {
-
-	dependsOn 'jar'
-    doLast {
-        delete fileTree(dir: "build", exclude: "libs")
-        delete fileTree(dir: "build/libs", exclude: "*.jar")
-    }
-}

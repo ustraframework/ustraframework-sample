@@ -9,17 +9,12 @@
     <template #start>
       <b-navbar-item :active="isActiveHome" type="div" @click="goHome">Home</b-navbar-item>
       <b-navbar-item :active="isActiveIntroduce" @click="$router.push('/introduce')">Introduce</b-navbar-item>
+      <b-navbar-item :active="isActiveCustomer" @click="$router.push('/customer')">Customer</b-navbar-item>
     </template>
 
     <template #end>
-      <b-navbar-item tag="div">
-        <div class="buttons">
-          <!-- <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light" @click="signIn"> Sign in </a> -->
-        </div>
-      </b-navbar-item>
+      <b-navbar-item v-show="!isAuthenticated" @click="$router.push('/customer')">Login</b-navbar-item>
+      <b-navbar-item v-show="isAuthenticated" @click="logout">Logout</b-navbar-item>
     </template>
   </b-navbar>
 </template>
@@ -37,6 +32,14 @@ export default class extends CustomFoComponent {
 
   get isActiveIntroduce() {
     return startsWith(this.$route.path, '/introduce')
+  }
+
+  get isActiveCustomer() {
+    return startsWith(this.$route.path, '/customer')
+  }
+
+  get isAuthenticated() {
+    return this.$ustra.auth.isAutenticated()
   }
 
   // #endregion

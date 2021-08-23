@@ -15,7 +15,7 @@ export default async () => {
         loginUrl: '/',
         jwt: {
           useCookie: false,
-          accessTokenKey: 'acc-token',
+          accessTokenKey: 'sample-fo-token',
           refreshTokenKey: 'ref-token',
         },
       },
@@ -41,6 +41,7 @@ export default async () => {
           materialDesignIcons: true,
         },
       },
+      css: ['~/assets/global.scss'],
       head: {
         titleTemplate: 'U.STRA Node Framework Sample - FO',
         title: '',
