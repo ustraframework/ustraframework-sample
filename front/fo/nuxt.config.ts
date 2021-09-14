@@ -1,3 +1,4 @@
+import path from 'path'
 import { configProperties, env } from '@ustra/core'
 import NuxtConfigLoader from '@ustra/nuxt/src/config/nuxt-config-loader'
 import NuxtAppProperties from '@ustra/nuxt/src/config/nuxt-app-properties'
@@ -30,7 +31,8 @@ export default async () => {
       middleware: {
         compress: true,
         bodyParser: true,
-        multipart: { enabled: true, excludeUrlPatterns: ['/external-if/billkey-register-result*'] },
+        // cmm 경로 static 리소스 참조
+        staticLocations: [{ serverPath: '/', path: path.resolve(__dirname, '../cmm/src/static') }],
       },
     },
     nuxt: {
@@ -42,7 +44,8 @@ export default async () => {
         },
         useMarkdown: true,
       },
-      css: ['~/assets/global.scss'],
+      // cmm 프로젝트 css 공통 사용
+      css: ['~/assets/global.scss', path.resolve(__dirname, '../cmm/src/assets/cmm.scss')],
       head: {
         titleTemplate: 'U.STRA Node Framework Sample - FO %s',
         title: '',
