@@ -12,8 +12,10 @@
     "IE >= 11"
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development CONFIG_ENV=local nuxt-ts dev --spa",
-    "generate": "rm -rf ./node_modules && cross-env NODE_ENV=production CONFIG_ENV=dev nuxt-ts generate --spa",
+    "dev": "cross-env NODE_ENV=development CONFIG_ENV=local nuxt dev",
+    "build": "cross-env NODE_ENV=development CONFIG_ENV=local nuxt build",
+    "start": "cross-env NODE_ENV=development CONFIG_ENV=local nuxt start",
+    "generate": "rm -rf ./node_modules && cross-env NODE_ENV=production CONFIG_ENV=dev nuxt generate",
     "test": "jest --detectOpenHandles --forceExit"
   },
   "dependencies": {

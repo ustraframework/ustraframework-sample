@@ -26,7 +26,7 @@ export default async () => {
       datePattern: 'YYYY-MM-DD-HH',
     },
     server: {
-      type: configProperties.ServerType.NONE,
+      type: configProperties.ServerType.CONNECT,
       middleware: {
         compress: true,
         bodyParser: true,
@@ -44,7 +44,7 @@ export default async () => {
       },
       css: ['~/assets/global.scss'],
       head: {
-        titleTemplate: 'U.STRA Node Framework Sample - FO',
+        titleTemplate: 'U.STRA Node Framework Sample - FO %s',
         title: '',
       },
       generation: {
@@ -74,5 +74,6 @@ export default async () => {
     _config.env.SERVER_PROP_ENC_KEY = 'Z3NjLWNyeXB0by1rZXkxMQ=='
 
     _config.build.transpile.push('@ustra-sample/cmm')
+    _config.router.middleware.push('custom')
   })
 }
