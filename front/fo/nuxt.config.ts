@@ -23,7 +23,7 @@ export default async () => {
     },
     logger: {
       level: configProperties.LogLevel.Debug,
-      file: true,
+      file: false,
       datePattern: 'YYYY-MM-DD-HH',
     },
     server: {
@@ -78,5 +78,6 @@ export default async () => {
 
     _config.build.transpile.push('@ustra-sample/cmm')
     _config.router.middleware.push('custom')
+    _config.plugins.push('~/plugins/core')
   })
 }

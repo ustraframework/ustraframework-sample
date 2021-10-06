@@ -9,6 +9,11 @@
     <sub-component ref="subComponent" :text.sync="subText" :text-sub="subText2" @text2_required_change="text2RequiredChange" />
     <button @click="subText = '변경'">subText 변경</button>
     <button @click="notify">notify</button>
+
+    <br /><br />
+    <button @click="setStoreData">스토어 값 설정</button>
+    <br /><br />
+    <button @click="execCore">core function 실행</button>
   </div>
 </template>
 <script lang="ts">
@@ -32,6 +37,9 @@ import { HttpMethod } from '@ustra/core/src/server/http/const'
     ).data
 
     return { subText: result.body }
+  },
+  validate: ctx => {
+    return !!ctx.route.query.a
   },
 })
 export default class extends CustomFoComponent {
@@ -81,6 +89,16 @@ export default class extends CustomFoComponent {
 
   notify() {
     this.subComponent.notify()
+  }
+
+  async setStoreData() {
+    await this.$core.store.sample.setList(['1', '2', '3'])
+    // await this.$ustra.store.sample().setList(['1', '2', '3'])
+    console.log(this.$core.store.sample.list)
+  }
+
+  execCore() {
+    this.$core.alert('dddd')
   }
 
   // #endregion

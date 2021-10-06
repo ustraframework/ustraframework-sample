@@ -7,7 +7,7 @@ repositories {
 
 
 dependencies {
-	compile 'com.gsitm.ustra.java.starter:ustra-starter-vue-bo:2.0.24.RELEASE'
+	compile 'com.gsitm.ustra.java.starter:ustra-starter-vue-bo:2.0.40.RELEASE'
     compile project(":cmm")
 }
 

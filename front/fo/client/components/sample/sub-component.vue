@@ -5,10 +5,14 @@
 
     <div>{{ textSub }}</div>
     <button @click="changeText2">text2 값 변경</button>
+
+    <div style="background-color: lime">
+      {{ this.$ustra.store.sample().list }}
+    </div>
   </div>
 </template>
 <script lang="ts">
-import { Vue, Component, Prop, PropSync, Emit } from 'vue-property-decorator'
+import { Vue, Component, Prop, PropSync, Emit, Watch } from 'vue-property-decorator'
 import { CustomFoComponent } from '@/components/custom-fo-component'
 
 @Component
@@ -21,6 +25,10 @@ export default class extends CustomFoComponent {
   // #region variables
   @PropSync('text', { default: '기본 값' }) innerText: string
   @Prop() readonly textSub: string
+
+  get list() {
+    return this.$ustra.store.sample().list
+  }
   // #endregion
   // #region hooks
   // #endregion
@@ -34,6 +42,10 @@ export default class extends CustomFoComponent {
   }
   // #endregion
   // #region watches
+  @Watch('list')
+  listChanged(v) {
+    console.log('listChanged', v)
+  }
   // #endregion
 }
 </script>
