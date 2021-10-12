@@ -7,10 +7,10 @@ repositories {
 
 
 dependencies {
-	compile 'com.gsitm.ustra.java.starter:ustra-starter-restapi:2.0.40.RELEASE'
-	compile 'com.gsitm.ustra.java:ustra-mvc-view:2.0.40.RELEASE'
-	compile 'com.gsitm.ustra.java:ustra-data-mybatis:2.0.40.RELEASE'
-	compile 'com.gsitm.ustra.java:ustra-security-jwt:2.0.40.RELEASE'
+	compile "com.gsitm.ustra.java.starter:ustra-starter-restapi:${ustraVersion}"
+	compile "com.gsitm.ustra.java:ustra-mvc-view:${ustraVersion}"
+	compile "com.gsitm.ustra.java:ustra-data-mybatis:${ustraVersion}"
+	compile "com.gsitm.ustra.java:ustra-security-jwt:${ustraVersion}"
     compile project(":cmm")
 }
 

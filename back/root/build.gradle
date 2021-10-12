@@ -1,6 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '2.2.5.RELEASE'
+        ustraVersion = '2.0.41.RELEASE'
         set('springCloudVersion', "Hoxton.SR3")
     }
 
