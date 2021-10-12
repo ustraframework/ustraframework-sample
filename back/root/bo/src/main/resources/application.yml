@@ -50,8 +50,8 @@ ustra:
           password: ENC(ohS/a1/Q/lKriwUq3rqJqht76fQ0Bnge)
     file:
       enabled: true
-      include-default: true
-      fileGrpId: test
+      group:
+        enabled: true
   mvc:
     view:
       api-prefix: api
@@ -65,27 +65,13 @@ ustra:
         password-change-days: 0
         maximum-auth-group-depth: 5
       authentication:
-        enabled: true
-        allow-anoymous-athentication: true
+        allow-anoymous-authentication: true
         system-name: management-bo
         system-key: BO
         token-key: acc-token
         refresh-token-key: ref-token
-        client-crypto-secret: fapoisudf2103984hj
-        password-change-days: 90
-        system-informations:
-          bo:
-            enable-refresh-token: true
-            refresh-valid-second: 6000
-            valid-second: 20
-            max-use-refresh-token: 5
-            system-properties:
-              v001:
-                version: v001
-                issue-start-dttm: 2021-05-01 00:00
-                issue-end-dttm: 2021-12-31 23:59
-                valid-start-dttm: 2021-05-01 00:00
-                valid-end-dttm: 2021-12-31 23:59
-                secret-key: asddflkhjasd
+        secret-key: asddflkhjasd
+        enable-refresh-token: true
+        refresh-valid-seconds: 6000
     
 
