@@ -1,8 +1,10 @@
 buildscript {
     ext {
         springBootVersion = '2.2.5.RELEASE'
-        ustraVersion = '2.0.41.RELEASE'
         set('springCloudVersion', "Hoxton.SR3")
+
+        // log4j2 버전 변경
+        set('log4j2.version', '2.15.0')
     }
 
     repositories {
@@ -16,6 +18,19 @@ buildscript {
         classpath('io.spring.gradle:dependency-management-plugin:1.0.9.RELEASE')
         classpath("io.franzbecker:gradle-lombok:1.8")
     }
+}
+
+// configuration setting version
+configurations.all {
+	resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+		if (details.requested.group == 'ch.qos.logback') {
+			details.useVersion '1.2.9'
+		}
+
+		if (details.requested.group == 'org.apache.logging.log4j') {
+			details.useVersion '2.15.0'
+		}
+	}
 }
 
 allprojects {
@@ -34,13 +49,14 @@ subprojects {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
-		eclipse {
-			classpath { downloadSources=true }
-		}
+	eclipse {
+		classpath { downloadSources=true }
+	}
 
 
     ext {
         set('springCloudVersion', "Hoxton.SR3")
+        ustraVersion = '2.0.50.8-SNAPSHOT'
     }
 
 
@@ -71,12 +87,18 @@ subprojects {
     }
 
     dependencies {
+
+    	implementation 'ch.qos.logback:logback-core:1.2.9'
+        implementation 'ch.qos.logback:logback-classic:1.2.9'
+
+		implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.15.0'
+		implementation 'org.apache.logging.log4j:log4j-api:2.15.0'
+
         implementation 'org.springframework.boot:spring-boot-starter'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
       	compileOnly 'org.projectlombok:lombok'
-        compileOnly 'org.springframework.boot:spring-boot-devtools'
         compile 'org.springframework.boot:spring-boot-starter-aop'
 
         annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'

@@ -10,7 +10,7 @@ spring:
 
 
 mybatis:
-  mapperLocations: classpath:/mapper/**/*.xml,classpath:/mapper2/**/*.xml
+  mapperLocations: classpath:/mapper/**/*.xml
   type-aliases-package: com.gsitm.ustra.java.management.models
   configuration:
     jdbc-type-for-null: "NULL"
@@ -24,19 +24,6 @@ ustra:
   core:
     process-info:
       default-system-code: BO
-    cache:
-      map:
-        additional-cache-names: USTRA-TEST-CACHE
-      caffeine:
-        caffeine-test:
-          maximum-size: 200
-          initial-capacity: 100
-          # refresh-seconds: 600
-          expire-after-write-seconds: 1800
-          expire-after-access-seconds: 1800
-        #eh:
-        #  eh-test:
-        #    config-location: classpath:/ehcache.xml
   data:
     procedure-manager:
       enabled: true
