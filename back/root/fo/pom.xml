@@ -34,6 +34,11 @@
 			<version>${ustra.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.gsitm.ustra.java</groupId>
+			<artifactId>ustra-management-core</artifactId>
+			<version>${ustra.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>sample.ustraframework.java</groupId>
 			<artifactId>cmm</artifactId>
 			<version>${parent.version}</version>
