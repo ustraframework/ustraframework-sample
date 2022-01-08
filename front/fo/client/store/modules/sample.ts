@@ -11,7 +11,7 @@ export class SampleModule extends VuexModule {
   list: Array<string> = null
 
   @Mutation
-  @Storage({ propertyKey: 'sample.list', defaultValue: [], type: "local" })
+  @Storage({ propertyKey: 'sample.list', defaultValue: [], type: 'local' })
   setList(list: Array<string>) {
     this.list = list
   }
@@ -25,5 +25,4 @@ export class SampleModule extends VuexModule {
   nuxtClientInit(ctx: CombinedContext) {
     console.log('nuxtClientInit')
   }
-
 }

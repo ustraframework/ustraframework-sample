@@ -15,6 +15,7 @@ export default class extends CustomFoComponent {
   // #region variables
   // #endregion
   // #region hooks
+  created() {}
   // #endregion
   // #region methods
   // #endregion
