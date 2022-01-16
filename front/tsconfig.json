@@ -27,7 +27,7 @@
     "paths": {
       "~/*": ["./fo/client/*", "./bo/client/*"],
       "@/*": ["./fo/client/*", "./bo/client/*"],
-      "@ustra-sample/*": ["./node_modules/@ustra-sample/*"]
+      "@ustra-sample/*": ["./*"]
     },
     "types": ["@types/node", "@types/jest", "@nuxt/types", "@ustra/nuxt", "@ustra/nuxt-dx", "@ustra/nuxt-mng-bo", "@ustra-sample/cmm", "@ustra/buefy", "buefy", "@ustra-sample/bo", "@ustra-sample/fo"]
   },

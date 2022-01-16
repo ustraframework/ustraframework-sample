@@ -24,7 +24,7 @@
     "downlevelIteration": true,
     "baseUrl": ".",
     "paths": {
-      "@ustra-sample/*": ["../node_modules/@ustra-sample/*"]
+      "@ustra-sample/*": ["../*"]
     },
     "types": ["@types/node", "@types/jest", "@nuxt/types", "@ustra/nuxt", "@ustra/buefy", "@ustra-sample/cmm", "./types"]
   },

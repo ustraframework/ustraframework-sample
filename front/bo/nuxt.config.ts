@@ -63,5 +63,7 @@ export default async () => {
     _config.env.SERVER_PROP_ENC_KEY = 'Z3NjLWNyeXB0by1rZXkxMQ=='
     _config.build.transpile.push('@ustra-sample/cmm')
     _config.build.extractCSS = false
+
+    _config.plugins.push('~/plugins/sample-bo-plugin.ts')
   })
 }

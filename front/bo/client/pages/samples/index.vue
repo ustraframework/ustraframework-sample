@@ -59,6 +59,7 @@ export default class extends SampleBoComponent {
       type: 'title',
       value: this.title,
     })
+
   }
   // #endregion
   // #region watches
