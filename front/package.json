@@ -30,14 +30,14 @@
     "create-off-pack": "rm -rf node_modules && rm yarn.lock && rm -rf npm_packages/* && yarn cache clean && yarn install"
   },
   "dependencies": {
-    "@ustra/core": "2.0.43-snapshot.10",
-    "@ustra/data": "2.0.43-snapshot.10",
-    "@ustra/nuxt": "2.0.43-snapshot.10",
-    "@ustra/nuxt-dx": "2.0.43-snapshot.10",
-    "@ustra/nuxt-mng": "2.0.43-snapshot.10",
-    "@ustra/nuxt-mng-bo": "2.0.43-snapshot.10",
-    "@ustra/nuxt-dx-mng-bo": "2.0.43-snapshot.10",
-    "@ustra/nuxt-buefy": "2.0.43-snapshot.10"
+    "@ustra/core": "2.0.44-snapshot.9",
+    "@ustra/data": "2.0.44-snapshot.9",
+    "@ustra/nuxt": "2.0.44-snapshot.9",
+    "@ustra/nuxt-dx": "2.0.44-snapshot.9",
+    "@ustra/nuxt-mng": "2.0.44-snapshot.9",
+    "@ustra/nuxt-mng-bo": "2.0.44-snapshot.9",
+    "@ustra/nuxt-dx-mng-bo": "2.0.44-snapshot.9",
+    "@ustra/nuxt-buefy": "2.0.44-snapshot.9"
   },
   "devDependencies": {
     "@babel/node": "7.13.13",
