@@ -22,7 +22,7 @@ export default (context: Context, inject) => {
 
   // context 객체에 플러그인 주입
   // @ts-ignore
-  contenxt.$bo = plugin
+  context.$bo = plugin
 
   // Vue 객체에 플러그인 주입
   inject('bo', plugin)
