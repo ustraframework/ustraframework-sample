@@ -12,7 +12,7 @@
 <script lang="ts">
 import { Component, Ref } from 'vue-property-decorator'
 import { UstraBoComponent } from '@ustra/nuxt-mng-bo/src/components/ustra-bo-component'
-import Dext5Editor from '@ustra/nuxt/src/vue/components/dext5/dext5-editor.vue'
+import Dext5Editor from '@ustra/nuxt/src/vue/components/dext5/dext5-editor'
 
 @Component({
   components: { Dext5Editor },

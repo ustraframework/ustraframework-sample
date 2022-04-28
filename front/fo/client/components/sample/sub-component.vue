@@ -34,6 +34,8 @@ export default class extends CustomFoComponent {
   // #endregion
   // #region methods
   changeText2() {
+    this.$ustra.store.sample().
+
     this.$emit('text2_required_change', 'text2 변경 값')
   }
 

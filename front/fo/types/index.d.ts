@@ -1,4 +1,11 @@
 import { CorePlugin } from '../client/plugins/core'
+import { SampleModule } from '../client/store/modules/sample'
+
+declare module '@ustra/nuxt/src/vue/store/index' {
+  interface StoreModules {
+    sample?: () => SampleModule
+  }
+}
 
 declare module '@nuxt/types' {
   // context 객체
