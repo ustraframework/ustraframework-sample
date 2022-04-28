@@ -45,7 +45,7 @@ export default class extends CustomFoComponent {
   }
 
   get isAuthenticated() {
-    return this.$ustra.auth.isAutenticated()
+    return this.$ustra.auth.isAuthenticated()
   }
 
   // #endregion
