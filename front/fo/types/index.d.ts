@@ -1,9 +1,11 @@
 import { CorePlugin } from '../client/plugins/core'
 import { SampleModule } from '../client/store/modules/sample'
+import { FreditModule } from '../client/store/modules/fredit'
 
 declare module '@ustra/nuxt/src/vue/store/index' {
   interface StoreModules {
     sample?: () => SampleModule
+    fredit?: () => FreditModule
   }
 }
 
