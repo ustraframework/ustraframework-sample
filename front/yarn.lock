@@ -3376,7 +3376,7 @@
 
 "@ustra/core@2.0.44-snapshot.43", "@ustra/core@^2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/core/-/core-2.0.44-snapshot.43.tgz#d1fdfd74a010e94b9b226617743548a32a63e462"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/core/-/core-2.0.44-snapshot.43.tgz#d1fdfd74a010e94b9b226617743548a32a63e462"
   integrity sha512-YCQ5guveCYqa84o9zrAUQzsaZHv00iZYH9hQC2lO1fNqgetrP5LExKMzMATCfURMfq+YISErmf3jjlzJQVThfg==
   dependencies:
     axios "0.21.1"
@@ -3403,14 +3403,14 @@
 
 "@ustra/data@2.0.44-snapshot.43", "@ustra/data@^2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/data/-/data-2.0.44-snapshot.43.tgz#2e5edcd23aad910989e673a689b9974de205145a"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/data/-/data-2.0.44-snapshot.43.tgz#2e5edcd23aad910989e673a689b9974de205145a"
   integrity sha512-uGHjFtkFSC+CRs3V4vs08oXYLtdD9EHQSCqglStYt2QK17ynDSCncUBeae4gQnePK5IcZzjdE3G1Izu/2kdwyA==
   dependencies:
     "@ustra/core" "^2.0.44-snapshot.43"
 
 "@ustra/nuxt-buefy@2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-buefy/-/nuxt-buefy-2.0.44-snapshot.43.tgz#7b31ff59046575c7885c5b776fab79bcead688c2"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-buefy/-/nuxt-buefy-2.0.44-snapshot.43.tgz#7b31ff59046575c7885c5b776fab79bcead688c2"
   integrity sha512-rxsTEI7g6nFWnVdzGGZsOTBeAoLNDUoEiNI4Wd4pCi/TfYKo8dPWKDj7mzJUdLOlAlSdvDmsLhio0EWZ5dcUgw==
   dependencies:
     "@ustra/nuxt" "^2.0.44-snapshot.43"
@@ -3418,7 +3418,7 @@
 
 "@ustra/nuxt-dx-mng-bo@2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx-mng-bo/-/nuxt-dx-mng-bo-2.0.44-snapshot.43.tgz#c6c2733499c5ad1f168a9cbff2bc6173c6021631"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-dx-mng-bo/-/nuxt-dx-mng-bo-2.0.44-snapshot.43.tgz#c6c2733499c5ad1f168a9cbff2bc6173c6021631"
   integrity sha512-iK0IGorapKMgeuqvmSk13sQbAWbmGXhbfqTJ2LYVulT2p7OnZw+IgKouX1mrRv8tXngk8yn3KTYXf25BNWcj3g==
   dependencies:
     "@ustra/nuxt-dx" "^2.0.44-snapshot.43"
@@ -3426,7 +3426,7 @@
 
 "@ustra/nuxt-dx@2.0.44-snapshot.43", "@ustra/nuxt-dx@^2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-dx/-/nuxt-dx-2.0.44-snapshot.43.tgz#24238bfa29c0e18c133057d491c82c80d10e2f49"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-dx/-/nuxt-dx-2.0.44-snapshot.43.tgz#24238bfa29c0e18c133057d491c82c80d10e2f49"
   integrity sha512-+D58+IYtdHK8fmAPpFK0SJ3R6Z0qwLrF3BdYrMBFqVEPWDC0SqVi+L5spMSu8Jyv1rh+LIqWZ2lp4tKMfWDCzA==
   dependencies:
     "@ustra/nuxt" "^2.0.44-snapshot.43"
@@ -3440,21 +3440,21 @@
 
 "@ustra/nuxt-mng-bo@2.0.44-snapshot.43", "@ustra/nuxt-mng-bo@^2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng-bo/-/nuxt-mng-bo-2.0.44-snapshot.43.tgz#93c9a0e119b05c9e3894b978a3f839c801d6c334"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-mng-bo/-/nuxt-mng-bo-2.0.44-snapshot.43.tgz#93c9a0e119b05c9e3894b978a3f839c801d6c334"
   integrity sha512-3IbqGfSwrS55Z6gKZr0p0tiWXI/8vgpXhvVBns/q9QHeVi3yBzsaxiIUm6Rh+pcxl1v+HjutEDZYZLzwRTf2Wg==
   dependencies:
     "@ustra/nuxt-mng" "^2.0.44-snapshot.43"
 
 "@ustra/nuxt-mng@2.0.44-snapshot.43", "@ustra/nuxt-mng@^2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-mng/-/nuxt-mng-2.0.44-snapshot.43.tgz#48955d3dbe443bc33fa69fbff0e65af137a4f393"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-mng/-/nuxt-mng-2.0.44-snapshot.43.tgz#48955d3dbe443bc33fa69fbff0e65af137a4f393"
   integrity sha512-/BCQhUu+CrQEnJ9oraGMMQF+pc6phqATIOI8RtA/N3p7fHl97irGECZa/SYmX5mYJZ2Fs1G+bZEhO6JKNFC9Uw==
   dependencies:
     "@ustra/nuxt" "^2.0.44-snapshot.43"
 
 "@ustra/nuxt@2.0.44-snapshot.43", "@ustra/nuxt@^2.0.44-snapshot.43":
   version "2.0.44-snapshot.43"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt/-/nuxt-2.0.44-snapshot.43.tgz#5a0c9047ced5a00ebd61682908705c67a60d40c8"
+  resolved "http://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt/-/nuxt-2.0.44-snapshot.43.tgz#5a0c9047ced5a00ebd61682908705c67a60d40c8"
   integrity sha512-KW4rbrSuri1g7n2RiBkd9C1IesT8BRNsXzYUMl1q0YVlIAb8XAlUW5Q6Tj1jX3p1RPYWZliMGWeW2S7zyce09w==
   dependencies:
     "@nuxt/typescript-runtime" "0.4.10"
