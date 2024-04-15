@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.2.5.RELEASE'
+        springBootVersion = '2.6.15'
         set('springCloudVersion', "Hoxton.SR3")
 
         // log4j2 버전 변경
@@ -56,7 +56,7 @@ subprojects {
 
     ext {
         set('springCloudVersion', "Hoxton.SR3")
-        ustraVersion = '2.1.1.RELEASE'
+        ustraVersion = '2.3.0.RELEASE'
     }
 
 
