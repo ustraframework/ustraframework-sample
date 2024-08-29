@@ -11,6 +11,9 @@
             <b-menu-item @click="$router.push('/sample/upload')">
               <template #label>파일 업로드</template>
             </b-menu-item>
+            <b-menu-item @click="$router.push('/sample/youtube')">
+              <template #label>YouTube 재생</template>
+            </b-menu-item>
           </b-menu-list>
         </div>
       </b-sidebar>
