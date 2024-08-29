@@ -30,10 +30,10 @@ ustra:
       default-datasource-name: rds1
       datasources:
         rds1:
-          url: jdbc:log4jdbc:sqlserver://framework-sqlserver.c0uiyan5ae24.ap-northeast-2.rds.amazonaws.com:1433;databaseName=USTRA_FW_SPL
+          url: jdbc:log4jdbc:postgresql://172.28.52.140:15432/sample
           driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-          username: ENC(p6rIPoShJklFLPxHKNJYFLooNCd2xnkayNZ2f+GexyA17qEMS77u8g==)
-          password: ENC(ohS/a1/Q/lKriwUq3rqJqht76fQ0Bnge)
+          username: sample
+          password: P7YTWr+Z8z0UgcAu
     logging:
       interfaces:
         enabled: true
@@ -49,4 +49,5 @@ ustra:
       token-key: sample-fo-token
       enable-refresh-token: false
       access-valid-second: 1800
-      allow-anonymous-authentication: true
+      allow-anonymous-authentication: true
+

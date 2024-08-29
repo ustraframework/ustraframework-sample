@@ -8,6 +8,9 @@
             <b-menu-item @click="$router.push('/sample/mobile')">
               <template #label>모바일 브릿지 호출</template>
             </b-menu-item>
+            <b-menu-item @click="$router.push('/sample/upload')">
+              <template #label>파일 업로드</template>
+            </b-menu-item>
           </b-menu-list>
         </div>
       </b-sidebar>
