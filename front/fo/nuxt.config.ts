@@ -66,7 +66,13 @@ export default async () => {
           },
           bridge: {
             enabled: true,
-            useTokenSecurity: false,
+            useTokenSecurity: true,
+            staticBridgeNames: {
+              notifyLoaded: 'GPC_MB_NOTIFY_LOADED',
+              toast: 'GPC_MB_TOAST',
+              currentTime: 'GPC_MB_CURRENT_TIME',
+              storage: 'GPC_MB_STORAGE',
+            }
           },
         },
       },
