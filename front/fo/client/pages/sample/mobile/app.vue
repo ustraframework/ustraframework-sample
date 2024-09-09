@@ -7,7 +7,7 @@
         <div class="card-header-title">Status</div>
       </header>
       <div class="card-content">
-        UserAgent: {{ window.navigator.userAgent}}
+        UserAgent: {{ window?.navigator.userAgent}}
         native: {{ isNative }}<br />
         android: {{ isAndroid }}<br />
         iOS: {{ isIOs }}
