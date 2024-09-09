@@ -7,9 +7,10 @@
         <div class="card-header-title">Status</div>
       </header>
       <div class="card-content">
-        native: {{ isNative() }}<br />
-        android: {{ isAndroid() }}<br />
-        iOS: {{ isIOs() }}
+        UserAgent: {{ window.navigator.userAgent}}
+        native: {{ isNative }}<br />
+        android: {{ isAndroid }}<br />
+        iOS: {{ isIOs }}
 
       </div>
     </div>
@@ -80,7 +81,7 @@
 </template>
 
 <script lang="ts">
-import { Component } from 'vue-property-decorator'
+import { Component, Ref } from 'vue-property-decorator'
 import UMarkdownViewer from '@ustra/nuxt/src/vue/components/ustra-markdown-viewer'
 import CustomFoComponent from '~/components/custom-fo-component'
 
@@ -95,9 +96,27 @@ import CustomFoComponent from '~/components/custom-fo-component'
  * component description
  */
 export default class extends CustomFoComponent {
-  isNative = () => this.$ustra.mobile.isNativeRequest
-  isAndroid = () => this.$ustra.mobile.isAndroidNativeRequest
-  isIOs = () => this.$ustra.mobile.isIosNativeRequest
+  isNative = false
+  isAndroid = false
+  isIOs = false
+
+  updateStatus = () => {
+    this.isNative = this.$ustra.mobile.isNativeRequest
+    this.isAndroid = this.$ustra.mobile.isAndroidNativeRequest
+    this.isIOs = this.$ustra.mobile.isIosNativeRequest
+  }
+
+  statusInterval = null
+
+  mounted() {
+    this.statusInterval = setInterval(this.updateStatus, 1000)
+  }
+
+  beforeUnmount() {
+    clearTimeout(this.statusInterval)
+    this.statusInterval = null
+  }
+
   onToast = () => {
     this.$ustra.mobile.bridge.staticFunctions.toast('Bridge : Toast Test Message')
   }
