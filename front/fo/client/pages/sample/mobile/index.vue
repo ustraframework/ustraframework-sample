@@ -13,14 +13,14 @@
 </template>
 <script lang="ts">
 import { Component } from 'vue-property-decorator'
-import { CustomFoComponent } from '@/components/custom-fo-component'
+import { CustomFoComponent } from '~/components/custom-fo-component'
 import UMarkdownViewer from '@ustra/nuxt/src/vue/components/ustra-markdown-viewer'
 
 // @ts-ignore
-import mobile01 from './md/mobile01.md'
+import mobile01 from '~/pages/sample/mobile/md/mobile01.md'
 
 // @ts-ignore
-import mobile02 from './md/mobile02.md'
+import mobile02 from '~/pages/sample/mobile/md/mobile02.md'
 
 @Component({
   components: {
