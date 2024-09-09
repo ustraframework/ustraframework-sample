@@ -4,6 +4,20 @@
 
     <div class="card">
       <header class="card-header">
+        <div class="card-header-title">Status</div>
+      </header>
+      <div class="card-content">
+        native: {{ isNative }}<br />
+        android: {{isAndroid}}<br />
+        iOS: {{isIOs}}
+
+      </div>
+    </div>
+
+    <br>
+
+    <div class="card">
+      <header class="card-header">
         <div class="card-header-title">Toast</div>
       </header>
       <div class="card-content">
@@ -81,6 +95,9 @@ import CustomFoComponent from '~/components/custom-fo-component'
  * component description
  */
 export default class extends CustomFoComponent {
+  isNative = () => this.$ustra.mobile.isNativeRequest
+  isAndroid = () => this.$ustra.mobile.isAndroidNativeRequest
+  isIOs = () => this.$ustra.mobile.isIosNativeRequest
   onToast = () => {
     this.$ustra.mobile.bridge.staticFunctions.toast('Bridge : Toast Test Message')
   }
