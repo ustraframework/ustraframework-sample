@@ -56,4 +56,60 @@
 			<key id="key2">value2</key>
 		</keys>
 	</interfaceInfo>
+	<interfaceInfo>
+		<id>GPC_MB_NOTIFY_LOADED</id>
+		<version>1.0</version>
+		<name>모바일 아웃바운드 API</name>
+		<type>MOBILE_BRIDGE</type>
+		<logType>ALL</logType>
+		<direction>OUTBOUND</direction>
+		<systemCode>FO</systemCode>
+		<rmk>샘플로 정의된 모바일 아웃바운드 API</rmk>
+		<keys>
+			<key id="key1">value1</key>
+			<key id="key2">value2</key>
+		</keys>
+	</interfaceInfo>
+	<interfaceInfo>
+		<id>GPC_MB_TOAST</id>
+		<version>1.0</version>
+		<name>모바일 아웃바운드 API</name>
+		<type>MOBILE_BRIDGE</type>
+		<logType>ALL</logType>
+		<direction>OUTBOUND</direction>
+		<systemCode>FO</systemCode>
+		<rmk>샘플로 정의된 모바일 아웃바운드 API</rmk>
+		<keys>
+			<key id="key1">value1</key>
+			<key id="key2">value2</key>
+		</keys>
+	</interfaceInfo>
+	<interfaceInfo>
+		<id>GPC_MB_CURRENT_TIME</id>
+		<version>1.0</version>
+		<name>모바일 아웃바운드 API</name>
+		<type>MOBILE_BRIDGE</type>
+		<logType>ALL</logType>
+		<direction>OUTBOUND</direction>
+		<systemCode>FO</systemCode>
+		<rmk>샘플로 정의된 모바일 아웃바운드 API</rmk>
+		<keys>
+			<key id="key1">value1</key>
+			<key id="key2">value2</key>
+		</keys>
+	</interfaceInfo>
+	<interfaceInfo>
+		<id>GPC_MB_STORAGE</id>
+		<version>1.0</version>
+		<name>모바일 아웃바운드 API</name>
+		<type>MOBILE_BRIDGE</type>
+		<logType>ALL</logType>
+		<direction>OUTBOUND</direction>
+		<systemCode>FO</systemCode>
+		<rmk>샘플로 정의된 모바일 아웃바운드 API</rmk>
+		<keys>
+			<key id="key1">value1</key>
+			<key id="key2">value2</key>
+		</keys>
+	</interfaceInfo>
 </interfaceInfos>
