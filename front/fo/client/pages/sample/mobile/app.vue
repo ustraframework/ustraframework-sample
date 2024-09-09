@@ -7,9 +7,9 @@
         <div class="card-header-title">Status</div>
       </header>
       <div class="card-content">
-        native: {{ isNative }}<br />
-        android: {{isAndroid}}<br />
-        iOS: {{isIOs}}
+        native: {{ isNative() }}<br />
+        android: {{ isAndroid() }}<br />
+        iOS: {{ isIOs() }}
 
       </div>
     </div>
