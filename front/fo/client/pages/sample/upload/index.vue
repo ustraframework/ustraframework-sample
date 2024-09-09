@@ -67,7 +67,7 @@
 </template>
 <script lang="ts">
 import { Component } from 'vue-property-decorator'
-import { CustomFoComponent } from '@/components/custom-fo-component'
+import CustomFoComponent from '~/components/custom-fo-component'
 import UMarkdownViewer from '@ustra/nuxt/src/vue/components/ustra-markdown-viewer'
 
 // @ts-ignore

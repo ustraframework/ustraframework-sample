@@ -114,7 +114,7 @@ export default class extends CustomFoComponent {
   }
 
   onStorageSetItem = async () => {
-    storage = await this.$ustra.mobile.bridge.staticFunctions.storage().setItem(this.itemKey, this.itemValue)
+    const storage = await this.$ustra.mobile.bridge.staticFunctions.storage().setItem(this.itemKey, this.itemValue)
   }
 
   onStorageClearItem = async () => {
