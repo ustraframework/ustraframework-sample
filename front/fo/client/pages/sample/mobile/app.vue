@@ -7,7 +7,6 @@
         <div class="card-header-title">Status</div>
       </header>
       <div class="card-content">
-        UserAgent: {{ getUserAgent() }}
         native: {{ isNative }}<br />
         android: {{ isAndroid }}<br />
         iOS: {{ isIOs }}
@@ -99,10 +98,6 @@ export default class extends CustomFoComponent {
   isNative = false
   isAndroid = false
   isIOs = false
-
-  getUserAgent = () => {
-    return window.navigator.userAgent
-  }
 
   updateStatus = () => {
     this.isNative = this.$ustra.mobile.isNativeRequest
