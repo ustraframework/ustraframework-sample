@@ -17,4 +17,4 @@ RUN rm $APP_NAME.tar.gz
 WORKDIR $APP_NAME/front/fo
 
 EXPOSE 9912
-ENTRYPOINT ["yarn", "start"]
+ENTRYPOINT ["yarn", "start:dev"]
