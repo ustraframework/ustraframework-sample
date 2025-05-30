@@ -28,7 +28,7 @@ ustra:
       default-datasource-name: rds1
       datasources:
         rds1:
-          url: jdbc:log4jdbc:postgresql://172.28.52.140:15432/sample?escapeSyntaxCallMode=callIfNoReturn
+          url: jdbc:log4jdbc:postgresql://172.28.31.140:15432/sample?escapeSyntaxCallMode=callIfNoReturn
           driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
           username: ENC(Tg4GUQ2PNIO5VxVJMSlfng==)
           password: ENC(wWalunLw5ct6Xev5lNfpLuQVNjgmQ/HUKiP5il5HOp8=)
