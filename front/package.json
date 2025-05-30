@@ -16,6 +16,7 @@
   "scripts": {
     "dev:fo": "cd ./fo && yarn run dev",
     "generate:fo": "cd ./fo && yarn run build",
+    "generate:dev:fo": "cd ./fo && yarn run build",
     "dev:bo": "cd ./bo && yarn run dev",
     "generate:bo": "cd ./bo && yarn run generate",
     "create-off-pack": "rm -rf node_modules && rm yarn.lock && rm -rf npm_packages/* && yarn cache clean && yarn install"
