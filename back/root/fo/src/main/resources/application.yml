@@ -51,3 +51,14 @@ ustra:
       access-valid-second: 1800
       allow-anonymous-authentication: true
 
+---
+spring:
+  config:
+    activate:
+      on-profile: prd
+ustra:
+  data:
+    datasource:
+      datasources:
+        rds1:
+          url: jdbc:log4jdbc:postgresql://172.28.52.140:15432/sample

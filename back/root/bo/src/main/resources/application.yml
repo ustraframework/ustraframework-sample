@@ -61,5 +61,15 @@ ustra:
         secret-key: asddflkhjasd
         enable-refresh-token: true
         refresh-valid-seconds: 6000
-    
 
+---
+spring:
+  config:
+    activate:
+      on-profile: prd
+ustra:
+  data:
+    datasource:
+      datasources:
+        rds1:
+          url: jdbc:log4jdbc:postgresql://172.28.52.140:15432/sample?escapeSyntaxCallMode=callIfNoReturn
