@@ -8,4 +8,4 @@ WORKDIR $APP_HOME
 COPY $APP_NAME.jar $APP_NAME.jar
 
 EXPOSE 9901
-ENTRYPOINT sh -c "java -jar $APP_NAME.jar"
+ENTRYPOINT sh -c "java -Dspring.profiles.active=dev -jar $APP_NAME.jar"
