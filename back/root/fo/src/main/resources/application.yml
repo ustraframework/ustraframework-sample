@@ -55,28 +55,6 @@ ustra:
 spring:
   config:
     activate:
-      on-profile: local
-ustra:
-  data:
-    datasource:
-      datasources:
-        rds1:
-          url: jdbc:log4jdbc:postgresql://172.28.31.140:15432/sample
----
-spring:
-  config:
-    activate:
-      on-profile: dev
-ustra:
-  data:
-    datasource:
-      datasources:
-        rds1:
-          url: jdbc:log4jdbc:postgresql://172.28.31.140:15432/sample
----
-spring:
-  config:
-    activate:
       on-profile: prd
 ustra:
   data:
