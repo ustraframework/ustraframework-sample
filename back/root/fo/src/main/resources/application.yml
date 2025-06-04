@@ -61,6 +61,9 @@ ustra:
       datasources:
         rds1:
           url: jdbc:log4jdbc:postgresql://172.28.31.140:15432/sample
+          driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+          username: sample
+          password: P7YTWr+Z8z0UgcAu
 ---
 spring:
   profiles:
