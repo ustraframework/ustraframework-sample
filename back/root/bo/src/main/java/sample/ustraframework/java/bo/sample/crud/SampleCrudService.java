@@ -2,8 +2,8 @@ package sample.ustraframework.java.bo.sample.crud;
 
 import java.util.List;
 
-import javax.validation.Valid;
-import javax.validation.groups.ConvertGroup;
+import jakarta.validation.Valid;
+import jakarta.validation.groups.ConvertGroup;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

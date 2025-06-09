@@ -38,7 +38,7 @@ public class AuthenticationConfiguration {
 			@Override
 			public void postConfigure(WebSecurity web) throws Exception {
 				web.ignoring()
-					.antMatchers("/api/auth/login");
+					.requestMatchers("/api/auth/login");
 			}
 		};
 	}

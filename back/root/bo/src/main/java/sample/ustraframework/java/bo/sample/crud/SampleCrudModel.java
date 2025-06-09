@@ -1,6 +1,6 @@
 package sample.ustraframework.java.bo.sample.crud;
 
-import javax.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotEmpty;
 
 import com.gsitm.ustra.java.data.domains.PaginationRequest;
 import com.gsitm.ustra.java.data.validation.CrudGroups;
