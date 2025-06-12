@@ -14,21 +14,15 @@
     "IE >= 11"
   ],
   "scripts": {
+    "install:fo": "cd ./fo && yarn install",
     "dev:fo": "cd ./fo && yarn run dev",
     "generate:fo": "cd ./fo && yarn run build",
     "generate:dev:fo": "cd ./fo && yarn run build:dev",
+    "install:bo": "cd ./bo && yarn install",
     "dev:bo": "cd ./bo && yarn run dev",
     "generate:bo": "cd ./bo && yarn run generate",
     "create-off-pack": "rm -rf node_modules && rm yarn.lock && rm -rf npm_packages/* && yarn cache clean && yarn install"
   },
   "dependencies": {
-    "@ustra/core": "3.2.5-stable",
-    "@ustra/h3": "3.2.5-stable",
-    "@ustra/nuxt": "3.2.5-stable",
-    "@ustra/nuxt-wijmo": "3.2.5-stable",
-    "@ustra/nuxt-ckeditor5": "3.2.5-stable",
-    "@pinia/nuxt": "0.5.5",
-    "vue-i18n" : "11.1.5",
-    "@intlify/vue-router-bridge" : "0.8.0"
   }
 }

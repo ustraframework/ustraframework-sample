@@ -2884,6 +2884,14 @@
     source-map "0.6.1"
     yaml-eslint-parser "^0.3.2"
 
+"@intlify/core-base@11.1.5":
+  version "11.1.5"
+  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-11.1.5.tgz#4ea7c7d89e12283b2046f51f90a4e90fc2fde07d"
+  integrity sha512-xGRkISwV/2Trqb8yVQevlHm5roaQqy+75qwUzEQrviaQF0o4c5VDhjBW7WEGEoKFx09HSgq7NkvK/DAyuerTDg==
+  dependencies:
+    "@intlify/message-compiler" "11.1.5"
+    "@intlify/shared" "11.1.5"
+
 "@intlify/core-base@9.3.0-beta.16":
   version "9.3.0-beta.16"
   resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.3.0-beta.16.tgz#bd993fde9c0a96f081a5805a78bece953bfdce9e"
@@ -2901,6 +2909,14 @@
   dependencies:
     "@intlify/shared" "9.3.0-beta.16"
 
+"@intlify/message-compiler@11.1.5":
+  version "11.1.5"
+  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-11.1.5.tgz#3ce479be964efa5615d11fe08a615e051f4060ec"
+  integrity sha512-YLSBbjD7qUdShe3ZAat9Hnf9E8FRpN6qmNFD/x5Xg5JVXjsks0kJ90Zj6aAuyoppJQA/YJdWZ8/bB7k3dg2TjQ==
+  dependencies:
+    "@intlify/shared" "11.1.5"
+    source-map-js "^1.0.2"
+
 "@intlify/message-compiler@9.3.0-beta.16":
   version "9.3.0-beta.16"
   resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.3.0-beta.16.tgz#335f7bdb06cfb84d04a1a1c1d6eff2532dfd88e7"
@@ -2916,6 +2932,11 @@
   dependencies:
     "@intlify/shared" "12.0.0-alpha.2"
     source-map-js "^1.0.2"
+
+"@intlify/shared@11.1.5":
+  version "11.1.5"
+  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-11.1.5.tgz#236eb0b2b01876f7b540ddb4079e2027cfc83d63"
+  integrity sha512-+I4vRzHm38VjLr/CAciEPJhGYFzWWW4HMTm+6H3WqknXLh0ozNX9oC8ogMUwTSXYR/wGUb1/lTpNziiCH5MybQ==
 
 "@intlify/shared@12.0.0-alpha.2", "@intlify/shared@next":
   version "12.0.0-alpha.2"
@@ -2957,6 +2978,13 @@
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@intlify/vue-i18n-bridge/-/vue-i18n-bridge-0.8.0.tgz#e574f893b68abfee31cc27dd87fdc296056213fc"
   integrity sha512-wQ18fSccm9QaWpUW2vq2QHvojgKIog7s+UMj9LeY3pUV3yD9bU4YZI+1PTNoX3tOA+BE71gQyqVGox/TVQKP6Q==
+
+"@intlify/vue-router-bridge@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@intlify/vue-router-bridge/-/vue-router-bridge-1.1.0.tgz#3b61b295d32974722878afec5aa52c6e1af0da13"
+  integrity sha512-EX+KndT9VS3muMdZWFmc99D8nUaWTOXr322a8zNf5HnMCbpbogdifWYW8hat+nVE73St/gcDbPz6u5smVUPoQg==
+  dependencies:
+    vue-demi ">=0.13.5 < 1.0.0"
 
 "@intlify/vue-router-bridge@^0.8.0":
   version "0.8.0"
@@ -4863,10 +4891,10 @@
     hookable "^5.5.3"
     unhead "1.11.20"
 
-"@ustra/core@3.5.0-snapshot":
-  version "3.5.0-snapshot"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/core/-/core-3.5.0-snapshot.tgz#09b66a3477443ab36b82402b3be54974a05f8bbd"
-  integrity sha512-mY+xsMjj040T6hhms3sf/wJhUnCmiO8gdbCtZunApHv3xaqcMKgmGjywRGi4E48EHwHhAbU2mY3ckQ3GCKxYvg==
+"@ustra/core@3.2.5-stable":
+  version "3.2.5-stable"
+  resolved "https://repo.ustraframework.kro.kr/repository/npm-public/@ustra/core/-/core-3.2.5-stable.tgz#1775d0c93136bb35db4030d4591057a1982c17f7"
+  integrity sha512-A35KeL7i88ts5qmeAPr44knOY9kIDZQcMfGXEtS0c/Ph1N14WoNWMFlurZo9ihK9vlxs6V3DLl948P4NsrkKNA==
   dependencies:
     "@howiefh/ant-path-matcher" "^0.0.4"
     "@refactorjs/http-proxy" "^0.1.0"
@@ -4874,7 +4902,7 @@
     "@types/inquirer" "^8.0.0"
     "@types/jest" "^28.1.6"
     "@types/shelljs" "^0.8.11"
-    "@ustra/types" "3.5.0-snapshot"
+    "@ustra/types" "3.2.5-stable"
     ant-path-matcher "^0.0.5"
     axios "1.5.1"
     axios-retry "^3.8.0"
@@ -4922,10 +4950,10 @@
     winston "^3.8.1"
     winston-daily-rotate-file "^4.7.1"
 
-"@ustra/nuxt-ckeditor5@3.5.0-snapshot":
-  version "3.5.0-snapshot"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-ckeditor5/-/nuxt-ckeditor5-3.5.0-snapshot.tgz#e86ec41ff852190df68872eea9b7b2780f794633"
-  integrity sha512-cQRJhOKyzHJJ28caugllVuEqeiZJ90uSy1HVs5Dl/fNceM0hIcVp1EgCnYAVTfm/h7XHVhAn8uTKbjrNCAicXw==
+"@ustra/nuxt-ckeditor5@3.2.5-stable":
+  version "3.2.5-stable"
+  resolved "https://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-ckeditor5/-/nuxt-ckeditor5-3.2.5-stable.tgz#4b7bdf727a587850a794de0976f376b7c192d7c6"
+  integrity sha512-ihoVR0zoIAiGYM9eoIhG1VppRZyYU1V5yy2Lr5J9E6geLOABzV5rk8ObqFidWVnVrDMQErGA7b6dzVzkT2qdtw==
   dependencies:
     "@ckeditor/ckeditor5-build-classic" "^35.2.1"
     "@ckeditor/ckeditor5-font" "^35.2.1"
@@ -4937,16 +4965,16 @@
     "@ckeditor/ckeditor5-style" "^35.2.1"
     "@ckeditor/ckeditor5-vue" "^4.0.1"
     "@types/ckeditor__ckeditor5-core" "^33.0.3"
-    "@ustra/nuxt" "3.5.0-snapshot"
+    "@ustra/nuxt" "3.2.5-stable"
 
-"@ustra/nuxt-vuetify@3.5.0-snapshot":
-  version "3.5.0-snapshot"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-vuetify/-/nuxt-vuetify-3.5.0-snapshot.tgz#307e47455475d100954b7ee748485eb9929d171c"
-  integrity sha512-OAiiEdU+bVG5hoSCcWN1LArwXlY6MFv/ZHXTdepIDD0/pxeqS7KgUwKrhxsMGrgZ7q6keHII/kfnYdn54f8V2w==
+"@ustra/nuxt-vuetify@3.2.5-stable":
+  version "3.2.5-stable"
+  resolved "https://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-vuetify/-/nuxt-vuetify-3.2.5-stable.tgz#7b81482e29a5ac42e094dec7a135b9d506983332"
+  integrity sha512-AxH+R0w26EklB1Y/NQS6HfLMUrhFXO89neWi60lme53bSa3Hs354ybquqLnP1JzWdqo0qtaRI605uPo78LyAfg==
   dependencies:
     "@fortawesome/fontawesome-free" "^6.5.1"
     "@mdi/font" "^7.4.47"
-    "@ustra/nuxt" "3.5.0-snapshot"
+    "@ustra/nuxt" "3.2.5-stable"
     "@vuepic/vue-datepicker" "7.2.0"
     font-awesome "4.7.0"
     realgrid "2.8.1"
@@ -4956,21 +4984,21 @@
     vuetify "^3.4.1"
     vuetify-nuxt-module "^0.9.1"
 
-"@ustra/nuxt-wijmo@3.5.0-snapshot":
-  version "3.5.0-snapshot"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt-wijmo/-/nuxt-wijmo-3.5.0-snapshot.tgz#7d4f55c2e081e9145d74e5fbefda3c14070ba70a"
-  integrity sha512-Trvr8E6SRx0PW6LbQrivHL/Z5ywlQ23Pzq8VkCW7bhQ7MYKYllujcZ8c3a8GHXzC3Vk1Xv1xNIC/pTy0m3p9fg==
+"@ustra/nuxt-wijmo@3.2.5-stable":
+  version "3.2.5-stable"
+  resolved "https://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt-wijmo/-/nuxt-wijmo-3.2.5-stable.tgz#642a68b9fb3630a2661b07b008efc960c416e95c"
+  integrity sha512-lLmcEZTZqXnELn6pxGQcX5UE/f4kC0mbu+F6pR+9KJx4yCt4OUAE6ZQ9ER2avyn926fsxYkKb1OPazq8vVTIlQ==
   dependencies:
     "@grapecity/wijmo.vue2.all" "5.20232.939"
-    "@ustra/core" "3.5.0-snapshot"
-    "@ustra/nuxt" "3.5.0-snapshot"
-    "@ustra/nuxt-vuetify" "3.5.0-snapshot"
+    "@ustra/core" "3.2.5-stable"
+    "@ustra/nuxt" "3.2.5-stable"
+    "@ustra/nuxt-vuetify" "3.2.5-stable"
     jszip "^3.10.1"
 
-"@ustra/nuxt@3.5.0-snapshot":
-  version "3.5.0-snapshot"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/nuxt/-/nuxt-3.5.0-snapshot.tgz#397f8643347c6dbb35c8c78c50bcaed574dbdeb0"
-  integrity sha512-aE1VYXUSQFJFfgbu/FRr6sZ4ma7joVilI86/ENbniRisCf2XaGMp7My22ib+QXc9hvM5s4XpVHRAugFgFpuJgw==
+"@ustra/nuxt@3.2.5-stable":
+  version "3.2.5-stable"
+  resolved "https://repo.ustraframework.kro.kr/repository/npm-public/@ustra/nuxt/-/nuxt-3.2.5-stable.tgz#a68ed0c3686cbef74544167872e236b027dbe4b8"
+  integrity sha512-9GPkHOBBXwigiqyQ6zbKwFde8ilK4TS0h5Yh8U55XRIDRZ1keoG7WcNBmebMHJy0yU6bCrkVWRIEQBcLDqKJ+A==
   dependencies:
     "@esbuild-plugins/node-globals-polyfill" "^0.1.1"
     "@esbuild-plugins/node-modules-polyfill" "^0.2.2"
@@ -4982,7 +5010,7 @@
     "@nuxt/webpack-builder" "3.9.3"
     "@nuxtjs/i18n" "=8.0.0-beta.10"
     "@pinia/nuxt" "0.5.1"
-    "@ustra/core" "3.5.0-snapshot"
+    "@ustra/core" "3.2.5-stable"
     "@vueuse/core" "10.7.2"
     "@vueuse/nuxt" "10.7.2"
     front-matter "^4.0.2"
@@ -5003,10 +5031,10 @@
     vue "3.4.21"
     vue-router "4.2.5"
 
-"@ustra/types@3.5.0-snapshot":
-  version "3.5.0-snapshot"
-  resolved "https://repo.gsitm.com/repository/npm-private/@ustra/types/-/types-3.5.0-snapshot.tgz#afb82f7d75a01a9562ce0a426bd03ff19f97a3bb"
-  integrity sha512-mRKMIKLINd+JLT7XlnMOCzGVJ/hDtDMv+KLvvTrApUVu4GLwGoUU7e02L6FHX+nJ/DyfzSsSbns4R6ugbYB2zg==
+"@ustra/types@3.2.5-stable":
+  version "3.2.5-stable"
+  resolved "https://repo.ustraframework.kro.kr/repository/npm-public/@ustra/types/-/types-3.2.5-stable.tgz#3230a3d2afb09927dc6adda9db29e47ec774f37d"
+  integrity sha512-zTNzOM3h1+2JqmOufMCb938VH/qmEmjNIVsgpZeyD5Ra/1fymzBgRFGbttdVGHGCQ467WyOZeFAh07xNKBK2Jg==
 
 "@vercel/nft@0.29.4", "@vercel/nft@^0.29.2":
   version "0.29.4"
@@ -11184,7 +11212,7 @@ pify@^6.1.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-6.1.0.tgz#db9f2ebfba65f0bc144db65ae84d1a486ab72909"
   integrity sha512-KocF8ve28eFjjuBKKGvzOBGzG8ew2OqOOSxTTZhirkzH7h3BI1vyzqlR0qbfcDBve1Yzo3FVlWUAtCRrbVN8Fw==
 
-pinia@>=2.1.7:
+pinia@3.0.3, pinia@>=2.1.7:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/pinia/-/pinia-3.0.3.tgz#f412019bdeb2f45e85927b432803190343e12d89"
   integrity sha512-ttXO/InUULUXkMHpTdp9Fj4hLpD/2AoJdmAbAeW2yu1iy1k+pkFekQXw5VpC0/5p51IOR/jDaDRfRWRnMMsGOA==
@@ -12551,7 +12579,16 @@ string-length@^4.0.1:
     char-regex "^1.0.2"
     strip-ansi "^6.0.0"
 
-"string-width-cjs@npm:string-width@^4.2.0", "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+"string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -12583,7 +12620,14 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -13606,7 +13650,7 @@ vue-bundle-renderer@^2.0.0:
   dependencies:
     ufo "^1.5.4"
 
-vue-demi@>=0.14.6:
+"vue-demi@>=0.13.5 < 1.0.0", vue-demi@>=0.14.6:
   version "0.14.10"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.10.tgz#afc78de3d6f9e11bf78c55e8510ee12814522f04"
   integrity sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==
@@ -13641,6 +13685,15 @@ vue-i18n@9.3.0-beta.16:
     "@intlify/shared" "9.3.0-beta.16"
     "@intlify/vue-devtools" "9.3.0-beta.16"
     "@vue/devtools-api" "^6.2.1"
+
+vue-i18n@^11.1.5:
+  version "11.1.5"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-11.1.5.tgz#34e8bcd4df709e488b0ff12d500ff0bdb75bec0d"
+  integrity sha512-XCwuaEA5AF97g1frvH/EI1zI9uo1XKTf2/OCFgts7NvUWRsjlgeHPrkJV+a3gpzai2pC4quZ4AnOHFO8QK9hsg==
+  dependencies:
+    "@intlify/core-base" "11.1.5"
+    "@intlify/shared" "11.1.5"
+    "@vue/devtools-api" "^6.5.0"
 
 vue-loader@^17.4.2:
   version "17.4.2"
@@ -13981,7 +14034,7 @@ winston@^3.10.0, winston@^3.8.1:
     triple-beam "^1.3.0"
     winston-transport "^4.9.0"
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
@@ -13994,6 +14047,15 @@ wrap-ansi@^6.0.1:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz#e9393ba07102e6c91a3b221478f0257cd2856e53"
   integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   dependencies:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
