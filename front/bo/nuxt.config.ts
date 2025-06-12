@@ -1,5 +1,5 @@
 import { resolve } from 'pathe'
-import { LogLevel } from '#ustra/core/config'
+import { defineNuxtConfig } from 'nuxt/config'
 
 const configEnv = process.env.CONFIG_ENV
 
@@ -28,6 +28,16 @@ export default defineNuxtConfig({
       order: 10,
     },
   ],
+  vite: {
+    server: {
+      hmr: {
+        // protocol: 'ws',
+        // host: '0.0.0.0',
+        // port: 24679,
+        clientPort: 3000
+      }
+    }
+  },
   // vite: {
   //   build: {
   //     rollupOptions: {

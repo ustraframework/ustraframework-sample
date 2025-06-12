@@ -412,13 +412,6 @@
     "@ckeditor/ckeditor5-utils" "45.2.0"
     ckeditor5 "45.2.0"
 
-"@ckeditor/ckeditor5-alignment@^35.2.1":
-  version "35.4.0"
-  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-alignment/-/ckeditor5-alignment-35.4.0.tgz#9912b25dddcbf8be47f160b5798bde84cd75b8ca"
-  integrity sha512-hRrP7b5VBsndwxzyNvUpGqTtUsCPDFRWSJq8vk9hk3f0AjioJZE0/rQA9U41dYKZdOKpTXBVrt+3DBMjObV6cQ==
-  dependencies:
-    ckeditor5 "^35.4.0"
-
 "@ckeditor/ckeditor5-autoformat@45.2.0":
   version "45.2.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-autoformat/-/ckeditor5-autoformat-45.2.0.tgz#9d7ef7619edf3b0f1b0c8356a6db7516444d9f02"
@@ -2884,14 +2877,6 @@
     source-map "0.6.1"
     yaml-eslint-parser "^0.3.2"
 
-"@intlify/core-base@11.1.5":
-  version "11.1.5"
-  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-11.1.5.tgz#4ea7c7d89e12283b2046f51f90a4e90fc2fde07d"
-  integrity sha512-xGRkISwV/2Trqb8yVQevlHm5roaQqy+75qwUzEQrviaQF0o4c5VDhjBW7WEGEoKFx09HSgq7NkvK/DAyuerTDg==
-  dependencies:
-    "@intlify/message-compiler" "11.1.5"
-    "@intlify/shared" "11.1.5"
-
 "@intlify/core-base@9.3.0-beta.16":
   version "9.3.0-beta.16"
   resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.3.0-beta.16.tgz#bd993fde9c0a96f081a5805a78bece953bfdce9e"
@@ -2909,14 +2894,6 @@
   dependencies:
     "@intlify/shared" "9.3.0-beta.16"
 
-"@intlify/message-compiler@11.1.5":
-  version "11.1.5"
-  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-11.1.5.tgz#3ce479be964efa5615d11fe08a615e051f4060ec"
-  integrity sha512-YLSBbjD7qUdShe3ZAat9Hnf9E8FRpN6qmNFD/x5Xg5JVXjsks0kJ90Zj6aAuyoppJQA/YJdWZ8/bB7k3dg2TjQ==
-  dependencies:
-    "@intlify/shared" "11.1.5"
-    source-map-js "^1.0.2"
-
 "@intlify/message-compiler@9.3.0-beta.16":
   version "9.3.0-beta.16"
   resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.3.0-beta.16.tgz#335f7bdb06cfb84d04a1a1c1d6eff2532dfd88e7"
@@ -2932,11 +2909,6 @@
   dependencies:
     "@intlify/shared" "12.0.0-alpha.2"
     source-map-js "^1.0.2"
-
-"@intlify/shared@11.1.5":
-  version "11.1.5"
-  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-11.1.5.tgz#236eb0b2b01876f7b540ddb4079e2027cfc83d63"
-  integrity sha512-+I4vRzHm38VjLr/CAciEPJhGYFzWWW4HMTm+6H3WqknXLh0ozNX9oC8ogMUwTSXYR/wGUb1/lTpNziiCH5MybQ==
 
 "@intlify/shared@12.0.0-alpha.2", "@intlify/shared@next":
   version "12.0.0-alpha.2"
@@ -2978,13 +2950,6 @@
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@intlify/vue-i18n-bridge/-/vue-i18n-bridge-0.8.0.tgz#e574f893b68abfee31cc27dd87fdc296056213fc"
   integrity sha512-wQ18fSccm9QaWpUW2vq2QHvojgKIog7s+UMj9LeY3pUV3yD9bU4YZI+1PTNoX3tOA+BE71gQyqVGox/TVQKP6Q==
-
-"@intlify/vue-router-bridge@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@intlify/vue-router-bridge/-/vue-router-bridge-1.1.0.tgz#3b61b295d32974722878afec5aa52c6e1af0da13"
-  integrity sha512-EX+KndT9VS3muMdZWFmc99D8nUaWTOXr322a8zNf5HnMCbpbogdifWYW8hat+nVE73St/gcDbPz6u5smVUPoQg==
-  dependencies:
-    vue-demi ">=0.13.5 < 1.0.0"
 
 "@intlify/vue-router-bridge@^0.8.0":
   version "0.8.0"
@@ -3914,14 +3879,6 @@
   dependencies:
     "@nuxt/kit" "^3.5.0"
     pinia ">=2.1.7"
-
-"@pinia/nuxt@0.5.5":
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.5.5.tgz#0e156bbb86b3ccb087006ff505bc0c1b6522e8c3"
-  integrity sha512-wjxS7YqIesh4OLK+qE3ZjhdOJ5pYZQ+VlEmZNtTwzQn1Kavei/khovx7mzXVXNA/mvSPXVhb9xBzhyS3XMURtw==
-  dependencies:
-    "@nuxt/kit" "^3.9.0"
-    pinia "^2.2.3"
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -5228,7 +5185,7 @@
     "@vue/compiler-dom" "3.5.16"
     "@vue/shared" "3.5.16"
 
-"@vue/devtools-api@^6.2.1", "@vue/devtools-api@^6.5.0", "@vue/devtools-api@^6.6.3", "@vue/devtools-api@^6.6.4":
+"@vue/devtools-api@^6.2.1", "@vue/devtools-api@^6.5.0", "@vue/devtools-api@^6.6.4":
   version "6.6.4"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.6.4.tgz#cbe97fe0162b365edc1dba80e173f90492535343"
   integrity sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==
@@ -11233,20 +11190,12 @@ pify@^6.1.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-6.1.0.tgz#db9f2ebfba65f0bc144db65ae84d1a486ab72909"
   integrity sha512-KocF8ve28eFjjuBKKGvzOBGzG8ew2OqOOSxTTZhirkzH7h3BI1vyzqlR0qbfcDBve1Yzo3FVlWUAtCRrbVN8Fw==
 
-pinia@3.0.3, pinia@>=2.1.7:
+pinia@>=2.1.7:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/pinia/-/pinia-3.0.3.tgz#f412019bdeb2f45e85927b432803190343e12d89"
   integrity sha512-ttXO/InUULUXkMHpTdp9Fj4hLpD/2AoJdmAbAeW2yu1iy1k+pkFekQXw5VpC0/5p51IOR/jDaDRfRWRnMMsGOA==
   dependencies:
     "@vue/devtools-api" "^7.7.2"
-
-pinia@^2.2.3:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.3.1.tgz#54c476675b72f5abcfafa24a7582531ea8c23d94"
-  integrity sha512-khUlZSwt9xXCaTbbxFYBKDc/bWAGWJjOgvxETwkTN7KRm66EeT1ZdZj6i2ceh9sP2Pzqsbc704r2yngBrxBVug==
-  dependencies:
-    "@vue/devtools-api" "^6.6.3"
-    vue-demi "^0.14.10"
 
 pirates@^4.0.4:
   version "4.0.7"
@@ -13679,7 +13628,7 @@ vue-bundle-renderer@^2.0.0:
   dependencies:
     ufo "^1.5.4"
 
-"vue-demi@>=0.13.5 < 1.0.0", vue-demi@>=0.14.6, vue-demi@^0.14.10:
+vue-demi@>=0.14.6:
   version "0.14.10"
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.14.10.tgz#afc78de3d6f9e11bf78c55e8510ee12814522f04"
   integrity sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==
@@ -13714,15 +13663,6 @@ vue-i18n@9.3.0-beta.16:
     "@intlify/shared" "9.3.0-beta.16"
     "@intlify/vue-devtools" "9.3.0-beta.16"
     "@vue/devtools-api" "^6.2.1"
-
-vue-i18n@^11.1.5:
-  version "11.1.5"
-  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-11.1.5.tgz#34e8bcd4df709e488b0ff12d500ff0bdb75bec0d"
-  integrity sha512-XCwuaEA5AF97g1frvH/EI1zI9uo1XKTf2/OCFgts7NvUWRsjlgeHPrkJV+a3gpzai2pC4quZ4AnOHFO8QK9hsg==
-  dependencies:
-    "@intlify/core-base" "11.1.5"
-    "@intlify/shared" "11.1.5"
-    "@vue/devtools-api" "^6.5.0"
 
 vue-loader@^17.4.2:
   version "17.4.2"
