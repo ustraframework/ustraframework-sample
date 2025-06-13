@@ -45,7 +45,7 @@ ustra:
       
   sample:
     authentication: 
-      secret-key: zjajhz829110y
+      secret-key: zjajhz829110yzjajhz829110yzjajhz829110yzjajhz829110y
       token-key: sample-fo-token
       enable-refresh-token: false
       access-valid-second: 1800
