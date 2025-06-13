@@ -58,7 +58,7 @@ ustra:
         system-key: BO
         token-key: acc-token
         refresh-token-key: ref-token
-        secret-key: asddflkhjasd
+        secret-key: asddflkhjasdasddflkhjasdasddflkhjasdasddflkhjasd
         enable-refresh-token: true
         refresh-valid-seconds: 6000
 
