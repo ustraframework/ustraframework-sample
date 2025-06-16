@@ -35,8 +35,7 @@
   "license": "MIT",
   "homepage": "http://guide.ustraframework.kro.kr/",
   "resolutions": {
-    "vuetify": "3.4.1",
-    "@nuxt/kit": "3.0.0-rc.13"
+    "vuetify": "3.4.1"
   },
   "dependencies": {
     "@ustra/core": "3.2.5-stable",
