@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
   <UWjComboBox v-bind="$attrs" :itemsSource="itemsSource" v-model="comboValue" displayMemberPath="display" selectedValuePath="value" />
 </template>
 <script lang="ts" setup>
@@ -45,4 +45,4 @@ export interface UCodeComboBoxProps extends CodeComboBoxProps {
    */
   modelValue?: string
 }
-</script> -->
+</script>
