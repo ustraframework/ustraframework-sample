@@ -1,22 +1,48 @@
 {
-  "name": "@ustra-sample/bo",
-  "version": "1.0.0",
-  "description": "U.STRA Node Framework Sample - BO",
-  "main": "src/index.ts",
-  "types": "types/index.d.ts",
-  "license": "MIT",
-  "private": true,
+  "engines": {
+    "node": "^18.0.0"
+  },
   "browserslist": [
     "last 2 version",
     "android >= 4.4",
     "IE >= 11"
   ],
+  "imports": {
+    "#ustra/core": "@ustra/core/src",
+    "#ustra/core/*": "@ustra/core/src/*",
+    "#ustra/h3": "@ustra/h3/src",
+    "#ustra/h3/*": "@ustra/h3/src/*",
+    "#ustra/nuxt": "@ustra/nuxt/src",
+    "#ustra/nuxt/*": "@ustra/nuxt/src/*",
+    "#ustra/nuxt-wijmo": "@ustra/nuxt-wijmo/src",
+    "#ustra/nuxt-wijmo/*": "@ustra/nuxt-wijmo/src/*",
+    "#ustra/nuxt-ckeditor5": "@ustra/nuxt-ckeditor5/src",
+    "#ustra/nuxt-ckeditor5/*": "@ustra/nuxt-ckeditor5/src/*"
+  },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development CONFIG_ENV=local nuxt",
-    "generate": "rm -rf ./node_modules && cross-env NODE_ENV=production CONFIG_ENV=dev nuxt generate",
-    "test": "jest --detectOpenHandles --forceExit"
+    "build": "cross-env CONFIG_ENV=dev nuxi build",
+    "dev": "cross-env CONFIG_ENV=local nuxi dev",
+    "generate": "cross-env CONFIG_ENV=dev nuxi generate",
+    "preview": "cross-env CONFIG_ENV=dev nuxi preview",
+    "clean": "nuxi cleanup",
+    "prepare": "nuxi prepare",
+    "init": "rm -rf node_modules && yarn install"
+  },
+  "name": "@ustra/demo-nuxt-wijmo-management",
+  "version": "3.5.0-snapshot",
+  "description": "USTRA Node framework3 Demo - nuxt wijmo management application",
+  "author": "Roy Lee <keymasroy@gsitm.com>",
+  "license": "MIT",
+  "homepage": "http://guide.ustraframework.kro.kr/",
+  "resolutions": {
+    "vuetify": "3.4.1"
   },
   "dependencies": {
-    "@ustra-sample/cmm": "1.0.0"
+    "@ustra/core": "3.2.5-stable",
+    "@ustra/h3": "3.2.5-stable",
+    "@ustra/nuxt": "3.2.5-stable",
+    "@ustra/nuxt-ckeditor5": "3.2.5-stable",
+    "@ustra/nuxt-wijmo": "3.2.5-stable",
+    "@pinia/nuxt": "0.5.5"
   }
 }
