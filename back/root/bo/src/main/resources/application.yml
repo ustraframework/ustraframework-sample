@@ -56,8 +56,8 @@ ustra:
         allow-anoymous-authentication: true
         system-name: management-bo
         system-key: BO
-        token-key: acc-token
-        refresh-token-key: ref-token
+        token-key: mng-bo-token
+        refresh-token-key: mng-bo-rtoken
         secret-key: asddflkhjasdasddflkhjasdasddflkhjasdasddflkhjasd
         enable-refresh-token: true
         refresh-valid-seconds: 6000

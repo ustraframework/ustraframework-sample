@@ -22,7 +22,7 @@
   "scripts": {
     "build": "cross-env CONFIG_ENV=dev nuxi build",
     "dev": "cross-env CONFIG_ENV=local nuxi dev",
-    "generate": "cross-env CONFIG_ENV=dev nuxi generate",
+    "generate": "rm -rf ./node_modules && cross-env CONFIG_ENV=dev nuxi generate",
     "preview": "cross-env CONFIG_ENV=dev nuxi preview",
     "clean": "nuxi cleanup",
     "prepare": "nuxi prepare",
