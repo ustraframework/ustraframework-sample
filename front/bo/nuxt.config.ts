@@ -36,6 +36,11 @@ export default defineNuxtConfig({
         // port: 24679,
         clientPort: 3000
       }
+    },
+    build : {
+      rollupOptions : {
+        external : ['vue-qrcode'],
+      }
     }
   },
   // vite: {
