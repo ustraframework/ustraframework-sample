@@ -1,9 +1,9 @@
 <template>
-  <div>샘플 신규 화면11123</div>
+  <Test/>
+  INDEX 페이지
 </template>
 <script lang="ts" setup>
 definePageMeta({
-  layout: false,
   auth: {
     required: false,
   },

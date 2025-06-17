@@ -35,6 +35,7 @@ export default defineNuxtConfig({
       },
     },
   },
+  // css: ['~/assets/global.scss', path.resolve(__dirname, '../cmm/src/assets/cmm.scss')],
   ustra: {
     app: {
       configDirPath: './app',
