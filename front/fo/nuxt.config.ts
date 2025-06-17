@@ -1,89 +1,91 @@
-import path from 'path'
-import { configProperties, env } from '@ustra/core'
-import NuxtConfigLoader from '@ustra/nuxt/src/config/nuxt-config-loader'
-import NuxtAppProperties from '@ustra/nuxt/src/config/nuxt-app-properties'
+import { resolve } from 'pathe'
+import { defineNuxtConfig } from 'nuxt/config'
 
-export default async () => {
-  const config: NuxtAppProperties = {
+const configEnv = process.env.CONFIG_ENV
+
+export default defineNuxtConfig({
+  // extends: `./app/config/${configEnv}`,
+  ssr: false,
+  debug: true,
+  modules: ['@nuxt/devtools', '@ustra/nuxt'],
+  experimental: {
+    headNext: true,
+  },
+  features: {
+    inlineStyles: id => {
+      console.log('id', id)
+      return true
+    },
+  },
+  vite: {
+    server: {
+      hmr: {
+        clientPort: 9912
+      }
+    },
+  },
+  devServer: {
+    port: 9912, // 원하는 포트 번호로 수정
+    host: '0.0.0.0' // 필요 시 외부 접속 허용
+  },
+  app: {
+    head: {
+      script: [],
+      bodyAttrs: {
+      },
+    },
+  },
+  ustra: {
     app: {
-      processPath: __dirname,
-      profile: process.env.CONFIG_ENV,
-      configDir: 'config',
-      deviceType: configProperties.DeviceType.MOBILE,
-      title: 'U.STRA Node Framework Sample - FO',
-      auth: {
-        enabled: true,
-        loginUrl: '/customer',
-        jwt: {
-          useCookie: false,
-          accessTokenKey: 'sample-fo-token',
-          refreshTokenKey: 'ref-token',
+      configDirPath: './app',
+    },
+    server: {
+      middleware: {
+        proxy: {
+          proxies: {
+            '/api/': { target: 'http://localhost:9902', ws: true },
+          },
         },
       },
     },
-    logger: {
-      level: configProperties.LogLevel.Debug,
-      file: false,
-      datePattern: 'YYYY-MM-DD-HH',
-    },
-    server: {
-      type: configProperties.ServerType.CONNECT,
-      middleware: {
-        compress: true,
-        bodyParser: true,
-        // cmm 경로 static 리소스 참조
-        staticLocations: [{ serverPath: '/', path: path.resolve(__dirname, '../cmm/src/static') }],
+    auth: {
+      enabled: true,
+      type: 'jwt',
+      jwt: {
+        accessTokenKey: 'mng-bo-token',
+        refreshTokenKey: 'mng-bo-rtoken',
+      },
+      autoLogoutSeconds: 30000,
+      duplication: {
+        checkPath: 'ws://localhost:9912/api/auth-ws',
       },
     },
     nuxt: {
-      module: {
-        useCookie: true,
-        useUstraBuefy: {
-          css: true,
-          materialDesignIcons: true,
+      api: {
+        maximumConcurrentNumber: 3,
+        taskDelay: 10
+      },
+      meta: {
+        auth: {
+          required: true
         },
-        useMarkdown: true,
       },
-      // cmm 프로젝트 css 공통 사용
-      css: ['~/assets/global.scss', path.resolve(__dirname, '../cmm/src/assets/cmm.scss')],
-      head: {
-        titleTemplate: 'U.STRA Node Framework Sample - FO %s',
-        title: '',
+      env: {
+        secret: 'Z3NjLWNyeXB0by1rZXkxMQ=='
       },
-      generation: {
-        generateDirPath: '../../../back/root/fo/src/main/resources/static',
-        generateProfiles: [env.Profile.DEV, env.Profile.STAGING, env.Profile.PRODUCTION],
-      },
-      interfaces: {
-        initialDataApiUrl: '/api/interface/all',
-      },
-      mobile: {
+      wijmo: {
         enabled: true,
-        hybrid: {
-          nativeAgent: {
-            android: 'client1',
-            ios: 'client2',
-          },
-          bridge: {
-            enabled: true,
-            useTokenSecurity: true,
-            staticBridgeNames: {
-              notifyLoaded: 'GPC_MB_NOTIFY_LOADED',
-              toast: 'GPC_MB_TOAST',
-              currentTime: 'GPC_MB_CURRENT_TIME',
-              storage: 'GPC_MB_STORAGE',
-            }
-          },
+        styles: {
+          theme: 'light'
         },
+        culture: 'ko'
       },
-    },
+      ckeditor5: {
+        enabled: false
+      },
+      management: {
+        enabled: false
+      }
+    }
   }
-
-  return await NuxtConfigLoader.nuxtConfig(config, (_prop, _config) => {
-    _config.env.SERVER_PROP_ENC_KEY = 'Z3NjLWNyeXB0by1rZXkxMQ=='
-
-    _config.build.transpile.push('@ustra-sample/cmm')
-    _config.router.middleware.push('custom')
-    _config.plugins.push('~/plugins/core')
-  })
-}
+})

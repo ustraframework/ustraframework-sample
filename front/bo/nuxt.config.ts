@@ -34,7 +34,7 @@ export default defineNuxtConfig({
         // protocol: 'ws',
         // host: '0.0.0.0',
         // port: 24679,
-        clientPort: 3000
+        clientPort: 9911
       }
     },
     build : {
@@ -127,7 +127,7 @@ export default defineNuxtConfig({
       autoLogoutSeconds: 30000,
       duplication: {
         // type: 'websocket',
-        checkPath: 'ws://localhost:3000/api/auth-ws',
+        checkPath: 'ws://localhost:9911/api/auth-ws',
       },
     },
     nuxt: {
