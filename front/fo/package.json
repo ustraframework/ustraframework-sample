@@ -14,8 +14,8 @@
     "#ustra/h3/*": "@ustra/h3/src/*",
     "#ustra/nuxt": "@ustra/nuxt/src",
     "#ustra/nuxt/*": "@ustra/nuxt/src/*",
-    "#ustra/nuxt-wijmo": "@ustra/nuxt-wijmo/src",
-    "#ustra/nuxt-wijmo/*": "@ustra/nuxt-wijmo/src/*"
+    "#ustra/nuxt-vuetify": "@ustra/nuxt-vuetify/src",
+    "#ustra/nuxt-vuetify/*": "@ustra/nuxt-vuetify/src/*"
   },
   "scripts": {
     "build": "cross-env CONFIG_ENV=dev nuxi build",

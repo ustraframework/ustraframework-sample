@@ -5,10 +5,8 @@
     </div>
   </footer>
 </template>
-<script lang="ts">
-
-export default {
-  name: 'layoutFooter',
-}
+<script lang="ts" setup>
 
 </script>
+<style scoped lang="scss">
+</style>

@@ -25,8 +25,8 @@ export default defineNuxtConfig({
     },
   },
   devServer: {
-    port: 9912, // 원하는 포트 번호로 수정
-    host: '0.0.0.0' // 필요 시 외부 접속 허용
+    port: 9912, 
+    host: '0.0.0.0' 
   },
   app: {
     head: {
@@ -35,7 +35,6 @@ export default defineNuxtConfig({
       },
     },
   },
-  // css: ['~/assets/global.scss', path.resolve(__dirname, '../cmm/src/assets/cmm.scss')],
   ustra: {
     app: {
       configDirPath: './app',
@@ -53,8 +52,7 @@ export default defineNuxtConfig({
       enabled: true,
       type: 'jwt',
       jwt: {
-        accessTokenKey: 'mng-bo-token',
-        refreshTokenKey: 'mng-bo-rtoken',
+        accessTokenKey: 'sample-fo-token',
       },
       autoLogoutSeconds: 30000,
       duplication: {

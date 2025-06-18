@@ -1,5 +1,5 @@
 <template>
-  [Home]
+  [Introduce]
 </template>
 <script lang="ts" setup>
 definePageMeta({
