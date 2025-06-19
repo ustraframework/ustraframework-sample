@@ -1,14 +1,14 @@
 <template>
-  <v-card color="#99DDCC">
+  <v-card color="white">
     <v-card-title class="title text-center justify-center py-6">
-        <div class="logo" style="cursor: pointer;" @click="goPage('home')">
+        <div class="logo" style="cursor: pointer;" @click="goPage()">
           <img src="@/static/img/logo.png" style="width: 150px;" alt="Logo" />
         </div>
         <div class="info">
           <span v-if="isAuthenticated()" style="padding-right: 30px; font-size: 15px;"> 
             <v-icon icon="mdi-account"/> {{ getUsername() }}
           </span>
-          <v-btn variant="outlined" v-if="!isAuthenticated()" @click="goPage('login')"><v-icon icon="mdi-login"/>로그인</v-btn>  
+          <v-btn variant="outlined" style="background-color: #C3EDC0;" v-if="!isAuthenticated()" @click="goPage('/login')"><v-icon icon="mdi-login"/>로그인</v-btn>  
           <v-btn variant="outlined" v-else="isAuthenticated()" @click="logout()"><v-icon icon="mdi-logout"/>로그아웃</v-btn>
         </div>
     </v-card-title>
@@ -16,20 +16,49 @@
     <v-tabs
       v-model="tab"
       bg-color="transparent"
-      color="white"
+      color="#059212"
       grow
     >
-      <v-tab @click="goPage('home')" value="tab-1">
+      <v-tab @click="goPage()" value="tab-1">
         <v-icon icon="mdi-home"/> Home
       </v-tab>
 
-      <v-tab @click="goPage('introduce')" value="tab-2">
+      <v-tab @click="goPage('/introduce')" value="tab-2">
         <v-icon icon="mdi-information"/> Introduce
       </v-tab>
+      
+      <v-menu>
+        <template v-slot:activator="{ props }">
+          <v-btn style="width: 30%;"
+            class="align-self-center me-4"
+            height="100%"
+            rounded="0"
+            variant="plain"
+            v-bind="props"
+          >
+            Sample
+            <v-icon icon="mdi-menu-down" end></v-icon>
+          </v-btn>
+        </template>
 
-      <v-tab @click="goPage('sample')"  value="tab-3">
-        <v-icon icon="mdi-alpha-s-circle"/> Sample
-      </v-tab>
+        <v-list >
+          <v-list-item
+            title="모바일 브릿지 호출"
+            value="mobile"
+            @click="goPage('/sample/mobile')"
+          ></v-list-item>
+          <v-list-item
+            title="파일 업로드"
+            value="upload"
+            @click="goPage('/sample/upload')"
+          ></v-list-item>
+          <v-list-item
+            title="YouTube 재생"
+            value="youtube"
+            @click="goPage('/sample/youtube')"
+          ></v-list-item>
+        </v-list>
+      </v-menu>
     </v-tabs>
   </v-card>
 </template>
@@ -49,10 +78,6 @@ const isActiveIntroduce = () => {
     return startsWith(route.path, '/introduce')
   }
 
-const isActiveSample = () => {
-  return startsWith(route.path, '/sample')
-}
-
 const isAuthenticated = () => {
   return $ustra.auth.isAuthenticated
 }
@@ -61,13 +86,13 @@ const getUsername = () => {
   return $ustra.auth.user.displayName
 }
 
-const goPage = (pageNm) => {
-  if(pageNm == 'home'){
+const goPage = (path?) => {
+  if(!path){
     router.push('/')
     return
   }
   tab.value = null
-  router.push(`/${pageNm}`)
+  router.push(path)
 }
 
 async function logout() {
@@ -87,8 +112,6 @@ watch(
       tab.value = 'tab-1'
     }else if(isActiveIntroduce()){
       tab.value = 'tab-2'
-    }else if(isActiveSample()){
-      tab.value = 'tab-3'
     }
   },
   {

@@ -11,6 +11,7 @@ dependencies {
 	implementation "com.gsitm.ustra.java:ustra-mvc-view:${ustraVersion}"
 	implementation "com.gsitm.ustra.java:ustra-data-mybatis:${ustraVersion}"
 	implementation "com.gsitm.ustra.java:ustra-security-jwt:${ustraVersion}"
+	implementation "com.gsitm.ustra.java:ustra-management-bo:${ustraVersion}"
 	implementation project(":cmm")
 }
 

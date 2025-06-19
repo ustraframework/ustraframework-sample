@@ -83,8 +83,23 @@ export default defineNuxtConfig({
         enabled: false
       },
       management: {
-        enabled: false
-      }
+        enabled: true,
+        ui: {
+          tabMenu: {
+            enabled: false,
+          },
+          defaultPage: {
+            system: {
+              copyResource: {
+                enabled: false,
+              },
+            },
+            login: {
+              include: false,
+            },
+          },
+        },
+      },
     }
   }
 })
