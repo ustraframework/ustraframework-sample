@@ -10,9 +10,8 @@
       </template>
       <v-card-text class="pt-4">
         <UVSingleFileUploader ref="uploader" fileGroupId="menuIcon" v-model:fileId="fileId" />
-        <VBtn class="mt-2" @click="() => uploadFile()">Upload</VBtn>
-        <VBtn class="mt-2" @click="() => createFormData()">Form Data</VBtn>
-
+        <VBtn variant="outlined" style="background-color: #C3EDC0; margin-right: 10px;" @click="() => uploadFile()">Upload</VBtn>
+        <VBtn variant="outlined" style="background-color: #C3EDC0;" @click="() => createFormData()">Form Data</VBtn>
         <UMarkdownViewer class="pt-4" :content="uploader1"></UMarkdownViewer>
       </v-card-text>
     </v-card>

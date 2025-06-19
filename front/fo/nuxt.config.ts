@@ -100,6 +100,28 @@ export default defineNuxtConfig({
           },
         },
       },
-    }
+    },
+    interfaces: {
+      initialDataApiUrl: '/api/interface/all',
+    },
+    mobile: {
+      enabled: true,
+      hybrid: {
+        nativeAgent: {
+          android: 'client1',
+          ios: 'client2',
+        },
+        bridge: {
+          enabled: true,
+          useTokenSecurity: true,
+          staticBridgeNames: {
+            notifyLoaded: 'GPC_MB_NOTIFY_LOADED',
+            toast: 'GPC_MB_TOAST',
+            currentTime: 'GPC_MB_CURRENT_TIME',
+            storage: 'GPC_MB_STORAGE',
+          }
+        },
+      },
+    },
   }
 })
