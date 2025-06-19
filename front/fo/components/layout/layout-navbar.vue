@@ -9,7 +9,7 @@
             <v-icon icon="mdi-account"/> {{ getUsername() }}
           </span>
           <v-btn variant="outlined" style="background-color: #C3EDC0;" v-if="!isAuthenticated()" @click="goPage('/login')"><v-icon icon="mdi-login"/>로그인</v-btn>  
-          <v-btn variant="outlined" v-else="isAuthenticated()" @click="logout()"><v-icon icon="mdi-logout"/>로그아웃</v-btn>
+          <v-btn variant="outlined" style="background-color: #C3EDC0;" v-else="isAuthenticated()" @click="logout()"><v-icon icon="mdi-logout"/>로그아웃</v-btn>
         </div>
     </v-card-title>
 

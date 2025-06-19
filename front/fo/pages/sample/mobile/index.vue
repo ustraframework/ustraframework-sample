@@ -27,10 +27,16 @@ import mobile01 from './md/mobile01.md'
 // @ts-ignore
 import mobile02 from './md/mobile02.md'
 
+definePageMeta({
+  auth: {
+    required: false,
+  },
+})
+
 onMounted(() => {
-  // $ustra.mobile.bridge.addNativeListener('IF-INBOUD-MOBILE01', data => {
-  //   console.log('nativate inbound data', data)
-  // })
+  $ustra.mobile.bridge.addNativeListener('IF-INBOUD-MOBILE01', data => {
+    console.log('nativate inbound data', data)
+  })
 })
 
 async function callOutbound() {
