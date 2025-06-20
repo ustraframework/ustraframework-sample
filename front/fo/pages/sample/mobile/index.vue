@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <v-card
-      subtitle="모바일 브릿지 연계 기본 가이드는 http://guide.ustraframework.kro.kr/ref-doc/03/1GyLoOpEjmPqsz2PPArR 를 참조합니다."
+      subtitle="모바일 브릿지 연계 기본 가이드는 http://guide.ustraframework.kro.kr/ref-doc/03/1GyLoOpEjmPqsz2PPArR 를 참조한다."
       width="100%"
       style="margin-top: 10px;"
     >
       <template v-slot:title>
-        <span class="font-weight-black"> <v-icon icon="mdi-youtube"/> 모바일 브릿지 호출 </span>
+        <span class="font-weight-black"> <v-icon icon="mdi-cellphone-wireless"/> 모바일 브릿지 호출 </span>
       </template>
       <v-card-text class="pt-4">
         <VBtn variant="outlined" style="background-color: #C3EDC0; margin-right: 10px;" @click="() => callOutbound()">아웃바운드 브릿지 호출</VBtn>

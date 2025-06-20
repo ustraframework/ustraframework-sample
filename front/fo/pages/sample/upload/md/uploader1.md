@@ -1,13 +1,14 @@
 ```html
 <template>
-  <USingleFileUploader ref="uploader" fileGroupId="menuIcon" v-model:fileId="fileId" />
-  <UButton class="mt-2" text="Upload" @click="() => uploadFile()" />
-  <UButton class="mt-2" text="Form Data" @click="() => createFormData()" />
+  <UVSingleFileUploader ref="uploader" fileGroupId="ustra-sample" v-model:fileId="fileId" />
+  <VBtn @click="() => uploadFile()">Upload</VBtn>
+  <VBtn @click="() => createFormData()">Form Data</VBtn>
 </template>
 <script lang="ts" setup>
-const fileId = ref(null)
+import UVSingleFileUploader from '#ustra/nuxt-vuetify/management/components/file/u-v-single-file-uploader.vue'
 
-const uploader = ref<InstanceType<typeof USingleFileUploader>>(null)
+const fileId = ref(null)
+const uploader = ref<InstanceType<typeof UVSingleFileUploader>>(null)
 async function uploadFile() {
   const result = await uploader.value.upload()
 

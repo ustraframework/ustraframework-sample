@@ -6,7 +6,7 @@
       style="margin-top: 10px;"
     >
       <template v-slot:title>
-        <span class="font-weight-black"> <v-icon icon="mdi-youtube"/> YouTube 재생 </span>
+        <span class="font-weight-black"> <v-icon icon="mdi-upload-box"/> 파일 업로드 </span>
       </template>
       <v-card-text class="pt-4">
         <UVSingleFileUploader ref="uploader" fileGroupId="ustra-sample" v-model:fileId="fileId" />

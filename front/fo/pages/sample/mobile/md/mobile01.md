@@ -1,6 +1,6 @@
 ```typescript
-callOutbound() {
-  this.$ustra.mobile.bridge.callNative({
+async function callOutbound() {
+  $ustra.mobile.bridge.callNative({
     id: 'IF-OUTBOUND-MOBILE01',
     callback: result => {
       console.log('result', result)
