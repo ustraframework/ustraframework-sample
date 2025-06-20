@@ -46,8 +46,6 @@
     "@ustra/nuxt-wijmo": "3.2.5-stable",
     "@ustra/nuxt-vuetify": "3.2.5-stable",
     "@pinia/nuxt": "0.5.5",
-    "animejs": "3.2.2",
-    "qrcode": "1.5.3",
-    "vue-qrcode": "2.2.2"
+    "animejs": "3.2.2"
   }
 }
