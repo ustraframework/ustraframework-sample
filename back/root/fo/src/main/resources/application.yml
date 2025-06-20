@@ -26,6 +26,9 @@ ustra:
   data:
     file:
       enabled: true
+      include-default: true
+      aws-s3:
+        enabled: false
     procedure-manager:
       enabled: true
     datasource:
@@ -44,7 +47,7 @@ ustra:
       api-prefix: api
       client-crypto-key: Z3NjLWNyeXB0by1rZXkxMQ==
       type: STATIC_THYEMELEAF
-      
+      add-profile-cookie: false
   sample:
     authentication:
       system-name: sample-fo
