@@ -18,8 +18,11 @@
     "#ustra/nuxt-vuetify/*": "@ustra/nuxt-vuetify/src/*"
   },
   "scripts": {
-    "build": "cross-env CONFIG_ENV=dev nuxi build",
     "dev": "cross-env CONFIG_ENV=local nuxi dev",
+    "build:dev": "cross-env CONFIG_ENV=dev nuxi build",
+    "build:prd": "cross-env CONFIG_ENV=prd nuxi build",
+    "start:dev": "node .output/server/index.mjs",
+    "start:prd": "node .output/server/index.mjs",
     "generate": "cross-env CONFIG_ENV=dev nuxi generate",
     "preview": "cross-env CONFIG_ENV=dev nuxi preview",
     "clean": "nuxi cleanup",
@@ -43,6 +46,8 @@
     "@ustra/nuxt-wijmo": "3.2.5-stable",
     "@ustra/nuxt-vuetify": "3.2.5-stable",
     "@pinia/nuxt": "0.5.5",
-    "animejs": "3.2.2"
+    "animejs": "3.2.2",
+    "qrcode": "1.5.3",
+    "vue-qrcode": "2.2.2"
   }
 }

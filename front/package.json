@@ -16,11 +16,12 @@
   "scripts": {
     "install:fo": "cd ./fo && yarn install",
     "dev:fo": "cd ./fo && yarn run dev",
-    "generate:fo": "cd ./fo && yarn run build",
     "generate:dev:fo": "cd ./fo && yarn run build:dev",
+    "generate:prd:fo": "cd ./fo && yarn run build:prd",
     "install:bo": "cd ./bo && yarn install",
     "dev:bo": "cd ./bo && yarn run dev",
-    "generate:bo": "cd ./bo && yarn run generate",
+    "generate:dev:bo": "cd ./bo && yarn run generate:dev",
+    "generate:prd:bo": "cd ./bo && yarn run generate:prd",
     "create-off-pack": "rm -rf node_modules && rm yarn.lock && rm -rf npm_packages/* && yarn cache clean && yarn install"
   },
   "dependencies": {
