@@ -1,22 +1,26 @@
-import { resolve } from 'pathe'
 import { defineNuxtConfig } from 'nuxt/config'
 
-const configEnv = process.env.CONFIG_ENV
-
 export default defineNuxtConfig({
-  // extends: `./app/config/${configEnv}`,
-  ssr: false,
   debug: true,
+  ssr: true,
   modules: ['@nuxt/devtools', '@ustra/nuxt'],
-  experimental: {
-    headNext: true,
-  },
-  features: {
-    inlineStyles: id => {
-      console.log('id', id)
-      return true
-    },
-  },
+  // experimental: {
+  //   headNext: true,
+  // },
+  // features: {
+  //   inlineStyles: id => {
+  //     console.log('id', id)
+  //     return true
+  //   },
+  // },
+  // runtimeConfig: {
+  //   public: {
+  //     apiBase: '/api'
+  //   },
+  // },
+  // routeRules: {
+  //   '/api/**': { proxy: 'http://localhost:9912/api/**' },
+  // },
   vite: {
     server: {
       hmr: {
@@ -29,51 +33,58 @@ export default defineNuxtConfig({
       }
     }
   },
-  devServer: {
-    port: 9912, 
-    host: '0.0.0.0' 
-  },
-  app: {
-    head: {
-      script: [],
-      bodyAttrs: {
-      },
-    },
-  },
+  // devServer: {
+  //   port: 9912, 
+  //   host: '0.0.0.0' 
+  // },
+  // app: {
+  //   head: {
+  //     script: [],
+  //     bodyAttrs: {
+  //     },
+  //   },
+  // },
   ustra: {
     app: {
-      configDirPath: './app',
+      // configDirPath: './app',
+      processPath: __dirname,
+      configDirPath: './config',
     },
-    server: {
-      middleware: {
-        proxy: {
-          proxies: {
-            '/api/': { target: 'http://localhost:9902', ws: true },
-          },
-        },
-      },
-    },
+    // server: {
+    //   middleware: {
+    //     proxy: {
+    //       proxies: {
+    //         '/api/': { target: 'http://localhost:9902', ws: true },
+    //       },
+    //     },
+    //   },
+    //   apiServerBaseUrl: 'http://localhost:9902',
+    // },
     auth: {
       enabled: true,
       type: 'jwt',
       jwt: {
         accessTokenKey: 'sample-fo-token',
+        useCookie: false,
+        // cookieOptions: {
+        //   domain: '.localhost.com',
+        // },
       },
-      autoLogoutSeconds: 30000,
-      duplication: {
-        checkPath: 'ws://localhost:9912/api/auth-ws',
-      },
+      // autoLogoutSeconds: 30000,
+      // duplication: {
+      //   checkPath: 'ws://localhost:9912/api/auth-ws',
+      // },
     },
     nuxt: {
-      api: {
-        maximumConcurrentNumber: 3,
-        taskDelay: 10
-      },
-      meta: {
-        auth: {
-          required: true
-        },
-      },
+      // api: {
+      //   maximumConcurrentNumber: 3,
+      //   taskDelay: 10
+      // },
+      // meta: {
+      //   auth: {
+      //     required: true
+      //   },
+      // },
       env: {
         secret: 'Z3NjLWNyeXB0by1rZXkxMQ=='
       },
