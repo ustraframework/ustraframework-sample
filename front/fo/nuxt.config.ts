@@ -18,13 +18,13 @@ export default defineNuxtConfig({
   //     apiBase: '/api'
   //   },
   // },
-  // routeRules: {
-  //   '/api/**': { proxy: 'http://localhost:9912/api/**' },
-  // },
+  routeRules: {
+    '/api/**': { proxy: 'http://localhost:9902/api/**' },
+  },
   vite: {
     server: {
       hmr: {
-        clientPort: 9912
+        clientPort: 3000
       }
     },
     build : {
@@ -34,8 +34,8 @@ export default defineNuxtConfig({
     }
   },
   // devServer: {
-  //   port: 9912, 
-  //   host: '0.0.0.0' 
+  //   port: 9912,
+  //   host: '0.0.0.0'
   // },
   // app: {
   //   head: {
@@ -50,46 +50,20 @@ export default defineNuxtConfig({
       processPath: __dirname,
       configDirPath: './config',
     },
-    // server: {
-    //   middleware: {
-    //     proxy: {
-    //       proxies: {
-    //         '/api/': { target: 'http://localhost:9902', ws: true },
-    //       },
-    //     },
-    //   },
-    //   apiServerBaseUrl: 'http://localhost:9902',
-    // },
     auth: {
       enabled: true,
       type: 'jwt',
       jwt: {
         accessTokenKey: 'sample-fo-token',
         useCookie: false,
-        // cookieOptions: {
-        //   domain: '.localhost.com',
-        // },
       },
-      // autoLogoutSeconds: 30000,
-      // duplication: {
-      //   checkPath: 'ws://localhost:9912/api/auth-ws',
-      // },
     },
     nuxt: {
-      // api: {
-      //   maximumConcurrentNumber: 3,
-      //   taskDelay: 10
-      // },
-      // meta: {
-      //   auth: {
-      //     required: true
-      //   },
-      // },
       env: {
         secret: 'Z3NjLWNyeXB0by1rZXkxMQ=='
       },
       wijmo: {
-        enabled: true,
+        enabled: false,
         styles: {
           theme: 'light'
         },
@@ -98,8 +72,11 @@ export default defineNuxtConfig({
       ckeditor5: {
         enabled: false
       },
-      management: {
+      vuetify: {
         enabled: true,
+      },
+      management: {
+        enabled: false,
         ui: {
           tabMenu: {
             enabled: false,
