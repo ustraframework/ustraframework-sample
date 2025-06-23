@@ -1,10 +1,10 @@
-FROM node:16
+FROM node:18
 
 ENV APP_HOME=/app
 ENV APP_NAME=fo-node
 
 RUN npm install -g cross-env
-RUN npm install -g nuxt@2.17.3
+RUN npm install -g nuxt@3.10.0
 
 WORKDIR $APP_HOME
 

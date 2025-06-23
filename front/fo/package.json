@@ -18,11 +18,11 @@
     "#ustra/nuxt-vuetify/*": "@ustra/nuxt-vuetify/src/*"
   },
   "scripts": {
-    "dev": "cross-env PORT=9912 CONFIG_ENV=local nuxi dev",
+    "dev": "cross-env CONFIG_ENV=local PORT=9912 nuxi dev",
     "build:dev": "cross-env CONFIG_ENV=dev nuxi build",
     "build:prd": "cross-env CONFIG_ENV=prd nuxi build",
-    "start:dev": "node .output/server/index.mjs",
-    "start:prd": "node .output/server/index.mjs",
+    "start:dev": "cross-env PORT=9912 node .output/server/index.mjs",
+    "start:prd": "cross-env PORT=9912 node .output/server/index.mjs",
     "generate": "cross-env CONFIG_ENV=dev nuxi generate",
     "preview": "cross-env CONFIG_ENV=dev nuxi preview",
     "clean": "nuxi cleanup",
