@@ -4,9 +4,6 @@ export default defineNuxtConfig({
   debug: true,
   ssr: true,
   modules: ['@nuxt/devtools', '@ustra/nuxt'],
-  routeRules: {
-    '/api/**': { proxy: 'http://localhost:9902/api/**' },
-  },
   vite: {
     server: {
       hmr: {

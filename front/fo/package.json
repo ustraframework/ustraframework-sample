@@ -18,7 +18,7 @@
     "#ustra/nuxt-vuetify/*": "@ustra/nuxt-vuetify/src/*"
   },
   "scripts": {
-    "dev": "cross-env CONFIG_ENV=dev NODE_ENV=development NODE_OPTIONS='--stack-trace-limit=100' nuxi dev --dotenv .env.dev",
+    "dev": "cross-env PORT=9912 CONFIG_ENV=local nuxi dev",
     "build:dev": "cross-env CONFIG_ENV=dev nuxi build",
     "build:prd": "cross-env CONFIG_ENV=prd nuxi build",
     "start:dev": "node .output/server/index.mjs",

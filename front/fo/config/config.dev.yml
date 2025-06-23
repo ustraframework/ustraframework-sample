@@ -1,8 +1,8 @@
 test:
-  props: '1'
+  props: '2'
 server:
-  apiServerBaseUrl: 'http://localhost:9902'
+  apiServerBaseUrl: 'http://host.docker.internal:9902'
   middleware:
     proxy:
       proxies:
-        '/api/': 'http://localhost:9902'
+        '/api/': 'http://host.docker.internal:9902'
