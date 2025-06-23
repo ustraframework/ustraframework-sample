@@ -4,27 +4,13 @@ export default defineNuxtConfig({
   debug: true,
   ssr: true,
   modules: ['@nuxt/devtools', '@ustra/nuxt'],
-  // experimental: {
-  //   headNext: true,
-  // },
-  // features: {
-  //   inlineStyles: id => {
-  //     console.log('id', id)
-  //     return true
-  //   },
-  // },
-  // runtimeConfig: {
-  //   public: {
-  //     apiBase: '/api'
-  //   },
-  // },
   routeRules: {
     '/api/**': { proxy: 'http://localhost:9902/api/**' },
   },
   vite: {
     server: {
       hmr: {
-        clientPort: 3000
+        clientPort: 9912
       }
     },
     build : {
@@ -33,20 +19,8 @@ export default defineNuxtConfig({
       }
     }
   },
-  // devServer: {
-  //   port: 9912,
-  //   host: '0.0.0.0'
-  // },
-  // app: {
-  //   head: {
-  //     script: [],
-  //     bodyAttrs: {
-  //     },
-  //   },
-  // },
   ustra: {
     app: {
-      // configDirPath: './app',
       processPath: __dirname,
       configDirPath: './config',
     },

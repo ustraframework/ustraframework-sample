@@ -1,5 +1,5 @@
 <template>
-  <section class="container hero is-info is-halfheight" >
+  <section class="hero is-info is-halfheight" >
     <div class="hero-body main-hero-body">
       <div>
         <p ref="textWrapper" class="title">U.STRA Framework</p>
@@ -46,23 +46,18 @@ onMounted(() => {
 
 </script>
 <style scoped lang="scss">
-.container {
-  height: 100%;
-}
-
 .hero {
   padding-top: 100px;
   padding-left: 20px;
-  background-color: white;
+  background-color: #039BE5;
+  height: 700px;
 }
 
 .main-hero-body {
-  background-image: url('@static/img/main-bg.jpg');
-
   & .title {
     font-weight: 900;
     font-size: 4.5em;
-    color: #033FFF;
+    color: white;
 
     & .letter {
       line-height: 1em;
@@ -71,7 +66,7 @@ onMounted(() => {
   }
 
   & .subtitle {
-    color: #071A52;
+    color: #E0F7FA;
   }
 }
 </style>

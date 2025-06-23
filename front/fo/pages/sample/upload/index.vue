@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <v-card
       subtitle="예제의 결과 값은 Console 창에서 확인할 수 있다."
       width="100%"
@@ -43,7 +43,4 @@ function createFormData() {
 }
 </script>
 <style scoped lang="scss">
-.container {
-  height: 100%;
-}
 </style>

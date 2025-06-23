@@ -1,9 +1,7 @@
 <template>
-  <div class="container">
-    <LayoutNavbar />
-    <slot />
-    <LayoutFooter />
-  </div>
+  <LayoutNavbar />
+  <slot />
+  <LayoutFooter />
 </template>
 <script lang="ts">
 import LayoutNavbar from '@/components/layout/layout-navbar.vue'

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <v-card
       subtitle="재생 테스트"
       width="100%"
@@ -31,7 +31,4 @@ definePageMeta({
 })
 </script>
 <style scoped lang="scss">
-.container {
-  height: 100%;
-}
 </style>

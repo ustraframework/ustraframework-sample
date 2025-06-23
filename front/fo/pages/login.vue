@@ -3,7 +3,7 @@
     <v-text-field label="아이디" v-model="username"/>
     <v-text-field label="비밀번호" type="password" v-model="password"/>
     <v-card color="indigo-lighten-1" text="샘플 로그인 화면입니다. sample/sample 계정을 사용하여 로그인이 가능합니다."/>
-    <UButton style="margin-top: 30px "text="로그인" @click="login"></UButton>
+    <v-btn variant="outlined" style="background-color: #C3EDC0; margin-top: 30px" @click="login">로그인</v-btn>  
   </div>
 </template>
 <script setup lang="ts">

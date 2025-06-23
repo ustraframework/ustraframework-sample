@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <v-card 
       style="margin: 10px;"
       color="#F6F1E9"
@@ -55,7 +55,4 @@ definePageMeta({
 })
 </script>
 <style scoped lang="scss">
-.container {
-  height: 100%;
-}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <v-card
       subtitle="모바일 브릿지 연계 기본 가이드는 http://guide.ustraframework.kro.kr/ref-doc/03/1GyLoOpEjmPqsz2PPArR 를 참조한다."
       width="100%"
@@ -50,7 +50,4 @@ async function callOutbound() {
 }
 </script>
 <style scoped lang="scss">
-.container {
-  height: 100%;
-}
 </style>
