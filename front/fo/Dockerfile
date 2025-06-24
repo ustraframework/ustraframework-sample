@@ -8,10 +8,10 @@ RUN npm install -g nuxt@3.10.0
 
 WORKDIR $APP_HOME
 
-COPY $APP_NAME.tar.gz $APP_NAME.tar.gz
+COPY build/$APP_NAME.tar.gz $APP_NAME.tar.gz
 
 RUN mkdir -p $APP_NAME 
-RUN tar -xzvf $APP_NAME.tar.gz -C $APP_NAME
+RUN tar -xzvf $APP_NAME.tar.gz --strip-components=3 -C $APP_NAME
 RUN rm $APP_NAME.tar.gz
 
 WORKDIR $APP_NAME/front/fo

@@ -1,2 +1,0 @@
-- Wijmo TabPanel API : https://www.grapecity.com/wijmo/api/classes/wijmo_nav.tabpanel.html
-- Wijmo TabPanel Demo : https://www.grapecity.com/wijmo/demos/Nav/TabPanel/Overview/vue 
