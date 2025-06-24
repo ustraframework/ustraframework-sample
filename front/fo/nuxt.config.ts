@@ -69,7 +69,7 @@ export default defineNuxtConfig({
       },
     },
     interfaces: {
-      initialDataApiUrl: '/api/interface/all',
+      // initialDataApiUrl: '/api/interface/all',
     },
     mobile: {
       enabled: true,
