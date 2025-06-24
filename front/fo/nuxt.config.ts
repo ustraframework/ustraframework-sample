@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   ssr: true,
   modules: ['@nuxt/devtools', '@ustra/nuxt'],
   routeRules: {
-    '/api/**': { proxy: 'http://localhost:9902/api/**' },
+    '/api/**': { proxy: 'http://host.docker.internal:9902/api/**' },
   },
   vite: {
     server: {
