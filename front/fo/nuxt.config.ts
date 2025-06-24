@@ -1,11 +1,16 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
+const CONFIG_ENV = process.env.CONFIG_ENV || 'local'
+
 export default defineNuxtConfig({
   debug: true,
   ssr: true,
   modules: ['@nuxt/devtools', '@ustra/nuxt'],
   routeRules: {
-    '/api/**': { proxy: 'http://host.docker.internal:9902/api/**' },
+    '/api/**': { proxy: CONFIG_ENV === 'dev'? 
+                  'http://host.docker.internal:9902/api/**' : 
+                  'http://localhost:9902/api/**' 
+                },
   },
   vite: {
     server: {
