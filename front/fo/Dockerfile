@@ -14,7 +14,7 @@ RUN mkdir -p $APP_NAME
 RUN tar -xzvf $APP_NAME.tar.gz --strip-components=3 -C $APP_NAME
 RUN rm $APP_NAME.tar.gz
 
-WORKDIR $APP_NAME/front/fo
+WORKDIR $APP_NAME/server
 
 EXPOSE 9912
-ENTRYPOINT ["cross-env", "PORT=9912", "node", ".output/server/index.mjs"]
+ENTRYPOINT ["cross-env", "PORT=9912", "node", "index.mjs"]
