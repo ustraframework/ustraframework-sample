@@ -1,6 +1,0 @@
-server:
-  host: 0.0.0.0
-  port: 9912
-  apiServerBaseUrl: http://host.docker.internal:9902
-nuxt:
-  module: { useProxy: { '/api': { target: 'http://host.docker.internal:9902' } } }

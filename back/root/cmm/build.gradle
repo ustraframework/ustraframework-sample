@@ -7,7 +7,7 @@ repositories {
 
 
 dependencies {
-    compile "com.gsitm.ustra.java.starter:ustra-starter-restapi:${ustraVersion}"
+    implementation "com.gsitm.ustra.java.starter:ustra-starter-restapi:${ustraVersion}"
 }
 
 

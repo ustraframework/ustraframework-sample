@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <ckeditor :editor="ClassicEditor" v-model="content" @ready="onReady" />
+  </div>
+</template>
+<script lang="ts" setup>
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+import EventInfo from '@ckeditor/ckeditor5-utils/src/eventinfo'
+
+const content = ref<string>('<p>Content of the editor.</p>')
+
+function onReady(eventInfo: EventInfo) {
+  eventInfo.ui.editor.editing.view.change(writer => {
+    writer.setStyle('height', '400px', eventInfo.ui.editor.editing.view.document.getRoot())
+  })
+  eventInfo.sourceElement.style.height = '400px'
+}
+
+definePageMeta({
+  auth: {
+    required: false,
+  },
+  layout: false,
+})
+</script>

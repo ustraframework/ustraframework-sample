@@ -1,0 +1,8 @@
+test:
+  props: '3'
+server:
+  apiServerBaseUrl: 'http://localhost:9902'
+  middleware:
+    proxy:
+      proxies:
+        '/api/': 'http://localhost:9902'

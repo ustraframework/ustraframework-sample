@@ -14,6 +14,8 @@ mybatis:
 
 ustra:
   core:
+    process-info:
+      default-system-code: FO
     cache:
       caffeine:
         authentication:
@@ -23,7 +25,10 @@ ustra:
           expire-after-access-seconds: 1800 # 캐시 조회 후 제거될 초수
   data:
     file:
-      enabled: false
+      enabled: true
+      include-default: true
+      aws-s3:
+        enabled: false
     procedure-manager:
       enabled: true
     datasource:
@@ -41,11 +46,13 @@ ustra:
     view:
       api-prefix: api
       client-crypto-key: Z3NjLWNyeXB0by1rZXkxMQ==
-      type: STATIC_THYEMELEAF
-      
+      type: FRONT_SSR
+      add-profile-cookie: false
   sample:
-    authentication: 
-      secret-key: zjajhz829110y
+    authentication:
+      system-name: sample-fo
+      system-key: FO
+      secret-key: zjajhz829110yzjajhz829110yzjajhz829110yzjajhz829110y
       token-key: sample-fo-token
       enable-refresh-token: false
       access-valid-second: 1800

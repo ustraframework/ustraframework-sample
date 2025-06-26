@@ -1,69 +1,128 @@
-import { configProperties, env } from '@ustra/core'
-import NuxtConfigLoader from '@ustra/nuxt/src/config/nuxt-config-loader'
-import NuxtAppProperties from '@ustra/nuxt/src/config/nuxt-app-properties'
+import { resolve } from 'pathe'
+import { defineNuxtConfig } from 'nuxt/config'
 
-export default async () => {
-  const config: NuxtAppProperties = {
-    app: {
-      processPath: __dirname,
-      profile: process.env.CONFIG_ENV,
-      configDir: 'config',
-      deviceType: configProperties.DeviceType.MOBILE,
-      title: 'U.STRA Node Framework Sample - BO',
-      auth: {
-        enabled: true,
-        loginUrl: '/',
-        jwt: {
-          useCookie: false,
-          accessTokenKey: 'acc-token',
-          refreshTokenKey: 'ref-token',
+const configEnv = process.env.CONFIG_ENV
+
+export default defineNuxtConfig({
+  ssr: false,
+  debug: true,
+  modules: ['@nuxt/devtools', '@ustra/nuxt'],
+  experimental: {
+    headNext: true,
+  },
+  features: {
+    inlineStyles: id => {
+      console.log('id', id)
+      return true
+    },
+  },
+  plugins: [
+    {
+      src: '~/plugins/test',
+      order: 10,
+    },
+  ],
+  vite: {
+    server: {
+      hmr: {
+        clientPort: 9911
+      }
+    },
+    build : {
+      rollupOptions : {
+        external : ['vue-qrcode'],
+      }
+    }
+  },
+  app: {
+    head: {
+      script: [],
+      bodyAttrs: {
+        class: 'ustra management',
+      },
+    },
+  },
+  ustra: {
+    logging: {
+      name: ['dev', 'local'].includes(configEnv) ? 'demo' : 'demo-prd',
+    },
+    server: {
+      middleware: {
+        proxy: {
+          proxies: {
+            '/api/': { target: 'http://localhost:9901', ws: true },
+          },
         },
       },
     },
-    logger: {
-      level: configProperties.LogLevel.Debug,
-    },
-    server: {
-      type: configProperties.ServerType.NONE,
-      middleware: {
-        compress: true,
-        bodyParser: true,
+    auth: {
+      enabled: true,
+      type: 'jwt',
+      jwt: {
+        accessTokenKey: 'mng-bo-token',
+        refreshTokenKey: 'mng-bo-rtoken',
+      },
+      autoLogoutSeconds: 30000,
+      duplication: {
+        checkPath: 'ws://localhost:9911/api/auth-ws',
       },
     },
     nuxt: {
-      // css: ['~/assets/font/fontagon-icons.sass'],
-      module: {
-        useCookie: true,
-        useUstraDx: {},
-        useUstraMngBo: {
-          uiConfig: {
-            appTitle: 'U.STRA Node Framework Sample - BO',
-            useMaskingForList: true,
+      api: {
+        maximumConcurrentNumber: 3,
+        taskDelay: 10,
+      },
+      router: {
+        extendPagesDirs: [resolve(__dirname, './pages copy')],
+      },
+      meta: {
+        auth: {
+          required: true,
+        },
+      },
+      env: {
+        secret: 'Z3NjLWNyeXB0by1rZXkxMQ==',
+      },
+      wijmo: {
+        enabled: true,
+        styles: {
+          theme: 'light',
+        },
+        culture: 'ko',
+        samples: {
+          additionalMenus: [
+            {
+              title: '프로젝트 샘플',
+              icon: 'mdi-group',
+              items: [{ title: '샘플1', componentPath: '~/components/sample/router1.vue' }],
+            },
+          ],
+          copyResource: {
+            enabled: false,
           },
-          useInitialDataCache: true,
         },
-        useUstraDxMngBo: {
-          importSystemPage: true,
-          useDefaultScreen: false,
+      },
+      ckeditor5: {
+        enabled: true,
+      },
+      management: {
+        enabled: true,
+        ui: {
+          tabMenu: {
+            enabled: true,
+          },
+          defaultPage: {
+            system: {
+              copyResource: {
+                enabled: false,
+              },
+            },
+            login: {
+              include: false,
+            },
+          },
         },
-        extends: [],
-      },
-      head: {
-        titleTemplate: 'U.STRA Node Framework Sample - BO',
-        title: '',
-      },
-      generation: {
-        generateDirPath: '../../../back/root/bo/src/main/resources/static',
-        generateProfiles: [env.Profile.DEV, env.Profile.STAGING, env.Profile.PRODUCTION],
       },
     },
-  }
-
-  return await NuxtConfigLoader.nuxtConfig(config, (_prop, _config) => {
-    _config.env.SERVER_PROP_ENC_KEY = 'Z3NjLWNyeXB0by1rZXkxMQ=='
-    _config.build.transpile.push('@ustra-sample/cmm')
-    _config.build.extractCSS = false
-
-    _config.plugins.push('~/plugins/sample-bo-plugin.ts')
-  })
-}
+  },
+})

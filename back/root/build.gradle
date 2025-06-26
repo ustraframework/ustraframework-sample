@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.6.15'
+        springBootVersion = '3.2.12'
         set('springCloudVersion', "Hoxton.SR3")
 
         // log4j2 버전 변경
@@ -46,8 +46,8 @@ subprojects {
     apply plugin: 'eclipse'
 
 
-    sourceCompatibility = 1.8
-    targetCompatibility = 1.8
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 
 	eclipse {
 		classpath { downloadSources=true }
@@ -56,7 +56,7 @@ subprojects {
 
     ext {
         set('springCloudVersion', "Hoxton.SR3")
-        ustraVersion = '2.3.0.RELEASE'
+        ustraVersion = '3.4.2'
     }
 
 
@@ -87,8 +87,8 @@ subprojects {
 
     dependencies {
 
-    	implementation 'ch.qos.logback:logback-core:1.2.9'
-        implementation 'ch.qos.logback:logback-classic:1.2.9'
+        implementation 'ch.qos.logback:logback-core:1.4.14'
+        implementation 'ch.qos.logback:logback-classic:1.4.14'
 
 		implementation 'org.apache.logging.log4j:log4j-to-slf4j:2.17.1'
 		implementation 'org.apache.logging.log4j:log4j-api:2.17.1'
@@ -98,7 +98,7 @@ subprojects {
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
       	compileOnly 'org.projectlombok:lombok'
-        compile 'org.springframework.boot:spring-boot-starter-aop'
+        implementation 'org.springframework.boot:spring-boot-starter-aop'
 
         annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
         annotationProcessor 'org.projectlombok:lombok:1.18.20'
@@ -106,7 +106,7 @@ subprojects {
         testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
         testCompileOnly 'org.projectlombok:lombok:1.18.20'
 
-        implementation 'org.postgresql:postgresql:42.3.3'
+        implementation 'org.postgresql:postgresql:42.7.2'
 
     }
 }

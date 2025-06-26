@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-slim
+FROM openjdk:17.0.1-jdk-slim
 
 ENV APP_HOME=/app
 ENV APP_NAME=bo-java
