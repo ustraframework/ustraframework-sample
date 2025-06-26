@@ -42,21 +42,21 @@
         </template>
 
         <v-list >
-          <v-list-item
+          <!-- <v-list-item
             title="모바일 브릿지 호출"
             value="mobile"
             @click="goPage('/sample/mobile')"
           ></v-list-item>
-          <!-- <v-list-item
+          <v-list-item
             title="파일 업로드"
             value="upload"
             @click="goPage('/sample/upload')"
-          ></v-list-item>
+          ></v-list-item> -->
           <v-list-item
             title="YouTube 재생"
             value="youtube"
             @click="goPage('/sample/youtube')"
-          ></v-list-item> -->
+          ></v-list-item>
         </v-list>
       </v-menu>
     </v-tabs>
