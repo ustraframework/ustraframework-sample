@@ -1,7 +1,6 @@
 {
   "private": true,
   "workspaces": [
-    "./cmm",
     "./fo",
     "./bo"
   ],
@@ -21,8 +20,7 @@
     "install:bo": "cd ./bo && yarn install",
     "dev:bo": "cd ./bo && yarn run dev",
     "generate:dev:bo": "cd ./bo && yarn run generate:dev",
-    "generate:prd:bo": "cd ./bo && yarn run generate:prd",
-    "create-off-pack": "rm -rf node_modules && rm yarn.lock && rm -rf npm_packages/* && yarn cache clean && yarn install"
+    "generate:prd:bo": "cd ./bo && yarn run generate:prd"
   },
   "dependencies": {
   }

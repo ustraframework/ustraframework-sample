@@ -1,13 +1,13 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
-const CONFIG_ENV = process.env.CONFIG_ENV || 'local'
+const configEnv = process.env.CONFIG_ENV || 'local'
 
 export default defineNuxtConfig({
-  debug: true,
   ssr: true,
+  debug: true,
   modules: ['@nuxt/devtools', '@ustra/nuxt'],
   routeRules: {
-    '/api/**': { proxy: CONFIG_ENV === 'dev'? 
+    '/api/**': { proxy: configEnv === 'dev'? 
                   'http://host.docker.internal:9902/api/**' : 
                   'http://localhost:9902/api/**' 
                 },
@@ -73,27 +73,27 @@ export default defineNuxtConfig({
         },
       },
     },
-    interfaces: {
-      // initialDataApiUrl: '/api/interface/all',
-    },
-    mobile: {
-      enabled: true,
-      hybrid: {
-        nativeAgent: {
-          android: 'client1',
-          ios: 'client2',
-        },
-        bridge: {
-          enabled: true,
-          useTokenSecurity: true,
-          staticBridgeNames: {
-            notifyLoaded: 'GPC_MB_NOTIFY_LOADED',
-            toast: 'GPC_MB_TOAST',
-            currentTime: 'GPC_MB_CURRENT_TIME',
-            storage: 'GPC_MB_STORAGE',
-          }
-        },
-      },
-    },
+    // interfaces: {
+    //   initialDataApiUrl: '/api/interface/all',
+    // },
+    // mobile: {
+    //   enabled: true,
+    //   hybrid: {
+    //     nativeAgent: {
+    //       android: 'client1',
+    //       ios: 'client2',
+    //     },
+    //     bridge: {
+    //       enabled: true,
+    //       useTokenSecurity: true,
+    //       staticBridgeNames: {
+    //         notifyLoaded: 'GPC_MB_NOTIFY_LOADED',
+    //         toast: 'GPC_MB_TOAST',
+    //         currentTime: 'GPC_MB_CURRENT_TIME',
+    //         storage: 'GPC_MB_STORAGE',
+    //       }
+    //     },
+    //   },
+    // },
   }
 })

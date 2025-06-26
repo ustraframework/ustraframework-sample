@@ -20,19 +20,11 @@
     "#ustra/nuxt-ckeditor5/*": "@ustra/nuxt-ckeditor5/src/*"
   },
   "scripts": {
-    "dev": "cross-env CONFIG_ENV=local nuxi dev",
+    "dev": "cross-env CONFIG_ENV=local PORT=9911 nuxi dev",
     "generate:dev": "cross-env CONFIG_ENV=dev nuxi generate",
-    "generate:prd": "cross-env CONFIG_ENV=prd nuxi generate",
-    "build": "cross-env CONFIG_ENV=dev nuxi build",
-    "preview": "cross-env CONFIG_ENV=dev nuxi preview",
-    "clean": "nuxi cleanup",
-    "prepare": "nuxi prepare",
-    "init": "rm -rf node_modules && yarn install"
+    "generate:prd": "cross-env CONFIG_ENV=prd nuxi generate"
   },
-  "name": "@ustra/demo-nuxt-wijmo-management",
-  "version": "3.5.0-snapshot",
-  "description": "USTRA Node framework3 Demo - nuxt wijmo management application",
-  "author": "Roy Lee <keymasroy@gsitm.com>",
+  "description": "USTRA Node framework3 Sample BO",
   "license": "MIT",
   "homepage": "http://guide.ustraframework.kro.kr/",
   "resolutions": {

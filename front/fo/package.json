@@ -22,17 +22,9 @@
     "build:dev": "cross-env CONFIG_ENV=dev nuxi build",
     "build:prd": "cross-env CONFIG_ENV=prd nuxi build",
     "start:dev": "cross-env PORT=9912 node .output/server/index.mjs",
-    "start:prd": "cross-env PORT=9912 node .output/server/index.mjs",
-    "generate": "cross-env CONFIG_ENV=dev nuxi generate",
-    "preview": "cross-env CONFIG_ENV=dev nuxi preview",
-    "clean": "nuxi cleanup",
-    "prepare": "nuxi prepare",
-    "init": "rm -rf node_modules && yarn install"
+    "start:prd": "cross-env PORT=9912 node .output/server/index.mjs"
   },
-  "name": "@ustra/demo-nuxt-wijmo-management",
-  "version": "3.5.0-snapshot",
-  "description": "USTRA Node framework3 Demo",
-  "author": "Roy Lee <keymasroy@gsitm.com>",
+  "description": "USTRA Node framework3 Sample FO",
   "license": "MIT",
   "homepage": "http://guide.ustraframework.kro.kr/",
   "resolutions": {
@@ -46,7 +38,6 @@
     "@ustra/nuxt-wijmo": "3.2.5-stable",
     "@ustra/nuxt-vuetify": "3.2.5-stable",
     "@pinia/nuxt": "0.5.5",
-    "animejs": "3.2.2",
-    "nuxt-cache-ssr": "^1.1.0"
+    "animejs": "3.2.2"
   }
 }

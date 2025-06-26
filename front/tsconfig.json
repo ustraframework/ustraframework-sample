@@ -24,12 +24,6 @@
     "declaration": false,
     "downlevelIteration": true,
     "baseUrl": ".",
-    "paths": {
-      "~/*": ["./fo/client/*", "./bo/client/*"],
-      "@/*": ["./fo/client/*", "./bo/client/*"],
-      "@ustra-sample/*": ["./*"]
-    },
-    "types": ["@types/node", "@types/jest", "@nuxt/types", "@ustra/nuxt", "@ustra/nuxt-dx", "@ustra/nuxt-mng-bo", "@ustra-sample/cmm", "@ustra/buefy", "buefy", "@ustra-sample/bo", "./fo/types"]
   },
   "exclude": ["node_modules", ".nuxt", "dist", "src/**/*.test.ts", "**/src/static/**/*", "**/*.js"],
   "typedocOptions": {
