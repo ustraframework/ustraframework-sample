@@ -54,6 +54,8 @@ import { WjInputMask, UCheckGroupBox } from '#ustra/nuxt-wijmo/components'
 import UstraManagementPasswordEditPopup from '#ustra/nuxt-wijmo/management/pages/common/password-edit-popup.vue'
 
 const { inputData, doLogin, appTitle, footerText, init, getRememberId } = useUstraManagementLoginPage(true)
+inputData.userId = 'admin'
+inputData.password = 'admin'
 
 const router = useRouter()
 
