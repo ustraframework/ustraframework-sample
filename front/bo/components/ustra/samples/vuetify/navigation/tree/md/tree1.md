@@ -7,7 +7,7 @@
   <WjTreeView :initialized="ctl => (treeView = ctl)" :itemsSource="treeData" displayMemberPath="text" childItemsPath="items" :autoCollapse="false" style="height: 300px"></WjTreeView>
 </template>
 <script lang="ts" setup>
-import { TreeView } from '@grapecity/wijmo.nav'
+import { TreeView } from '@mescius/wijmo.nav'
 
 const treeView = ref<TreeView>()
 
