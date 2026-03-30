@@ -14,7 +14,8 @@ mybatis:
   type-aliases-package: com.gsitm.ustra.java.management.models
   configuration:
     jdbc-type-for-null: "NULL"
-   #   mapUnderscoreToCamelCase: true
+    mapUnderscoreToCamelCase: true
+    autoMappingUnknownColumnBehavior: warning
    
  
 ustra:

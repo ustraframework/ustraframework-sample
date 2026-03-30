@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     },
     auth: {
       enabled: true,
-      type: 'jwt',
+      type: 'server',
       jwt: {
         accessTokenKey: 'mng-bo-token',
         refreshTokenKey: 'mng-bo-rtoken',

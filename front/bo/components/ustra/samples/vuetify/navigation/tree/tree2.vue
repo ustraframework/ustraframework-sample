@@ -20,7 +20,7 @@
 </template>
 <script lang="ts" setup>
 import { ref } from '#ustra/nuxt'
-import { TreeView } from '@grapecity/wijmo.nav'
+import { TreeView } from '@mescius/wijmo.nav'
 import { WjTreeView } from '#ustra/nuxt-wijmo/components'
 import { useWjTreeSelectedItemData } from '#ustra/nuxt-wijmo/composables'
 

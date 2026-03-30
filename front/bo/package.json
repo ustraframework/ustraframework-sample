@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "^18.0.0"
+    "node": "^20.0.0"
   },
   "browserslist": [
     "last 2 version",
@@ -27,15 +27,16 @@
   "description": "USTRA Node framework3 Sample BO",
   "license": "MIT",
   "homepage": "http://guide.ustraframework.kro.kr/",
-  "resolutions": {
-    "vuetify": "3.4.1"
-  },
   "dependencies": {
-    "@ustra/core": "3.2.5-stable",
-    "@ustra/h3": "3.2.5-stable",
-    "@ustra/nuxt": "3.2.5-stable",
-    "@ustra/nuxt-ckeditor5": "3.2.5-stable",
-    "@ustra/nuxt-wijmo": "3.2.5-stable",
-    "@pinia/nuxt": "0.5.5"
+    "@pinia/nuxt": "0.5.5",
+    "@ustra/core": "snapshot-3.5.0",
+    "@ustra/h3": "snapshot-3.5.0",
+    "@ustra/nuxt": "snapshot-3.5.0",
+    "@ustra/nuxt-ckeditor5": "snapshot-3.5.0",
+    "@ustra/nuxt-wijmo": "snapshot-3.5.0"
+  },
+  "devDependencies": {
+    "sass-embedded": "1.72.0",
+    "vite-plugin-compression2": "2.2.0"
   }
 }
