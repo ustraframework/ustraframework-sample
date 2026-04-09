@@ -18,8 +18,8 @@
   <UButton text="Validate" @click="() => validationGroup.validate()"></UButton>
 </template>
 <script lang="ts" setup>
-import { UValidationGroup } from '#ustra/nuxt-wijmo/components'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UValidationGroup } from '@ustra/nuxt-wijmo/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 const validationGroup = ref<InstanceType<typeof UValidationGroup>>()
 

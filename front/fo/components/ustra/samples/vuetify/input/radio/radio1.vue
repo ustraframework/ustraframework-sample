@@ -33,8 +33,8 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref, reactive } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { ref, reactive } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import radio1_1 from './md/radio1-1.md'

@@ -16,7 +16,7 @@
   ></UButton>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 
 const fieldValue1 = ref(null)
 const fieldValue2 = ref(null)

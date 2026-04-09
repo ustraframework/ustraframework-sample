@@ -4,8 +4,8 @@
   </UPopup>
 </template>
 <script lang="ts" setup>
-import { UPopup } from '#ustra/nuxt-wijmo/components'
-import { openDaumPostScreen, DaumPostResult, DaumPostScreenOptions } from '#ustra/nuxt/externals/daum/post'
+import { UPopup } from '@ustra/nuxt-wijmo/components'
+import { openDaumPostScreen, DaumPostResult, DaumPostScreenOptions } from '@ustra/nuxt/externals/daum/post'
 
 const props = withDefaults(
   defineProps<{

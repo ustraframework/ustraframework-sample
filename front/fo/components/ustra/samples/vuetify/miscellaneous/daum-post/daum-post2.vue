@@ -7,7 +7,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import daumPost2_1 from './md/daum-post2-1.md'

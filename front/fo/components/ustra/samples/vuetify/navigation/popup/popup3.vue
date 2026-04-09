@@ -13,8 +13,8 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 import popup4 from './md/popup4.md'
 import popup5 from './md/popup5.md'

@@ -9,7 +9,7 @@
   </v-chip>
 </template>
 <script lang="ts" setup>
-import { WjAutoComplete } from '#ustra/nuxt-wijmo/components'
+import { WjAutoComplete } from '@ustra/nuxt-wijmo/components'
 
 const value = ref(null)
 

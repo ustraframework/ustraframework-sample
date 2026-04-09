@@ -12,5 +12,5 @@
 </template>
 <script lang="ts" setup>
 import markdown1 from './md/markdown1.md'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 </script>

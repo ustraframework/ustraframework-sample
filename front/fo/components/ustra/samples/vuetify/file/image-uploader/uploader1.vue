@@ -14,7 +14,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 
 // @ts-ignore
 import uploader0 from './md/uploader0.md'

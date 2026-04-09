@@ -22,8 +22,8 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, computed } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { ref, reactive, computed } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import check8 from './md/check8.md'

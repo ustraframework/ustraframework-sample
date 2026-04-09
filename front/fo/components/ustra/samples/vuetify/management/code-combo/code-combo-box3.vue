@@ -16,9 +16,9 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UVCodeComboBox from '#ustra/nuxt-vuetify/management/components/combo-box/u-v-code-combo-box.vue'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UVCodeComboBox from '@ustra/nuxt-vuetify/management/components/combo-box/u-v-code-combo-box.vue'
 // @ts-ignore
 import desc from './md/code-combo-box3.md'
 

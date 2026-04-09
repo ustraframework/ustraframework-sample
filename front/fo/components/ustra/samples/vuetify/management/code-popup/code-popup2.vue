@@ -19,9 +19,9 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UVCodeInputBox from '#ustra/nuxt-vuetify/management/components/input/u-v-code-input-box.vue'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UVCodeInputBox from '@ustra/nuxt-vuetify/management/components/input/u-v-code-input-box.vue'
 
 // @ts-ignore
 import codePopup2 from './md/code-popup2.md'

@@ -96,11 +96,11 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from '#ustra/nuxt'
-import { WjComboBox } from '@grapecity/wijmo.vue2.input'
-import { WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { useWijmo } from '#ustra/nuxt-wijmo/composables/wijmo'
-import { useCollectionView } from '#ustra/nuxt-wijmo/composables/grid'
+import { reactive, ref } from '@ustra/nuxt'
+import { WjComboBox } from '@mescius/wijmo.vue2.input'
+import { WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { useWijmo } from '@ustra/nuxt-wijmo/composables/wijmo'
+import { useCollectionView } from '@ustra/nuxt-wijmo/composables/grid'
 import formGrid1 from './md/form-grid1.md'
 
 const lineData = ref('CODE-0000123')

@@ -7,9 +7,9 @@
   </UPopup>
 </template>
 <script lang="ts" setup>
-import { defineProps, ref, reactive, defineEmits, nextTick, watch } from '#ustra/nuxt'
+import { defineProps, ref, reactive, defineEmits, nextTick, watch } from '@ustra/nuxt'
 import { useVModel } from '@vueuse/core'
-import { useUstraBatchHistService } from '#ustra/nuxt/management'
+import { useUstraBatchHistService } from '@ustra/nuxt/management'
 const service = useUstraBatchHistService()
 
 const props = defineProps<{

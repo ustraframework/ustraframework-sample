@@ -30,8 +30,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import { UPhoneNoBox, UValidationGroup } from '#ustra/nuxt-vuetify/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import { UPhoneNoBox, UValidationGroup } from '@ustra/nuxt-vuetify/components'
 
 // @ts-ignore
 import doc1 from './md/phone-no6-1.md'

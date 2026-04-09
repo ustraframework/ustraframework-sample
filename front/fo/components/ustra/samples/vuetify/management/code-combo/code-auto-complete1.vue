@@ -19,11 +19,11 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import { useUstraCodeList } from '#ustra/nuxt/management/composables'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import { useUstraCodeList } from '@ustra/nuxt/management/composables'
 
-import uVCodeAutoComplete from '#ustra/nuxt-vuetify/management/components/combo-box/u-v-code-auto-complete.vue'
+import uVCodeAutoComplete from '@ustra/nuxt-vuetify/management/components/combo-box/u-v-code-auto-complete.vue'
 
 // @ts-ignore
 import desc from './md/code-auto-complete1.md'

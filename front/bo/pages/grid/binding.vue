@@ -27,8 +27,8 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
+import { WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
 
 const data = ref([])
 const countries = ['US', 'Germany', 'UK', 'Japan', 'Italy', 'Greece']

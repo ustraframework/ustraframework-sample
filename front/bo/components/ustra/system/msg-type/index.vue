@@ -46,8 +46,8 @@
                       <WjInputMask
                         v-model="formActions.inputData.msgTypeId"
                         :isDisabled="!formActions.isNew.value"
-                        :validation="{ rules: [formActions.validateId] }"  
-                      /> 
+                        :validation="{ rules: [formActions.validateId] }"
+                      />
                     </UField>
                   </UFieldRow>
 
@@ -65,19 +65,19 @@
 
                   <UFieldRow>
                     <UField label="메시지 프로바이더" required>
-                      <WjComboBox 
-                          :textChanged="providerComboChange" 
-                          :itemsSource="providerItems" 
+                      <WjComboBox
+                          :textChanged="providerComboChange"
+                          :itemsSource="providerItems"
                           :initialized="providerComboInit"
-                          v-model="formActions.inputData.providerNm" 
+                          v-model="formActions.inputData.providerNm"
                           selectedValuePath="value" displayMemberPath="text" />
                     </UField>
                   </UFieldRow>
 
                   <UFieldRow>
                     <template  v-for="(item, index) in formActions.inputData.props">
-                      <UField required v-if="currentProvider?.propertyNames.indexOf(item.propKey) > -1"> 
-                        <WjInputMask :isRequired="true" v-model="item.propKey" :isDisabled="true" /> 
+                      <UField required v-if="currentProvider?.propertyNames.indexOf(item.propKey) > -1">
+                        <WjInputMask :isRequired="true" v-model="item.propKey" :isDisabled="true" />
                         <WjInputMask :isRequired="true" v-model="item.propVal" />
                       </UField>
                     </template>
@@ -119,10 +119,10 @@
 
                   <UFieldRow>
                     <UField label="파일 그룹 아이디" required>
-                      <WjComboBox 
-                        :itemsSource="fileGrpComboItems" 
-                        v-model="formActions.inputData.fileGrpId" 
-                        selectedValuePath="value" displayMemberPath="text" />     
+                      <WjComboBox
+                        :itemsSource="fileGrpComboItems"
+                        v-model="formActions.inputData.fileGrpId"
+                        selectedValuePath="value" displayMemberPath="text" />
                     </UField>
                   </UFieldRow>
 
@@ -153,19 +153,19 @@
                   <UFieldRow>
                     <UField label="입력 정보" v-if="!formActions.isNew.value">
                       <b>
-                        {{formActions.inputData.regUsrId}} 
-                        / {{formActions.inputData.regUsrIp}} 
+                        {{formActions.inputData.regUsrId}}
+                        / {{formActions.inputData.regUsrIp}}
                         / {{ $ustra.utils.formatting.datetime(formActions.inputData.regDttm, 'yyyy-MM-dd hh:mm:ss') }}
-                      </b>  
+                      </b>
                     </UField>
                   </UFieldRow>
                   <UFieldRow>
                     <UField label="수정 정보" v-if="!formActions.isNew.value">
                       <b>
-                        {{formActions.inputData.updUsrId}} 
-                        / {{formActions.inputData.updUsrIp}} 
+                        {{formActions.inputData.updUsrId}}
+                        / {{formActions.inputData.updUsrIp}}
                         / {{ $ustra.utils.formatting.datetime(formActions.inputData.updDttm, 'yyyy-MM-dd hh:mm:ss') }}
-                      </b>  
+                      </b>
                     </UField>
                   </UFieldRow>
                 </UFieldSet>
@@ -187,7 +187,7 @@
                   @click="() => formActions.remove()"
                 />
               </UButtonBox>
-            </UItem> 
+            </UItem>
           </UBox>
         </UItem>
       </UBox>
@@ -196,7 +196,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '#ustra/nuxt'
+import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -215,10 +215,10 @@ import {
   UValidationGroup,
   WjInputNumber,
   URadioGroupBox
-} from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { useUstraFileGroupService, useUstraMessageTypeService } from '#ustra/nuxt/management'
-import { MessageTypeCriteria, MessageType } from '#ustra/nuxt/management/models/msg-type'
+} from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { useUstraFileGroupService, useUstraMessageTypeService } from '@ustra/nuxt/management'
+import { MessageTypeCriteria, MessageType } from '@ustra/nuxt/management/models/msg-type'
 
 const ustraMessageTypeService = useUstraMessageTypeService()
 
@@ -436,7 +436,7 @@ const currentProvider = computed(() => {
 })
 
 // 폼 프로바이더 이벤트
-function providerComboChange (e) {  
+function providerComboChange (e) {
   formActions.inputData.props = getProperties(e.text)
 }
 

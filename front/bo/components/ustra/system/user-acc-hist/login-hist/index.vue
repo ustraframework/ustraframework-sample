@@ -97,7 +97,7 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, watch, onMounted, useOnError, provide, inject, shallowRef, computed } from '#ustra/nuxt'
+import { ref, reactive, watch, onMounted, useOnError, provide, inject, shallowRef, computed } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -113,11 +113,11 @@ import {
   WjFlexChartAxis,
   WjFlexPie,
   WjFlexPieDataLabel,
-} from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { useWijmo } from '#ustra/nuxt-wijmo/composables'
-import { LoginHistCriteria, LoginHist } from '#ustra/nuxt/management/models/login-hist'
-import { useUstraLoginHistoryService, useUstraCodeList } from '#ustra/nuxt/management'
+} from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { useWijmo } from '@ustra/nuxt-wijmo/composables'
+import { LoginHistCriteria, LoginHist } from '@ustra/nuxt/management/models/login-hist'
+import { useUstraLoginHistoryService, useUstraCodeList } from '@ustra/nuxt/management'
 
 const service = useUstraLoginHistoryService()
 const wijmo = useWijmo()

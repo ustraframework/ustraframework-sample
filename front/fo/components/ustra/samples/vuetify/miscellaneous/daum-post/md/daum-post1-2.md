@@ -11,8 +11,8 @@
   <UDaumPostPopup v-model="showPopup" :options="options" @selected="onSelected" />
 </template>
 <script lang="ts" setup>
-import UDaumPostPopup from '#ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
-import { DaumPostResult, DaumPostScreenOptions } from '#ustra/nuxt/externals/daum/post'
+import UDaumPostPopup from '@ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
+import { DaumPostResult, DaumPostScreenOptions } from '@ustra/nuxt/externals/daum/post'
 
 const options: DaumPostScreenOptions = {
   autoClose: false,

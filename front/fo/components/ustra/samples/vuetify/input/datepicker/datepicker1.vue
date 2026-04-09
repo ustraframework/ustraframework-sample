@@ -60,18 +60,18 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UDatepicker from '#ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UDatepicker from '@ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
 // import Datepicker from '@vuepic/vue-datepicker'
 import { ko } from 'date-fns/locale'
 
 // @ts-ignore
-import doc1 from './md/datepicker1-1.md'
+import doc1 from './md/datepicker1-1.js'
 
 // @ts-ignore
-import doc2 from './md/datepicker1-2.md'
-import UBaseDatepicker from '#ustra/nuxt-vuetify/components/datepicker/u-base-datepicker.vue'
+import doc2 from './md/datepicker1-2.js'
+import UBaseDatepicker from '@ustra/nuxt-vuetify/components/datepicker/u-base-datepicker.vue'
 
 const value = ref('2023-01-01')
 const datetimeValue = ref('2018-06-12T19:30')

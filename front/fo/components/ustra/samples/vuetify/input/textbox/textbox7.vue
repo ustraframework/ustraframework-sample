@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import textBox7 from './md/textbox7.md'

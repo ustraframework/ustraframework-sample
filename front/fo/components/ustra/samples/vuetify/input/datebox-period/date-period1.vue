@@ -19,11 +19,11 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import doc1 from './md/date-period1.md'
-import UVDatePeriodBox from '#ustra/nuxt-vuetify/components/date-period/u-v-date-period-box.vue';
+import UVDatePeriodBox from '@ustra/nuxt-vuetify/components/date-period/u-v-date-period-box.vue';
 
 // const start = ref('20220507')
 // const end = ref('20220508')

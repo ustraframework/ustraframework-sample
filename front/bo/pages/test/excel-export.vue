@@ -17,9 +17,9 @@
   <UButton text="Export Excel" @click="() => grid.export.toExcel('DownloadExcel.xlsx')"></UButton>
 </template>
 <script lang="ts" setup>
-import { WjFlexGrid, WjFlexGridColumnGroup } from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { wijmoGrid } from '#ustra/nuxt-wijmo'
+import { WjFlexGrid, WjFlexGridColumnGroup } from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { wijmoGrid } from '@ustra/nuxt-wijmo'
 
 const grid = useWijmoFlexGrid({
   autoSelection: false,

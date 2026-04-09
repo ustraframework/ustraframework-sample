@@ -91,7 +91,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from '#ustra/nuxt'
+import { reactive, ref } from '@ustra/nuxt'
 import formSample4 from './md/form-sample4.md'
 import formSample41 from './md/form-sample41.md'
 

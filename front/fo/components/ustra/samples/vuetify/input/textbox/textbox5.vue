@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import textBox5 from './md/textbox5.md'

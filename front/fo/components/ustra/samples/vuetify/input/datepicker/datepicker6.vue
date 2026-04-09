@@ -17,12 +17,12 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UDatepicker from '#ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UDatepicker from '@ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
 
 // @ts-ignore
-import doc1 from './md/datepicker6.md'
+import doc1 from './md/datepicker6.js'
 
 const value = ref(null)
 </script>

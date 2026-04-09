@@ -34,7 +34,7 @@ import {
   UCheckGroupBox,
   UValidationGroup,
   WjMultiSelect,
-} from '#ustra/nuxt-wijmo/components'
+} from '@ustra/nuxt-wijmo/components'
 const show = ref(false)
 const value = ref()
 

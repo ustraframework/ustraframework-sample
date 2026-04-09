@@ -22,7 +22,7 @@
   </v-chip>
 </template>
 <script lang="ts" setup>
-import { WjAutoComplete, UCheckGroupBox, WjInputNumber } from '#ustra/nuxt-wijmo/components'
+import { WjAutoComplete, UCheckGroupBox, WjInputNumber } from '@ustra/nuxt-wijmo/components'
 import data from './data'
 
 const value = ref(null)

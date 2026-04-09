@@ -26,9 +26,9 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { defineProps } from '#ustra/nuxt'
-import { UBox, UItem, WjFlexGrid, WjFlexGridColumn, UFieldSet } from '#ustra/nuxt-wijmo/components'
-import { Menu, useUstraCodeValue } from '#ustra/nuxt/management'
+import { defineProps } from '@ustra/nuxt'
+import { UBox, UItem, WjFlexGrid, WjFlexGridColumn, UFieldSet } from '@ustra/nuxt-wijmo/components'
+import { Menu, useUstraCodeValue } from '@ustra/nuxt/management'
 
 type MenuData = Menu & { accessibleAuthGroups?: any[]; accessibleUsers?: any[] }
 

@@ -33,8 +33,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import textBox8 from './md/textbox8.md'

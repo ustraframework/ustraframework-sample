@@ -78,7 +78,7 @@
   <!--  -->
 </template>
 <script lang="ts" setup>
-import { reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge, shallowRef } from '#ustra/nuxt'
+import { reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge, shallowRef } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -90,10 +90,10 @@ import {
   UCheckGroupBox,
   WjInputMask,
   WjInputNumber,
-} from '#ustra/nuxt-wijmo/components'
-import { wijmoInput } from '#ustra/nuxt-wijmo'
-import { UCodeMultiComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { AuthGroup, useUstraAuthGroupService, useUstraAuthService, useUstraManagementUser } from '#ustra/nuxt/management'
+} from '@ustra/nuxt-wijmo/components'
+import { wijmoInput } from '@ustra/nuxt-wijmo'
+import { UCodeMultiComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { AuthGroup, useUstraAuthGroupService, useUstraAuthService, useUstraManagementUser } from '@ustra/nuxt/management'
 import { usePathText } from './index.vue'
 import Users from './users.vue'
 

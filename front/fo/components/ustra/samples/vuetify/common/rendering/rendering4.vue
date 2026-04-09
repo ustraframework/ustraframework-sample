@@ -9,7 +9,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref, getCurrentInstance, computed, onMounted, onBeforeUnmount, VNode } from '#ustra/nuxt'
+import { ref, getCurrentInstance, computed, onMounted, onBeforeUnmount, VNode } from '@ustra/nuxt'
 import RenderPopup from './popup/render-popup.vue'
 
 // @ts-ignore

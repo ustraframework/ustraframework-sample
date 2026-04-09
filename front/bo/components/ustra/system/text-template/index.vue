@@ -109,7 +109,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref, useOnError, useGlobal, shallowRef } from '#ustra/nuxt'
+import { reactive, ref, useOnError, useGlobal, shallowRef } from '@ustra/nuxt'
 import {
   WjComboBox,
   UBox,
@@ -121,11 +121,11 @@ import {
   WjFlexGrid,
   WjFlexGridColumn,
   UValidationGroup,
-} from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables/grid'
-import { baseModels } from '#ustra/core/data'
-import { TextTemplateCriteria, TextTemplate, useUstraTextTemplateService } from '#ustra/nuxt/management'
-import { onMounted } from '#ustra/nuxt'
+} from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables/grid'
+import { baseModels } from '@ustra/core/data'
+import { TextTemplateCriteria, TextTemplate, useUstraTextTemplateService } from '@ustra/nuxt/management'
+import { onMounted } from '@ustra/nuxt'
 import txtTmplTestPopup from './template-test-popup.vue'
 
 const validationGroup = shallowRef<InstanceType<typeof UValidationGroup>>()

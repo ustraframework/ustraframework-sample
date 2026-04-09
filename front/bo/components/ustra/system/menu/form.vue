@@ -140,7 +140,7 @@
   <!--  -->
 </template>
 <script lang="ts" setup>
-import { reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge } from '#ustra/nuxt'
+import { reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -158,10 +158,10 @@ import {
   WjFlexGridCellTemplate,
   WjTabPanel,
   WjTab,
-} from '#ustra/nuxt-wijmo/components'
-import { useCollectionView, isValidCollectionView } from '#ustra/nuxt-wijmo/composables'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { Menu, useUstraMenuService } from '#ustra/nuxt/management'
+} from '@ustra/nuxt-wijmo/components'
+import { useCollectionView, isValidCollectionView } from '@ustra/nuxt-wijmo/composables'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { Menu, useUstraMenuService } from '@ustra/nuxt/management'
 import { usePathText } from './index.vue'
 import Authority from './authority.vue'
 

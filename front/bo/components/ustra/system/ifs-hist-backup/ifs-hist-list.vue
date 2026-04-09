@@ -35,11 +35,11 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '#ustra/nuxt'
-import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { IfsHist, IfsHistCriteria, useUstraCodeValue } from '#ustra/nuxt/management'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables/grid'
-import { useUstraInterfaceService } from '#ustra/nuxt/management/services/interface'
+import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '@ustra/nuxt'
+import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { IfsHist, IfsHistCriteria, useUstraCodeValue } from '@ustra/nuxt/management'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables/grid'
+import { useUstraInterfaceService } from '@ustra/nuxt/management/services/interface'
 // import { DxDataGrid } from '@ustra/nuxt-dx/src/components/dx/dx-data-grid'
 // import { OnError } from '@ustra/nuxt/src/vue/decorators'
 // import CustomStore from 'devextreme/data/custom_store'

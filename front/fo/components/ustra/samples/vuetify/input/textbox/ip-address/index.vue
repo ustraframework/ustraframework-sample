@@ -50,14 +50,14 @@
 definePageMeta({
   layout: 'samples',
 })
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 import { ref } from 'vue'
 
 // @ts-ignore
-import ipAddress1 from './md/ip-address1.md'
+import ipAddress1 from './md/ip-address1.js'
 
 // @ts-ignore
-import ipAddress2 from './md/ip-address2.md'
+import ipAddress2 from './md/ip-address2.js'
 
 let ipValue = ref<string>('127.0.0.1')
 let ipListValue = ref(['127.0.0.1', '127.0.0.2', '127.0.0.3'])

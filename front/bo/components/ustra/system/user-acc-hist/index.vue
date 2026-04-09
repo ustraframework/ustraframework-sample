@@ -15,8 +15,8 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '#ustra/nuxt-wijmo/components'
+import { ref } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '@ustra/nuxt-wijmo/components'
 import LoginHist from './login-hist/index.vue'
 import AccCnt from './acc-cnt/index.vue'
 </script>

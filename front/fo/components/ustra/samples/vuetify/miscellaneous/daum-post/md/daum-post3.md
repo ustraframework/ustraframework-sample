@@ -53,8 +53,8 @@ addLatLng 속성을 true로 설정하고, apiKey를 세팅하면 주소 조회 �
   </v-chip>
 </template>
 <script lang="ts" setup>
-import { DaumPostResult } from '#ustra/nuxt/externals/daum/post'
-import UDaumPostPopup from '#ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
+import { DaumPostResult } from '@ustra/nuxt/externals/daum/post'
+import UDaumPostPopup from '@ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
 
 const showPopup = ref(false)
 const postResult = ref<DaumPostResult>(null)

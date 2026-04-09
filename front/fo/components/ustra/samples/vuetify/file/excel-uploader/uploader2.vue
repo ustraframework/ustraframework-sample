@@ -35,10 +35,10 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { useFetch } from '#app'
-import { ref, shallowRef } from '#ustra/nuxt'
-import { useOnError } from '#ustra/nuxt/composables'
-import { useUstraCodeValue } from '#ustra/nuxt/management'
+import { useFetch } from 'nuxt/app'
+import { ref, shallowRef } from '@ustra/nuxt'
+import { useOnError } from '@ustra/nuxt/composables'
+import { useUstraCodeValue } from '@ustra/nuxt/management'
 
 // @ts-ignore
 import uploader2_1 from './md/uploader2-1.md'

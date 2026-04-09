@@ -47,11 +47,11 @@
 
 <script lang="ts" setup>
 import { useRouter } from '#app'
-import { ref, useOnError, onBeforeMount } from '#ustra/nuxt'
-import { UValidationGroup } from '#ustra/nuxt-wijmo/components'
-import { useUstraManagementLoginPage } from '#ustra/nuxt/management/composables'
-import { WjInputMask, UCheckGroupBox } from '#ustra/nuxt-wijmo/components'
-import UstraManagementPasswordEditPopup from '#ustra/nuxt-wijmo/management/pages/common/password-edit-popup.vue'
+import { ref, useOnError, onBeforeMount } from '@ustra/nuxt'
+import { UValidationGroup } from '@ustra/nuxt-wijmo/components'
+import { useUstraManagementLoginPage } from '@ustra/nuxt/management/composables'
+import { WjInputMask, UCheckGroupBox } from '@ustra/nuxt-wijmo/components'
+import UstraManagementPasswordEditPopup from '@ustra/nuxt-wijmo/management/pages/common/password-edit-popup.vue'
 
 const { inputData, doLogin, appTitle, footerText, init, getRememberId } = useUstraManagementLoginPage(true)
 inputData.userId = 'admin'

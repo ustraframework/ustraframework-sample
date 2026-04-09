@@ -122,9 +122,9 @@ import {
   UValidationGroup,
   UBox,
   UItem,
-} from '#ustra/nuxt-wijmo/components'
-import { Code, useUstraCodeService } from '#ustra/nuxt/management'
-import { withDefaults, defineProps, reactive, ref, watch, computed, useDeepMerge, defineEmits, useOnError } from '#ustra/nuxt'
+} from '@ustra/nuxt-wijmo/components'
+import { Code, useUstraCodeService } from '@ustra/nuxt/management'
+import { withDefaults, defineProps, reactive, ref, watch, computed, useDeepMerge, defineEmits, useOnError } from '@ustra/nuxt'
 import { useVModel } from '@vueuse/core'
 
 const codeService = useUstraCodeService()

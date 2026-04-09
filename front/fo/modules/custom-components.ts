@@ -5,7 +5,7 @@ export default defineNuxtModule({
     addComponent({
       name: 'WjComboBox',
       export: 'WjComboBox',
-      filePath: '#ustra/nuxt-wijmo/components',
+      filePath: '@ustra/nuxt-wijmo/components',
     })
   },
 })

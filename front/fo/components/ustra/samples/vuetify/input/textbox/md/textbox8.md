@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 
 const data = ref(null)
 const set = val => {

@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '#ustra/nuxt-wijmo/components'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '@ustra/nuxt-wijmo/components'
 import IfPage from './if-page.vue'
 import { ref } from 'vue'
 

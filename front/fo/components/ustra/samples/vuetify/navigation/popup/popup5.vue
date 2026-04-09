@@ -39,10 +39,10 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { useRoute } from '#app'
-import { ref, watch } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import { useGlobal } from '#ustra/nuxt/composables'
+import { useRoute } from 'nuxt/app'
+import { ref, watch } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import { useGlobal } from '@ustra/nuxt/composables'
 
 // @ts-ignore
 import popup6 from './md/popup6.md'

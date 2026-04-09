@@ -87,12 +87,12 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { reactive, onBeforeMount, ref, computed, watch } from '#ustra/nuxt'
-import { useOnError } from '#ustra/nuxt/composables'
-import { UBox, UItem, UButtonBar, UFieldRow, UFieldSet, UField } from '#ustra/nuxt-vuetify/components'
-import { Code } from '#ustra/nuxt/management/models/code'
-import { WjFlexGrid, WjFlexGridColumn, WjComboBox } from '#ustra/nuxt-wijmo/components'
-import { useUstraCodeService } from '#ustra/nuxt/management/services/code'
+import { reactive, onBeforeMount, ref, computed, watch } from '@ustra/nuxt'
+import { useOnError } from '@ustra/nuxt/composables'
+import { UBox, UItem, UButtonBar, UFieldRow, UFieldSet, UField } from '@ustra/nuxt-vuetify/components'
+import { Code } from '@ustra/nuxt/management/models/code'
+import { WjFlexGrid, WjFlexGridColumn, WjComboBox } from '@ustra/nuxt-wijmo/components'
+import { useUstraCodeService } from '@ustra/nuxt/management/services/code'
 import UstraSystemCodeList from './list.vue'
 import UstraSystemCodeFrom from './form.vue'
 

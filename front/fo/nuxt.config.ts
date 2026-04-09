@@ -7,12 +7,15 @@ export default defineNuxtConfig({
   debug: true,
   modules: ['@nuxt/devtools', '@ustra/nuxt'],
   routeRules: {
-    '/api/**': { proxy: configEnv === 'dev'? 
-                  'http://host.docker.internal:9902/api/**' : 
-                  'http://localhost:9902/api/**' 
+    '/api/**': { proxy: configEnv === 'dev'?
+                  'http://host.docker.internal:9902/api/**' :
+                  'http://localhost:9902/api/**'
                 },
   },
   vite: {
+    optimizeDeps: {
+      include: []
+    },
     server: {
       hmr: {
         clientPort: 9912
@@ -20,8 +23,23 @@ export default defineNuxtConfig({
     },
     build : {
       rollupOptions : {
-        external : ['vue-qrcode'],
+        external : [],
       }
+    },
+    ssr: {
+      noExternal: []
+    },
+    resolve: {
+      alias: {
+      }
+    }
+  },
+  build: {
+    transpile: []
+  },
+  nitro: {
+    externals: {
+      inline: []
     }
   },
   ustra: {

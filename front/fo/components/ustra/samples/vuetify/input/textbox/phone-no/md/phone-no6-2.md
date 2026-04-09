@@ -17,8 +17,8 @@
 </template>
 
 <script setup lang="ts">
-import { UPhoneNoBox, UValidationGroup } from '#ustra/nuxt-vuetify/components'
-import { UButton, UPhoneNoBox as UPhoneNoBox2 } from '#ustra/nuxt-wijmo/components'
+import { UPhoneNoBox, UValidationGroup } from '@ustra/nuxt-vuetify/components'
+import { UButton, UPhoneNoBox as UPhoneNoBox2 } from '@ustra/nuxt-wijmo/components'
 
 const validationGroup = ref<InstanceType<typeof UValidationGroup>>()
 

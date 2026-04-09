@@ -86,11 +86,11 @@
   </UPopup>
 </template>
 <script lang="ts" setup>
-import { computed, defineProps, reactive, ref, shallowRef, defineExpose, defineEmits } from '#ustra/nuxt'
-import { UPopup, UMessage, UBox, UItem, UValidationGroup, UField, UFieldRow, UFieldSet, WjInputMask } from '#ustra/nuxt-wijmo/components'
-import { useUstraLoginService } from '#ustra/nuxt/management'
-import { useUstraManagementUser } from '#ustra/nuxt/management/composables'
-import { useAsyncTask, useOnError } from '#ustra/nuxt/composables'
+import { computed, defineProps, reactive, ref, shallowRef, defineExpose, defineEmits } from '@ustra/nuxt'
+import { UPopup, UMessage, UBox, UItem, UValidationGroup, UField, UFieldRow, UFieldSet, WjInputMask } from '@ustra/nuxt-wijmo/components'
+import { useUstraLoginService } from '@ustra/nuxt/management'
+import { useUstraManagementUser } from '@ustra/nuxt/management/composables'
+import { useAsyncTask, useOnError } from '@ustra/nuxt/composables'
 import { useVModel } from '@vueuse/core'
 
 const service = useUstraLoginService()

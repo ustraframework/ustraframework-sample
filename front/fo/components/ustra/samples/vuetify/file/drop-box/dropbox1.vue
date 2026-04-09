@@ -14,7 +14,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 
 // @ts-ignore
 import dropbox1 from './md/dropbox1.md'

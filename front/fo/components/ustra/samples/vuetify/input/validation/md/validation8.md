@@ -7,7 +7,7 @@
   <UButton text="Validate" @click="() => validationGroup.validate()"></UButton>
 </template>
 <script lang="ts" setup>
-import { UValidationGroup } from '#ustra/nuxt-vuetify/components'
+import { UValidationGroup } from '@ustra/nuxt-vuetify/components'
 
 const validationGroup = ref<InstanceType<typeof UValidationGroup>>()
 </script>

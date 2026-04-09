@@ -20,5 +20,5 @@ WjAutoComplete 컴포넌트를 사용하여 Combo Box 형태의 선택 박스를
 
 컴포넌트의 import는 다음과 같이 참조한다.
 ```typescript
-import { WjAutoComplete } from '#ustra/nuxt-wijmo/components'
+import { WjAutoComplete } from '@ustra/nuxt-wijmo/components'
 ```

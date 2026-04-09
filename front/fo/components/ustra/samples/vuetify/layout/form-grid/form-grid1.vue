@@ -94,7 +94,7 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from '#ustra/nuxt'
+import { reactive, ref } from '@ustra/nuxt'
 
 // @ts-ignore
 import formGrid1 from './md/form-grid1.md'

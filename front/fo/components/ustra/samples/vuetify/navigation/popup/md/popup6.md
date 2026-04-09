@@ -34,9 +34,9 @@
 
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UPopup } from '#ustra/nuxt-wijmo/components'
-import { useGlobal } from '#ustra/nuxt/composables/utils'
+import { ref } from '@ustra/nuxt'
+import { UPopup } from '@ustra/nuxt-wijmo/components'
+import { useGlobal } from '@ustra/nuxt/composables/utils'
 
 const showPopup = ref(false)
 </script>

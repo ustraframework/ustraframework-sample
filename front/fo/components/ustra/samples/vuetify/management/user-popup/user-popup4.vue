@@ -11,9 +11,9 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UVUserInputBox from '#ustra/nuxt-vuetify/management/components/input/u-v-user-input-box.vue'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UVUserInputBox from '@ustra/nuxt-vuetify/management/components/input/u-v-user-input-box.vue'
 
 // @ts-ignore
 import doc1 from './md/user-popup4-1.md'

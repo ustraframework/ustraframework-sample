@@ -11,7 +11,7 @@
   <UButton text="Validate" @click="() => validationGroup.validate()" />
 </template>
 <script lang="ts" setup>
-import { UBizNoBox, UCorpNoBox } from '#ustra/nuxt-vuetify/components'
+import { UBizNoBox, UCorpNoBox } from '@ustra/nuxt-vuetify/components'
 
 const value = ref(null)
 const value2 = ref(null)

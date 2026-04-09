@@ -107,7 +107,7 @@
     layout: 'samples',
   })
   import { ref } from 'vue'
-  import { UMarkdownViewer } from '#ustra/nuxt/components'
+  import { UMarkdownViewer } from '@ustra/nuxt/components'
   // @ts-ignore
   import date1 from './md/date1.md'
   // @ts-ignore
@@ -118,7 +118,7 @@
   import date4 from './md/date4.md'
   // @ts-ignore
   import date5 from './md/date5.md'
-  import UVDateBox from '#ustra/nuxt-vuetify/components/date/u-v-date-box.vue'
+  import UVDateBox from '@ustra/nuxt-vuetify/components/date/u-v-date-box.vue'
   
   const inputValue1 = ref(null)
   const inputValue2 = ref('20220507')

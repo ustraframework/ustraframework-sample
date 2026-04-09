@@ -12,7 +12,7 @@ import Markdown2 from './markdown2.vue'
 import Markdown3 from './markdown3.vue'
 import Markdown4 from './markdown4.vue'
 
-import { defineNuxtComponent } from '#app'
+import { defineNuxtComponent } from 'nuxt/app'
 
 export default defineNuxtComponent({
   layout: false,

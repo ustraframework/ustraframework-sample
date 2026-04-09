@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import { isRef, reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge, shallowRef } from '#ustra/nuxt'
+import { isRef, reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge, shallowRef } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -64,9 +64,9 @@ import {
   WjFlexGridCellTemplate,
   WjTabPanel,
   WjTab,
-} from '#ustra/nuxt-wijmo/components'
-import { IfsHist } from '#ustra/nuxt/management'
-import { useUstraInterfaceService } from '#ustra/nuxt/management/services/interface'
+} from '@ustra/nuxt-wijmo/components'
+import { IfsHist } from '@ustra/nuxt/management'
+import { useUstraInterfaceService } from '@ustra/nuxt/management/services/interface'
 const infService = useUstraInterfaceService()
 // import { Component, Emit } from 'vue-property-decorator'
 // import { UstraBoComponent } from '@ustra/nuxt-mng-bo/src/components/ustra-bo-component'

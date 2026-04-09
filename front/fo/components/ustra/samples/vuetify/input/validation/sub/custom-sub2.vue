@@ -5,7 +5,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { ref, shallowRef, defineExpose } from '#ustra/nuxt'
+import { ref, shallowRef, defineExpose } from '@ustra/nuxt'
 
 const textValue1 = ref('')
 const textValue2 = ref('')

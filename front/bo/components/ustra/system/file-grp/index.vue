@@ -124,7 +124,7 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { shallowRef, ref, onBeforeMount, reactive, useDeepMerge, useOnError, watch, nextTick } from '#ustra/nuxt'
+import { shallowRef, ref, onBeforeMount, reactive, useDeepMerge, useOnError, watch, nextTick } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -138,11 +138,11 @@ import {
   WjInputMask,
   WjInputNumber,
   UMessage,
-} from '#ustra/nuxt-wijmo/components'
-import { useWjGridSelectionData } from '#ustra/nuxt-wijmo/composables'
-import { useUstraFileGroupService } from '#ustra/nuxt/management/composables'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { FileGrp } from '#ustra/nuxt/management'
+} from '@ustra/nuxt-wijmo/components'
+import { useWjGridSelectionData } from '@ustra/nuxt-wijmo/composables'
+import { useUstraFileGroupService } from '@ustra/nuxt/management/composables'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { FileGrp } from '@ustra/nuxt/management'
 import { FlexGrid } from '@grapecity/wijmo.grid'
 
 const fileGroupService = useUstraFileGroupService()

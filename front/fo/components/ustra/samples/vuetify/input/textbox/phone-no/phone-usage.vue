@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 const data = ref(null)
 const width = ref(null)
 const maxlength = ref('14')

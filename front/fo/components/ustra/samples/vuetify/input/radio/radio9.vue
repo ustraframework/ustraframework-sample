@@ -38,9 +38,9 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref, reactive } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UVRadioGroupBox from '#ustra/nuxt-vuetify/components/radio/u-v-radio-group-box.vue'
+import { ref, reactive } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UVRadioGroupBox from '@ustra/nuxt-vuetify/components/radio/u-v-radio-group-box.vue'
 
 // @ts-ignore
 import doc1 from './md/radio9-1.md'

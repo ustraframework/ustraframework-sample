@@ -15,7 +15,7 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 
 // @ts-ignore
 import doc1 from './md/biz-no1.md'

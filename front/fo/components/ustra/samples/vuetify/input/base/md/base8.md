@@ -6,7 +6,7 @@
   </UItem>
 </UBox>
 <script setup lang="ts">
-import { reactive, ref } from '#ustra/nuxt'
+import { reactive, ref } from '@ustra/nuxt'
 
 const data2 = reactive([
   { value: 1, label: 'test1' },

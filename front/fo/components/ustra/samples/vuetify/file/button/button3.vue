@@ -16,7 +16,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { shallowRef } from '#ustra/nuxt'
+import { shallowRef } from '@ustra/nuxt'
 
 // @ts-ignore
 import button3 from './md/button3.md'

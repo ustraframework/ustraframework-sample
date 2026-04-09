@@ -8,5 +8,5 @@
 </template>
 <script lang="ts" setup>
 import markdown3 from './md/markdown3.md'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 </script>

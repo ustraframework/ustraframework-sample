@@ -29,7 +29,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { useOnError } from '#ustra/nuxt/composables'
+import { useOnError } from '@ustra/nuxt/composables'
 
 // @ts-ignore
 import doc1 from './md/error1-1.md'

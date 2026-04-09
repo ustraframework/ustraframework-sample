@@ -16,12 +16,12 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '#ustra/nuxt'
-import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { IfsCriteria, Ifs } from '#ustra/nuxt/management'
-import { useUstraInterfaceService } from '#ustra/nuxt/management/services/interface'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables/grid'
+import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '@ustra/nuxt'
+import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { IfsCriteria, Ifs } from '@ustra/nuxt/management'
+import { useUstraInterfaceService } from '@ustra/nuxt/management/services/interface'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables/grid'
 
 const infService = useUstraInterfaceService()
 

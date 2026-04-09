@@ -2,9 +2,9 @@
   <UWjComboBox v-bind="$attrs" :itemsSource="itemsSource" v-model="comboValue" displayMemberPath="display" selectedValuePath="value" />
 </template>
 <script lang="ts" setup>
-import { defineProps, withDefaults, watch, defineOptions } from '#ustra/nuxt'
-import { UWjComboBox } from '#ustra/nuxt-wijmo/components'
-import { useComboComponent, CodeComboBoxProps, CodeItem } from '#ustra/nuxt-wijmo/management/components/composables/code-combo'
+import { defineProps, withDefaults, watch, defineOptions } from '@ustra/nuxt'
+import { UWjComboBox } from '@ustra/nuxt-wijmo/components'
+import { useComboComponent, CodeComboBoxProps, CodeItem } from '@ustra/nuxt-wijmo/management/components/composables/code-combo'
 
 defineOptions({
   name: 'ManagementCodeComboBox',

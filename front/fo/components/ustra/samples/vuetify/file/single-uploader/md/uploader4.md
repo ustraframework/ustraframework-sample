@@ -8,7 +8,7 @@
   <UButton text="Validate" @click="() => validationGroup.validate()" />
 </template>
 <script lang="ts" setup>
-import { UValidationGroup } from '#ustra/nuxt-wijmo/components'
+import { UValidationGroup } from '@ustra/nuxt-wijmo/components'
 
 const validationGroup = ref<InstanceType<typeof UValidationGroup>>()
 const fileId = ref(null)

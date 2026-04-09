@@ -14,7 +14,7 @@ useWjTreeSelectedItemData 메소드를 사용하여 tree selection을 동적으�
   <div>selectedItem : {{ treeViewSelection }}</div>
 </template>
 <script lang="ts" setup>
-import { TreeView } from '@grapecity/wijmo.nav'
+import { TreeView } from '@mescius/wijmo.nav'
 
 type TreeData = {
   text: string

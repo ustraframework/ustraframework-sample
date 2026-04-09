@@ -43,12 +43,12 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { defineProps, withDefaults, watchEffect, watch, ref, defineExpose, nextTick } from '#ustra/nuxt'
-import { UButtonBar } from '#ustra/nuxt-vuetify/components'
-import { UButton } from '#ustra/nuxt-wijmo/components'
-import { Code, useUstraCodeService } from '#ustra/nuxt/management'
-import { WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { addWjGridEventHandler, useWjGridSelectionData } from '#ustra/nuxt-wijmo/composables'
+import { defineProps, withDefaults, watchEffect, watch, ref, defineExpose, nextTick } from '@ustra/nuxt'
+import { UButtonBar } from '@ustra/nuxt-vuetify/components'
+import { UButton } from '@ustra/nuxt-wijmo/components'
+import { Code, useUstraCodeService } from '@ustra/nuxt/management'
+import { WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { addWjGridEventHandler, useWjGridSelectionData } from '@ustra/nuxt-wijmo/composables'
 
 const codeService = useUstraCodeService()
 

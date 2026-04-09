@@ -32,11 +32,11 @@
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import doc1 from './md/date-period2.md'
-import UVDatePeriodBox from '#ustra/nuxt-vuetify/components/date-period/u-v-date-period-box.vue';
+import UVDatePeriodBox from '@ustra/nuxt-vuetify/components/date-period/u-v-date-period-box.vue';
 
 const dateArr2 = ref(['20220507', '20221009'])
 const dateArr3 = ref(['20220507220912', '20221009220912'])

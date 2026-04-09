@@ -233,7 +233,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '#ustra/nuxt'
+import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -250,8 +250,8 @@ import {
   UTextBox,
   UPhoneNoBox,
   UValidationGroup,
-} from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
+} from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
 import {
   useUstraCodeValue,
   useUstraUserService,
@@ -260,9 +260,9 @@ import {
   useUstraUserApprovalService,
   useUstraLoginService,
   useUstraAuthService,
-} from '#ustra/nuxt/management'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { UserCriteria, User, AuthGroup, UserApproval, useUstraManagementUser } from '#ustra/nuxt/management'
+} from '@ustra/nuxt/management'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { UserCriteria, User, AuthGroup, UserApproval, useUstraManagementUser } from '@ustra/nuxt/management'
 import ApprovalPopup from '../../common/approval-popup.vue'
 import toNumber from 'lodash/toNumber'
 

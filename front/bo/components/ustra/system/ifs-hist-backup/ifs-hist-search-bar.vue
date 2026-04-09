@@ -52,10 +52,10 @@
   <!-- </UButtonBar> -->
 </template>
 <script setup lang="ts">
-import { onMounted, reactive, ref, nextTick, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '#ustra/nuxt'
-import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { IfsHistCriteria } from '#ustra/nuxt/management'
+import { onMounted, reactive, ref, nextTick, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '@ustra/nuxt'
+import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { IfsHistCriteria } from '@ustra/nuxt/management'
 // import querystring from 'querystring'
 // import { Component, Emit, PropSync, Watch } from 'vue-property-decorator'
 // import { UstraBoComponent } from '@ustra/nuxt-mng-bo/src/components/ustra-bo-component'

@@ -14,7 +14,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import doc1 from './md/focus1.md'

@@ -23,8 +23,8 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import UVCodeCheckGroupBox from '#ustra/nuxt-vuetify/management/components/check-box/u-v-code-check-group-box.vue'
+import { ref } from '@ustra/nuxt'
+import UVCodeCheckGroupBox from '@ustra/nuxt-vuetify/management/components/check-box/u-v-code-check-group-box.vue'
 
 // @ts-ignore
 import check1 from './md/check1.md'

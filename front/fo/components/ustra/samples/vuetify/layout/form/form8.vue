@@ -51,10 +51,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 import './style/form.scss'
 import form8 from './md/form8.md'
-import UField from '#ustra/nuxt-vuetify/components/form/u-field.vue'
+import UField from '@ustra/nuxt-vuetify/components/form/u-field.vue'
 const checked = ref(true)
 </script>
 

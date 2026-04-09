@@ -177,7 +177,7 @@
 </template>
 
 <script setup lang="ts">
-import { isRef, reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge, shallowRef } from '#ustra/nuxt'
+import { isRef, reactive, defineExpose, ref, useOnError, defineEmits, nextTick, defineProps, computed, useDeepMerge, shallowRef } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -197,15 +197,15 @@ import {
   WjFlexGridCellTemplate,
   WjTabPanel,
   WjTab,
-} from '#ustra/nuxt-wijmo/components'
-import { FormMode } from '#ustra/core/data/models/base'
+} from '@ustra/nuxt-wijmo/components'
+import { FormMode } from '@ustra/core/data/models/base'
 import IfsKeyForm from './ifs-key-form.vue'
-import { IfsCriteria, Ifs } from '#ustra/nuxt/management'
-import { UCodeMultiComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { useUstraInterfaceService } from '#ustra/nuxt/management/services/interface'
-import { useCollectionView, isValidCollectionView } from '#ustra/nuxt-wijmo/composables/grid'
+import { IfsCriteria, Ifs } from '@ustra/nuxt/management'
+import { UCodeMultiComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { useUstraInterfaceService } from '@ustra/nuxt/management/services/interface'
+import { useCollectionView, isValidCollectionView } from '@ustra/nuxt-wijmo/composables/grid'
 import { FlexGrid } from '@grapecity/wijmo.grid'
-import { watchValidationData } from '#ustra/nuxt-wijmo/composables/validation'
+import { watchValidationData } from '@ustra/nuxt-wijmo/composables/validation'
 import { ComboBox, ClickAction } from '@grapecity/wijmo.input'
 
 const infService = useUstraInterfaceService()

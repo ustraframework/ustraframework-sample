@@ -8,10 +8,10 @@
           </UField>
 
           <UField label="메시지 유형 ID" :totalWidth="500">
-            <WjComboBox 
-                        :itemsSource="msgTypeComboItems" 
-                        v-model="searchActions.criteria.msgTypeId" 
-                        selectedValuePath="value" displayMemberPath="text" />     
+            <WjComboBox
+                        :itemsSource="msgTypeComboItems"
+                        v-model="searchActions.criteria.msgTypeId"
+                        selectedValuePath="value" displayMemberPath="text" />
           </UField>
 
           <UField label="상태" :totalWidth="500">
@@ -87,11 +87,11 @@
                   <UFieldRow>
                     <UField label="발송 요청" required v-if="formActions.isNew.value">
                       <URadioGroupBox v-model="sendRqFlag" :itemsSource="sendRqRadioItems" />
-                      <UDateBox 
+                      <UDateBox
                         v-if="sendRqFlag == 2"
-                        v-model="sendRqDt" 
-                        mode="datetime" 
-                        :isRequired="sendRqFlag == 2" 
+                        v-model="sendRqDt"
+                        mode="datetime"
+                        :isRequired="sendRqFlag == 2"
                         :validation="{ rules: [formActions.validateSendRqDt] }" />
                       <UMessage v-if="sendRqFlag == 2" type="info" message="예약일시 기본값은 한시간 후입니다." />
                     </UField>
@@ -126,18 +126,18 @@
 
                   <UFieldRow>
                     <UField label="메시지 유형 ID" required>
-                      <WjComboBox 
+                      <WjComboBox
                         :isReadOnly="!formActions.isNew.value"
-                        :itemsSource="msgTypeComboItems" 
-                        v-model="formActions.inputData.msgTypeId" 
-                        selectedValuePath="value" displayMemberPath="text" />     
+                        :itemsSource="msgTypeComboItems"
+                        v-model="formActions.inputData.msgTypeId"
+                        selectedValuePath="value" displayMemberPath="text" />
                     </UField>
                   </UFieldRow>
 
                   <UFieldRow>
                     <UField label="메시지 제목" >
-                      <WjInputMask 
-                        v-model="formActions.inputData.title" 
+                      <WjInputMask
+                        v-model="formActions.inputData.title"
                         :isReadOnly="!formActions.isNew.value"
                         :isRequired="false"
                         :validation="{ rules: [formActions.validateMaxTitleLen] }"  />
@@ -146,10 +146,10 @@
 
                   <UFieldRow>
                     <UField label="메시지 내용" required>
-                      <UTextBox 
-                        type="textarea" 
-                        :isRequired="true" 
-                        v-model="formActions.inputData.content" 
+                      <UTextBox
+                        type="textarea"
+                        :isRequired="true"
+                        v-model="formActions.inputData.content"
                         :readonly="!formActions.isNew.value"
                         :validation="{ rules: [formActions.validateMaxContentLen] }"
                         />
@@ -158,18 +158,18 @@
 
                   <UFieldRow>
                     <UField label="발신자" required>
-                      <WjInputMask 
+                      <WjInputMask
                         v-model="formActions.inputData.source"
-                        :isRequired="true"  
+                        :isRequired="true"
                         :isReadOnly="!formActions.isNew.value"/>
                     </UField>
                   </UFieldRow>
 
                   <UFieldRow>
                     <UField label="수신자" required>
-                      <WjInputMask 
-                        v-model="formActions.inputData.target" 
-                        :isRequired="true" 
+                      <WjInputMask
+                        v-model="formActions.inputData.target"
+                        :isRequired="true"
                         :isReadOnly="!formActions.isNew.value"
                         :validation="{ rules: [formActions.validateMaxReceiverNum] }"/>
                     </UField>
@@ -189,11 +189,11 @@
 
                   <UFieldRow v-show="attachmentUseYn">
                     <UField label="첨부 파일">
-                     <UMultiFileUploader 
-                        ref="uploader" 
+                     <UMultiFileUploader
+                        ref="uploader"
                         :fileGroupId="fileGroupId"
                         v-model:fileId="formActions.inputData.fileId"
-                        :readonly="!formActions.isNew.value" 
+                        :readonly="!formActions.isNew.value"
                         :validation="{ rules: [formActions.validateAttMaxNum, formActions.validateAttFormat, formActions.validateAttMaxSz] }"
                      />
                     </UField>
@@ -201,15 +201,15 @@
 
                   <UFieldRow>
                     <UField label="입력 정보" v-if="!formActions.isNew.value">
-                        {{formActions.inputData.regUsrId}} 
-                        / {{formActions.inputData.regUsrIp}} 
+                        {{formActions.inputData.regUsrId}}
+                        / {{formActions.inputData.regUsrIp}}
                         / {{ $ustra.utils.formatting.datetime(formActions.inputData.regDttm) }}
                     </UField>
                   </UFieldRow>
                   <UFieldRow>
                     <UField label="수정 정보" v-if="!formActions.isNew.value">
-                        {{formActions.inputData.updUsrId}} 
-                        / {{formActions.inputData.updUsrIp}} 
+                        {{formActions.inputData.updUsrId}}
+                        / {{formActions.inputData.updUsrIp}}
                         / {{ $ustra.utils.formatting.datetime(formActions.inputData.updDttm, 'yyyy-MM-dd hh:mm:ss') }}
                     </UField>
                   </UFieldRow>
@@ -246,7 +246,7 @@
                   @click="() => formActions.remove()"
                 />
               </UButtonBox>
-            </UItem> 
+            </UItem>
           </UBox>
         </UItem>
       </UBox>
@@ -255,7 +255,7 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch, onMounted } from '#ustra/nuxt'
+import { reactive, ref, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch, onMounted } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -274,13 +274,13 @@ import {
   UValidationGroup,
   WjInputNumber,
   URadioGroupBox
-} from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { useUstraCodeValue, useUstraMessageService } from '#ustra/nuxt/management'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { MessageCriteria, Message, MessageRqVo } from '#ustra/nuxt/management/models/msg'
-import { useUstraMessageTypeService, useUstraCodeList } from '#ustra/nuxt/management'
-import UMultiFileUploader from '#ustra/nuxt-wijmo/management/components/file/u-multi-file-uploader.vue'
+} from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { useUstraCodeValue, useUstraMessageService } from '@ustra/nuxt/management'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { MessageCriteria, Message, MessageRqVo } from '@ustra/nuxt/management/models/msg'
+import { useUstraMessageTypeService, useUstraCodeList } from '@ustra/nuxt/management'
+import UMultiFileUploader from '@ustra/nuxt-wijmo/management/components/file/u-multi-file-uploader.vue'
 
 const ustraMessageService = useUstraMessageService()
 const ustraMessageTypeService = useUstraMessageTypeService()
@@ -342,7 +342,7 @@ const listActions = (() => {
       endSendRqDt: null
     })
     const newMsgIds = newMsgs.map(i=> i.msgId)
-    
+
     if (newMsgIds.length > 0) {
       newMsgIds.sort(function(a, b)  {
         return b - a;
@@ -404,7 +404,7 @@ const formActions = (() => {
       return true
     }
     const msgType = msgTypes.find(i=> i.msgTypeId == formActions.inputData.msgTypeId);
-  
+
     if(!formActions.inputData.title || msgType.maxTitleLen == 0) return true;
     if(formActions.inputData.title.length > msgType.maxTitleLen) {
       return `제목은 ${msgType.maxTitleLen}자 이하로 입력하세요.`
@@ -417,7 +417,7 @@ const formActions = (() => {
       return true
     }
     const msgType = msgTypes.find(i=> i.msgTypeId == formActions.inputData.msgTypeId);
-  
+
     if(!formActions.inputData.content || msgType.maxContentLen == 0) return true;
     if(formActions.inputData.content.length > msgType.maxContentLen) {
       return `본문은 ${msgType.maxContentLen}자 이하로 입력하세요.`
@@ -430,7 +430,7 @@ const formActions = (() => {
       return true
     }
     const msgType = msgTypes.find(i=> i.msgTypeId == formActions.inputData.msgTypeId);
-  
+
     if(!formActions.inputData.target || msgType.maxReceiverNum == 0) return true;
     const targets = formActions.inputData.target.split(',');
     if(targets.length > msgType.maxReceiverNum) {
@@ -457,7 +457,7 @@ const formActions = (() => {
     if(isFormatErr){
       return `첨부파일은 ${msgType.attachmentFormat} 이외의 형식은 첨부 할 수 없습니다.`
     }
-  }  
+  }
 
   async function validateAttMaxSz() {
     const msgType = msgTypes.find(i=> i.msgTypeId == formActions.inputData.msgTypeId)
@@ -470,7 +470,7 @@ const formActions = (() => {
     if(totalSize > msgType.attachmentMaxSz){
       return `첨부파일 총 용량은 ${msgType.attachmentMaxSz} B를 초과 할 수 없습니다.`
     }
-  }  
+  }
 
   async function validateSendRqDt() {
     if(!sendRqDt){
@@ -538,7 +538,7 @@ const formActions = (() => {
         }
 
         const saveData = useDeepMerge({}, inputData)
-        
+
         if (isNew.value) {
           const fileResult = await uploader.value.upload()
           saveData.fileId = fileResult.fileId;
@@ -567,7 +567,7 @@ const formActions = (() => {
     if (await confirm('재발송 요청을 하시겠습니까?')) {
       await ustraMessageService.resendMsg(inputData.msgId)
       listActions.whenUpdated(inputData.msgId)
-    } 
+    }
   }
 
   async function cancel() {
@@ -581,7 +581,7 @@ const formActions = (() => {
 
   onBeforeMount(() => init())
 
-  return { inputData, init, validationGroup, save, isNew, load, remove, cancel, resend, 
+  return { inputData, init, validationGroup, save, isNew, load, remove, cancel, resend,
     validateMaxTitleLen, validateMaxContentLen, validateMaxReceiverNum, validateSendRqDt, validateAttMaxNum, validateAttFormat, validateAttMaxSz }
 })()
 

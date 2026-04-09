@@ -22,8 +22,8 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { WjInputMask } from '#ustra/nuxt-wijmo/components'
-import { DaumPostResult } from '#ustra/nuxt/externals/daum/post'
+import { WjInputMask } from '@ustra/nuxt-wijmo/components'
+import { DaumPostResult } from '@ustra/nuxt/externals/daum/post'
 
 const inputData = reactive({
   zipNo: null,

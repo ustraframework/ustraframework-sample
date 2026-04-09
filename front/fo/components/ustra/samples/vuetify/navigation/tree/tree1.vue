@@ -20,10 +20,10 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-// import { WjTreeView } from '#ustra/nuxt-wijmo/components'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-// import { TreeView } from '@grapecity/wijmo.nav'
+import { ref } from '@ustra/nuxt'
+// import { WjTreeView } from '@ustra/nuxt-wijmo/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+// import { TreeView } from '@mescius/wijmo.nav'
 
 // @ts-ignore
 import treeDesc from './md/tree1.md'

@@ -23,8 +23,8 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '#ustra/nuxt-wijmo/components'
+import { ref } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '@ustra/nuxt-wijmo/components'
 import BatchTask from './task/index.vue'
 import BatchHist from './hist/index.vue'
 import BatchManager from './manager/index.vue'

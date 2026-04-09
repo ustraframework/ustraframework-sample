@@ -6,5 +6,5 @@
 </template>
 <script lang="ts" setup>
 import markdown2 from './md/markdown2.md'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 </script>

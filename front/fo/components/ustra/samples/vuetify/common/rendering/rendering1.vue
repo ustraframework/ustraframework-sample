@@ -10,14 +10,14 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref, getCurrentInstance, h } from '#ustra/nuxt'
+import { ref, getCurrentInstance, h } from '@ustra/nuxt'
 import RenderPopup from './popup/render-popup.vue'
 
 // @ts-ignore
 import doc1 from './md/rendering1-1.md'
 
 // @ts-ignore
-import doc2 from './md/rendering2-2.md'
+import doc2 from './md/rendering2-2.js'
 
 const render = () => {
   return h(VBtn, {

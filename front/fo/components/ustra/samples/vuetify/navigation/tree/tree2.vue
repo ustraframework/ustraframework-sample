@@ -19,12 +19,12 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { TreeView } from '@grapecity/wijmo.nav'
-import { WjTreeView } from '#ustra/nuxt-wijmo/components'
-import { useWjTreeSelectedItemData } from '#ustra/nuxt-wijmo/composables'
+import { ref } from '@ustra/nuxt'
+import { TreeView } from '@mescius/wijmo.nav'
+import { WjTreeView } from '@ustra/nuxt-wijmo/components'
+import { useWjTreeSelectedItemData } from '@ustra/nuxt-wijmo/composables'
 
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import doc1 from './md/tree2.md'

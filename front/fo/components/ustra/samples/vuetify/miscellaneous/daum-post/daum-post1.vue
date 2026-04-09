@@ -29,10 +29,10 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { DaumPostResult, DaumPostScreenOptions } from '#ustra/nuxt/externals/daum/post'
-import { reactive, ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UDaumPostPopup from '#ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
+import { DaumPostResult, DaumPostScreenOptions } from '@ustra/nuxt/externals/daum/post'
+import { reactive, ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UDaumPostPopup from '@ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
 
 // @ts-ignore
 import daumPost1_1 from './md/daum-post1-1.md'

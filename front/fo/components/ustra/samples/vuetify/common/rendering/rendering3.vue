@@ -13,7 +13,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref, getCurrentInstance } from '#ustra/nuxt'
+import { ref, getCurrentInstance } from '@ustra/nuxt'
 
 // @ts-ignore
 import doc1 from './md/rendering3-1.md'

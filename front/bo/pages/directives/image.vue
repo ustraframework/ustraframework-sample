@@ -12,7 +12,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { WjFlexGrid, WjFlexGridCellTemplate, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
+import { WjFlexGrid, WjFlexGridCellTemplate, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
 
 const data = [
   { path: 'http://localhost:30001/1.jpg' },

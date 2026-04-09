@@ -19,13 +19,13 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UDatepicker from '#ustra/nuxt-vuetify/components/form/u-datepicker.vue'
-import UVCheckGroupBox from '#ustra/nuxt-vuetify/components/check-box/u-v-check-group-box.vue'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UDatepicker from '@ustra/nuxt-vuetify/components/form/u-datepicker.vue'
+import UVCheckGroupBox from '@ustra/nuxt-vuetify/components/check-box/u-v-check-group-box.vue'
 
 // @ts-ignore
-import doc1 from './md/datepicker2.md'
+import doc1 from './md/datepicker2.js'
 
 const value = ref(null)
 const states = ref([false, false])

@@ -21,7 +21,7 @@
 
 // @ts-ignore
 import uploader1 from './md/uploader1.md'
-import UVSingleFileUploader from '#ustra/nuxt-vuetify/management/components/file/u-v-single-file-uploader.vue'
+import UVSingleFileUploader from '@ustra/nuxt-vuetify/management/components/file/u-v-single-file-uploader.vue'
 definePageMeta({
   auth: {
     required: false,

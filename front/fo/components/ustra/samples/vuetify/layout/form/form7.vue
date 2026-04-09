@@ -38,7 +38,7 @@
 <script setup lang="ts">
 import './style/form.scss'
 import form7 from './md/form7.md'
-import UField from '#ustra/nuxt-vuetify/components/form/u-field.vue'
+import UField from '@ustra/nuxt-vuetify/components/form/u-field.vue'
 </script>
 
 <style scoped></style>

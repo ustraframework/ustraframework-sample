@@ -5,7 +5,7 @@
   <VBtn @click="() => createFormData()">Form Data</VBtn>
 </template>
 <script lang="ts" setup>
-import UVSingleFileUploader from '#ustra/nuxt-vuetify/management/components/file/u-v-single-file-uploader.vue'
+import UVSingleFileUploader from '@ustra/nuxt-vuetify/management/components/file/u-v-single-file-uploader.vue'
 
 const fileId = ref(null)
 const uploader = ref<InstanceType<typeof UVSingleFileUploader>>(null)

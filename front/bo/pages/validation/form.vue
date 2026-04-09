@@ -89,7 +89,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { WjInputMask, UValidationGroup, WjComboBox, WjListBox } from '#ustra/nuxt-wijmo/components'
+import { WjInputMask, UValidationGroup, WjComboBox, WjListBox } from '@ustra/nuxt-wijmo/components'
 
 const comboItems = reactive([
   { value: null, text: '선택하세요.' },

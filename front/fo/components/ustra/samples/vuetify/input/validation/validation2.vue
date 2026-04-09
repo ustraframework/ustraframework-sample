@@ -57,10 +57,10 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, defineExpose } from '#ustra/nuxt'
-import { UFieldSet, UFieldRow, UField } from '#ustra/nuxt-vuetify/components'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import { useUstraLoginService } from '#ustra/nuxt/management/composables'
+import { ref, reactive, defineExpose } from '@ustra/nuxt'
+import { UFieldSet, UFieldRow, UField } from '@ustra/nuxt-vuetify/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import { useUstraLoginService } from '@ustra/nuxt/management/composables'
 
 // @ts-ignore
 import validation2_1 from './md/validation2-1.md'

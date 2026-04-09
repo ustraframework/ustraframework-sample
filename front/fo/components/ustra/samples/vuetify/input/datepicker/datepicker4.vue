@@ -23,12 +23,12 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref, shallowRef } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UDatepicker from '#ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
+import { ref, shallowRef } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UDatepicker from '@ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
 
 // @ts-ignore
-import doc1 from './md/datepicker4.md'
+import doc1 from './md/datepicker4.js'
 
 const value = ref(null)
 const validationGroup = shallowRef<InstanceType<typeof UValidationGroup>>()

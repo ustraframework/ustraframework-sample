@@ -15,9 +15,9 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { DaumPostResult } from '#ustra/nuxt/externals/daum/post'
-import UDaumPostPopup from '#ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
+import { ref } from '@ustra/nuxt'
+import { DaumPostResult } from '@ustra/nuxt/externals/daum/post'
+import UDaumPostPopup from '@ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
 
 // @ts-ignore
 import daumPost3 from './md/daum-post3.md'

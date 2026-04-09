@@ -59,10 +59,10 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, watch, onMounted, useOnError, provide, inject, shallowRef, computed } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn, WjFlexGridCellTemplate } from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables/grid'
-import { BatchHistCriteria, BatchHist, useUstraBatchHistService } from '#ustra/nuxt/management'
+import { ref, reactive, watch, onMounted, useOnError, provide, inject, shallowRef, computed } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn, WjFlexGridCellTemplate } from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables/grid'
+import { BatchHistCriteria, BatchHist, useUstraBatchHistService } from '@ustra/nuxt/management'
 import LogPopup from './popup.vue'
 const service = useUstraBatchHistService()
 const searchAction = (function () {

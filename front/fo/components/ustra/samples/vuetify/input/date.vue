@@ -105,18 +105,18 @@ definePageMeta({
   layout: 'samples',
 })
 import { ref } from 'vue'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
-import date1 from './md/date1.md'
+import date1 from './md/date1.js'
 // @ts-ignore
-import date2 from './md/date2.md'
+import date2 from './md/date2.js'
 // @ts-ignore
-import date3 from './md/date3.md'
+import date3 from './md/date3.js'
 // @ts-ignore
-import date4 from './md/date4.md'
+import date4 from './md/date4.js'
 // @ts-ignore
-import date5 from './md/date5.md'
+import date5 from './md/date5.js'
 
 const inputValue1 = ref(null)
 const inputValue2 = ref('20220507')

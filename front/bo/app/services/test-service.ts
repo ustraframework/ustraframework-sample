@@ -4,7 +4,7 @@
  * @packageDocumentation
  */
 
-import { baseModels, apiModels, interfaceModels, paginationModels } from '#ustra/core/data'
+import { baseModels, apiModels, interfaceModels, paginationModels } from '@ustra/core/data'
 
 export const useSampleService = defineUstraService(({ $ustra, appProps, api, nuxtApp }) => {
   async function getList(data: any) {

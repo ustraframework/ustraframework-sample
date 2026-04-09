@@ -27,8 +27,8 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '#ustra/nuxt-wijmo/components'
+import { ref } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '@ustra/nuxt-wijmo/components'
 import UserAuthStt from './user-auth-stt/index.vue'
 import PeriodAuth from './period-auth/index.vue'
 import CurrentAuthStt from './current-auth-stt/index.vue'

@@ -23,12 +23,12 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { TreeView } from '@grapecity/wijmo.nav'
-import { WjTreeView } from '#ustra/nuxt-wijmo/components'
-import { useWjTreeCheckedItems } from '#ustra/nuxt-wijmo/composables'
+import { ref } from '@ustra/nuxt'
+import { TreeView } from '@mescius/wijmo.nav'
+import { WjTreeView } from '@ustra/nuxt-wijmo/components'
+import { useWjTreeCheckedItems } from '@ustra/nuxt-wijmo/composables'
 
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import tree3 from './md/tree3.md'

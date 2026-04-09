@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import textBox2 from './md/textbox2.md'

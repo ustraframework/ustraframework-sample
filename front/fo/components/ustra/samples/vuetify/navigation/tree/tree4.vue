@@ -34,10 +34,10 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { WjTreeView, UButton } from '#ustra/nuxt-wijmo/components'
-import { useWijmoTreeView } from '#ustra/nuxt-wijmo/composables'
+import { WjTreeView, UButton } from '@ustra/nuxt-wijmo/components'
+import { useWijmoTreeView } from '@ustra/nuxt-wijmo/composables'
 
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import doc1 from './md/tree4-1.md'

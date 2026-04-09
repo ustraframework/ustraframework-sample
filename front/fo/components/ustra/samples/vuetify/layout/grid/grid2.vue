@@ -23,8 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { reactive } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 import grid2 from './md/grid2.md'
 //요청 URL: http://guide-dx.ustraframework.kro.kr/api/system/initializing-data.json
 //요청 URL: http://guide-dx.ustraframework.kro.kr/api/system/code/group

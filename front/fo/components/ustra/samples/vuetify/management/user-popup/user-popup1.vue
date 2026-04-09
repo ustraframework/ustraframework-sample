@@ -19,8 +19,8 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import UVUserPopup from '#ustra/nuxt-vuetify/management/components/popup/u-v-user-popup.vue'
+import { ref } from '@ustra/nuxt'
+import UVUserPopup from '@ustra/nuxt-vuetify/management/components/popup/u-v-user-popup.vue'
 
 // @ts-ignore
 import userPopup1 from './md/user-popup1.md'

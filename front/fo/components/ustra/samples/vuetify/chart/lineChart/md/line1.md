@@ -27,8 +27,8 @@
   </WjFlexChart>
 </template>
 <script setup lang="ts">
-import { WjFlexChart, WjFlexChartLegend, WjFlexChartAxis, WjFlexChartSeries, WjFlexChartAnimation } from '#ustra/nuxt-wijmo/components'
-import { reactive } from '#ustra/nuxt'
+import { WjFlexChart, WjFlexChartLegend, WjFlexChartAxis, WjFlexChartSeries, WjFlexChartAnimation } from '@ustra/nuxt-wijmo/components'
+import { reactive } from '@ustra/nuxt'
 const data = reactive([
   { month: 'Jan', mean: -5.2, high: -0.8, low: -9.7 },
   { month: 'Feb', mean: -3.4, high: 1.4, low: -8.2 },

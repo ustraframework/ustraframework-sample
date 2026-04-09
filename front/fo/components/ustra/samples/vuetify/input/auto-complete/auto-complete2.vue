@@ -16,8 +16,8 @@
   </USampleContentContainer>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { USampleContentContainer } from '#ustra/nuxt-vuetify/samples'
+import { ref } from '@ustra/nuxt'
+import { USampleContentContainer } from '@ustra/nuxt-vuetify/samples'
 // @ts-ignore
 import doc1 from './md/auto-complete2-1.md'
 

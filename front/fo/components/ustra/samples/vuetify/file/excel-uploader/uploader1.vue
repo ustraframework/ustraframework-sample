@@ -11,9 +11,9 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref, shallowRef } from '#ustra/nuxt'
+import { ref, shallowRef } from '@ustra/nuxt'
 
-import { useOnError } from '#ustra/nuxt/composables'
+import { useOnError } from '@ustra/nuxt/composables'
 
 // @ts-ignore
 import uploader1_1 from './md/uploader1-1.md'

@@ -1,7 +1,7 @@
 커스톰 팝업 창 등을 사용하기 위해 openDaumPostScreen API를 제공한다.
 - API Document : http://guide.ustraframework.kro.kr/docs/node/3.0/nuxt/functions/externals_daum_post.openDaumPostScreen.html
 ```typescript
-import { openDaumPostScreen } from '#ustra/nuxt/externals/daum/post'
+import { openDaumPostScreen } from '@ustra/nuxt/externals/daum/post'
 ```
 
 API Document에서 안내하는대로 주소 검색 화면을 Embed 할 HTMLElement와 DaumPostScreenOptions 유형의 Option 값을 수신하며, DaumPostScreenOptions의 onSelected 속성을 통해 결과 값을 수신 후, 타 컴포넌트로 전달할 수 있다.
@@ -27,12 +27,12 @@ openDaumPostScreen(el, {
   </slot>
 </template>
 <script lang="ts" setup>
-import { useHead } from '#app'
-import { ref } from '#ustra/nuxt'
+import { useHead } from 'nuxt/app'
+import { ref } from '@ustra/nuxt'
 import { useVModel } from '@vueuse/core'
 import toNumber from 'lodash/toNumber'
 import UPopup from '../dialog/u-popup.vue'
-import { openDaumPostScreen, DaumPostResult, DaumPostScreenOptions } from '#ustra/nuxt/externals/daum/post'
+import { openDaumPostScreen, DaumPostResult, DaumPostScreenOptions } from '@ustra/nuxt/externals/daum/post'
 
 const props = withDefaults(defineProps<Props>(), {
   options: () => {
@@ -64,7 +64,7 @@ useHead({
 })
 </script>
 <script lang="ts">
-import { Ref } from '#ustra/nuxt'
+import { Ref } from '@ustra/nuxt'
 
 export interface Props {
   /**
@@ -221,7 +221,7 @@ UDaumPostPopup은 위의 코드와 같이 slot과 useDaumPostPopup 를 통한 �
 </template>
 <script lang="ts" setup>
 import { UDaumPostPopup } from '#components'
-import { Props } from '#ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
+import { Props } from '@ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
 
 const props = defineProps<Props>()
 const modelValue = useVModel(props, 'modelValue')
@@ -245,7 +245,7 @@ API를 사용한 커스토마이징은 아래와 같다.
   </UPopup>
 </template>
 <script lang="ts" setup>
-import { Props, Emits, useDaumPostPopup } from '#ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
+import { Props, Emits, useDaumPostPopup } from '@ustra/nuxt-vuetify/components/daum/u-daum-post-popup.vue'
 
 const props = withDefaults(defineProps<Props>(), {
   options: () => {

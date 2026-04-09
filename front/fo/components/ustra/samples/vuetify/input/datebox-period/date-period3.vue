@@ -16,10 +16,10 @@
 </template>
 <script lang="ts" setup>
 import { ref, reactive } from 'vue'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 // @ts-ignore
 import doc3 from './md/date-period3.md'
-import UVDatePeriodBox from '#ustra/nuxt-vuetify/components/date-period/u-v-date-period-box.vue';
+import UVDatePeriodBox from '@ustra/nuxt-vuetify/components/date-period/u-v-date-period-box.vue';
 
 const dateArr6 = ref(['20220507', '20221009'])
 

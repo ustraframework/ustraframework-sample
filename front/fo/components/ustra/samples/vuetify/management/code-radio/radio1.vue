@@ -27,8 +27,8 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref, reactive } from '#ustra/nuxt'
-import UVCodeRadioGroupBox from '#ustra/nuxt-vuetify/management/components/radio/u-v-code-radio-group-box.vue'
+import { ref, reactive } from '@ustra/nuxt'
+import UVCodeRadioGroupBox from '@ustra/nuxt-vuetify/management/components/radio/u-v-code-radio-group-box.vue'
 
 // @ts-ignore
 import radio1 from './md/radio1.md'

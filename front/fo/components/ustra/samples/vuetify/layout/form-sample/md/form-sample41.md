@@ -46,8 +46,8 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from '#ustra/nuxt'
-import { WjComboBox } from '@grapecity/wijmo.vue2.input'
+import { reactive, ref } from '@ustra/nuxt'
+import { WjComboBox } from '@mescius/wijmo.vue2.input'
 
 const value = ref(null)
 

@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
 // @ts-ignore
 import textBox6 from './md/textbox6.md'

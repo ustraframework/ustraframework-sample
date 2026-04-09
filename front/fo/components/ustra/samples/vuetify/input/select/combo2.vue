@@ -39,7 +39,7 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { shallowRef, ref, reactive } from '#ustra/nuxt'
+import { shallowRef, ref, reactive } from '@ustra/nuxt'
 
 // @ts-ignore
 import combo2_1 from './md/combo2-1.md'

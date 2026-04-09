@@ -11,7 +11,7 @@
 </template>
 <script lang="ts" setup>
 import { ref, reactive, computed } from 'vue'
-import { useDatePeriod } from '#ustra/nuxt-wijmo/composables/datePeriod'
+import { useDatePeriod } from '@ustra/nuxt-wijmo/composables/datePeriod'
 
 const dateArr11 = ref(['20220507', '20221009'])
 

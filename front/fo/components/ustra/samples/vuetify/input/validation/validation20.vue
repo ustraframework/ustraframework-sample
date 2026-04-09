@@ -16,9 +16,9 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref, defineComponent } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import { UValidationGroup } from '#ustra/nuxt-vuetify/components'
+import { ref, defineComponent } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import { UValidationGroup } from '@ustra/nuxt-vuetify/components'
 
 // @ts-ignore
 import doc1 from './md/validation20-1.md'

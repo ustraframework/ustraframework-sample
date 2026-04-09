@@ -7,16 +7,6 @@
     "android >= 4.4",
     "IE >= 11"
   ],
-  "imports": {
-    "#ustra/core": "@ustra/core/src",
-    "#ustra/core/*": "@ustra/core/src/*",
-    "#ustra/h3": "@ustra/h3/src",
-    "#ustra/h3/*": "@ustra/h3/src/*",
-    "#ustra/nuxt": "@ustra/nuxt/src",
-    "#ustra/nuxt/*": "@ustra/nuxt/src/*",
-    "#ustra/nuxt-vuetify": "@ustra/nuxt-vuetify/src",
-    "#ustra/nuxt-vuetify/*": "@ustra/nuxt-vuetify/src/*"
-  },
   "scripts": {
     "dev": "cross-env CONFIG_ENV=local PORT=9912 nuxi dev",
     "build:dev": "cross-env CONFIG_ENV=dev nuxi build",
@@ -36,5 +26,12 @@
     "@ustra/nuxt-vuetify": "snapshot-3.5.0",
     "@ustra/nuxt-wijmo": "snapshot-3.5.0",
     "animejs": "3.2.2"
+  },
+  "resolutions": {
+    "uuid": "11.0.2"
+  },
+  "devDependencies": {
+    "sass-embedded": "1.72.0",
+    "vite-plugin-compression2": "2.2.0"
   }
 }

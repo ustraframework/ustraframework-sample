@@ -37,8 +37,8 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UCkEditor5 } from '#ustra/nuxt-ckeditor5/components'
+import { ref } from '@ustra/nuxt'
+import { UCkEditor5 } from '@ustra/nuxt-ckeditor5/components'
 
 // @ts-ignore
 import doc1 from './md/editor4-1.md'

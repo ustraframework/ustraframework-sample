@@ -20,7 +20,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 // @ts-ignore
 import youtube01 from './md/youtube01.md'
 

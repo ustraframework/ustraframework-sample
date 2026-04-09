@@ -26,7 +26,7 @@
   </VChip>
 </template>
 <script lang="ts" setup>
-import { WjTreeView, UButton } from '#ustra/nuxt-wijmo/components'
+import { WjTreeView, UButton } from '@ustra/nuxt-wijmo/components'
 
 type TreeData = {
   id: number

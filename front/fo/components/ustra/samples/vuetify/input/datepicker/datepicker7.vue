@@ -32,12 +32,12 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref, onMounted, watch } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UDatepicker from '#ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
+import { ref, onMounted, watch } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UDatepicker from '@ustra/nuxt-vuetify/components/datepicker/u-datepicker.vue'
 
 // @ts-ignore
-import doc1 from './md/datepicker7.md'
+import doc1 from './md/datepicker7.js'
 
 const value = ref(null)
 onMounted(() => {

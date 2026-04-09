@@ -55,9 +55,9 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, defineExpose, defineProps, computed, nextTick } from '#ustra/nuxt'
-import { Auth, useUstraAuthService, AuthMenuTreeData } from '#ustra/nuxt/management'
-import { useDeepMerge } from '#ustra/nuxt/composables'
+import { ref, reactive, defineExpose, defineProps, computed, nextTick } from '@ustra/nuxt'
+import { Auth, useUstraAuthService, AuthMenuTreeData } from '@ustra/nuxt/management'
+import { useDeepMerge } from '@ustra/nuxt/composables'
 import {
   UValidationGroup,
   UDatePeriodBox,
@@ -71,9 +71,9 @@ import {
   USpacer,
   UButtonBox,
   UButtonBar,
-} from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { wijmoGrid, wijmo } from '#ustra/nuxt-wijmo'
+} from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { wijmoGrid, wijmo } from '@ustra/nuxt-wijmo'
 import pick from 'lodash/pick'
 
 const authService = useUstraAuthService()

@@ -14,7 +14,7 @@
   <div>Checked Items : {{ treeCheckedItems }}</div>
 </template>
 <script lang="ts" setup>
-import { TreeView } from '@grapecity/wijmo.nav'
+import { TreeView } from '@mescius/wijmo.nav'
 
 type TreeData = {
   id: number

@@ -6,9 +6,9 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { VNode } from '#ustra/nuxt'
-import { UButton } from '#ustra/nuxt-wijmo/components'
-import component from '#ustra/nuxt/utils/component'
+import { VNode } from '@ustra/nuxt'
+import { UButton } from '@ustra/nuxt-wijmo/components'
+import component from '@ustra/nuxt/utils/component'
 import TestPopup from '~/components/render/test-popup.vue'
 
 const root = ref<HTMLDivElement>()

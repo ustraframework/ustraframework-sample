@@ -22,7 +22,7 @@
 
 <script setup lang="ts">
 import base8 from './md/base8.md'
-import { reactive, ref } from '#ustra/nuxt'
+import { reactive, ref } from '@ustra/nuxt'
 
 const data2 = reactive([
   { value: '1', label: 'test1' },

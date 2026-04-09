@@ -71,11 +71,11 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, inject, defineProps, watch } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjInputMask, UCheckGroupBox, WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { wijmoGrid } from '#ustra/nuxt-wijmo'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { UserCriteria, User, useUstraCodeValue, useUstraUserDeptName, useUstraUserService } from '#ustra/nuxt/management'
+import { ref, reactive, inject, defineProps, watch } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjInputMask, UCheckGroupBox, WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { wijmoGrid } from '@ustra/nuxt-wijmo'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { UserCriteria, User, useUstraCodeValue, useUstraUserDeptName, useUstraUserService } from '@ustra/nuxt/management'
 import Form from './form.vue'
 
 const userService = useUstraUserService()

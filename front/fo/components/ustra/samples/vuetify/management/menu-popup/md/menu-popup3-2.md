@@ -18,7 +18,7 @@
   <UButton text="menu = null" @click="() => (menu = null)" />
 </template>
 <script lang="ts" setup>
-import { UMenuInputBox } from '#ustra/nuxt-wijmo/management/components'
+import { UMenuInputBox } from '@ustra/nuxt-wijmo/management/components'
 
 const menu = ref(null)
 const objectValue = ref(null)

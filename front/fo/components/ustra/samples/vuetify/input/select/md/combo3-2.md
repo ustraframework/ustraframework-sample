@@ -3,7 +3,7 @@
   <WjComboBox :itemsSource="items" v-model="comboValue2" selectedValuePath="value" displayMemberPath="text" />
 </template>
 <script lang="ts" setup>
-import { WjComboBox } from '#ustra/nuxt-wijmo/components'
+import { WjComboBox } from '@ustra/nuxt-wijmo/components'
 
 const comboValue2 = ref(null)
 

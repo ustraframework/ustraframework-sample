@@ -30,10 +30,10 @@ import {
   WjFlexChartSeries,
   WjFlexChartLineMarker,
   WjFlexChartAnimation,
-} from '#ustra/nuxt-wijmo/components'
-import { ref, reactive, computed } from '#ustra/nuxt'
-import { useWijmo } from '#ustra/nuxt-wijmo/composables/wijmo'
-import { useWijmoChart } from '#ustra/nuxt-wijmo/composables/chart'
+} from '@ustra/nuxt-wijmo/components'
+import { ref, reactive, computed } from '@ustra/nuxt'
+import { useWijmo } from '@ustra/nuxt-wijmo/composables/wijmo'
+import { useWijmoChart } from '@ustra/nuxt-wijmo/composables/chart'
 
 const showMarker = ref(false)
 const palette = computed(() => {

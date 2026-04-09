@@ -15,8 +15,8 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import UVMenuPopup from '#ustra/nuxt-vuetify/management/components/popup/u-v-menu-popup.vue'
+import { ref } from '@ustra/nuxt'
+import UVMenuPopup from '@ustra/nuxt-vuetify/management/components/popup/u-v-menu-popup.vue'
 
 // @ts-ignore
 import doc1 from './md/menu-popup2.md'

@@ -2,7 +2,7 @@
   <VFileInput v-model="inputFiles" />
 </template>
 <script lang="ts" setup>
-import { file } from '#ustra/core/utils'
+import { file } from '@ustra/core/utils'
 import toString from 'lodash/toString'
 
 const props = defineProps<{

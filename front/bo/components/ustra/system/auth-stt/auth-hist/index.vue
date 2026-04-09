@@ -43,10 +43,10 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, useOnError } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn, WjComboBox } from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { useUstraAuthSttService, AuthSttCriteria, AuthStt, useUstraCodeValue } from '#ustra/nuxt/management'
+import { ref, reactive, useOnError } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn, WjComboBox } from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { useUstraAuthSttService, AuthSttCriteria, AuthStt, useUstraCodeValue } from '@ustra/nuxt/management'
 const service = useUstraAuthSttService()
 const searchAction = (function () {
   const searchParam: AuthSttCriteria = reactive({

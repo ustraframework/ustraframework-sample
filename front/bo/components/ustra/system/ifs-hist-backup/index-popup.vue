@@ -31,10 +31,10 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref, nextTick, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '#ustra/nuxt'
-import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { IfsHist, IfsHistCriteria } from '#ustra/nuxt/management'
+import { reactive, ref, nextTick, shallowRef, onBeforeMount, useDeepMerge, useOnError, computed, watch } from '@ustra/nuxt'
+import { WjComboBox, UBox, UItem, WjInputMask, UFieldSet, UFieldRow, UField, WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { IfsHist, IfsHistCriteria } from '@ustra/nuxt/management'
 import IfsHistSearchBar from './ifs-hist-search-bar.vue'
 import IfsHistList from './ifs-hist-list.vue'
 // import IfsHistForm from './ifs-hist-form.vue'

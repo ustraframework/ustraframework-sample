@@ -23,8 +23,8 @@
   </UPopup>
 </template>
 <script lang="ts" setup>
-import { UBox, UItem, UPopup, UFieldSet, UFieldRow, UField } from '#ustra/nuxt-wijmo/components'
-import { defineProps, withDefaults, defineExpose, ref, watch } from '#ustra/nuxt'
+import { UBox, UItem, UPopup, UFieldSet, UFieldRow, UField } from '@ustra/nuxt-wijmo/components'
+import { defineProps, withDefaults, defineExpose, ref, watch } from '@ustra/nuxt'
 import { useVModel } from '@vueuse/core'
 
 /**

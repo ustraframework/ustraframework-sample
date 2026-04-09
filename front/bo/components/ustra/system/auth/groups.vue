@@ -18,10 +18,10 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, watch, onMounted, useOnError, provide, inject, shallowRef, defineProps } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTreeView, WjMenu, WjMenuItem, WjMenuSeparator } from '#ustra/nuxt-wijmo/components'
-import { useWijmoTreeView } from '#ustra/nuxt-wijmo/composables'
-import { useUstraAuthGroupService, AuthGroup, AuthGroupTreeData } from '#ustra/nuxt/management'
+import { ref, watch, onMounted, useOnError, provide, inject, shallowRef, defineProps } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTreeView, WjMenu, WjMenuItem, WjMenuSeparator } from '@ustra/nuxt-wijmo/components'
+import { useWijmoTreeView } from '@ustra/nuxt-wijmo/composables'
+import { useUstraAuthGroupService, AuthGroup, AuthGroupTreeData } from '@ustra/nuxt/management'
 import Form from './form.vue'
 
 const authGroupService = useUstraAuthGroupService()

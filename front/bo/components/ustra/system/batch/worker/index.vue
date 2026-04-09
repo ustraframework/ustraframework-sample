@@ -99,7 +99,7 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, watch, onMounted, useOnError, provide, inject, shallowRef, computed, nextTick } from '#ustra/nuxt'
+import { ref, reactive, watch, onMounted, useOnError, provide, inject, shallowRef, computed, nextTick } from '@ustra/nuxt'
 import {
   UBox,
   UItem,
@@ -114,10 +114,10 @@ import {
   UCheckGroupBox,
   UValidationGroup,
   WjMultiSelect,
-} from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables/grid'
-import { baseModels } from '#ustra/core/data'
-import { BatchWorker, BatchWorkerCriteria, useUstraBatchWorkerService } from '#ustra/nuxt/management'
+} from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables/grid'
+import { baseModels } from '@ustra/core/data'
+import { BatchWorker, BatchWorkerCriteria, useUstraBatchWorkerService } from '@ustra/nuxt/management'
 const service = useUstraBatchWorkerService()
 const validationGroup = shallowRef<InstanceType<typeof UValidationGroup>>()
 

@@ -18,11 +18,11 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { useUstraCodeList } from '#ustra/nuxt/management/composables'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { ref } from '@ustra/nuxt'
+import { useUstraCodeList } from '@ustra/nuxt/management/composables'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 
-import uVCodeMultiComboBox from '#ustra/nuxt-vuetify/management/components/combo-box/u-v-code-multi-combo-box.vue'
+import uVCodeMultiComboBox from '@ustra/nuxt-vuetify/management/components/combo-box/u-v-code-multi-combo-box.vue'
 
 // @ts-ignore
 import desc from './md/code-multi-combo-box1.md'

@@ -5,7 +5,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-// import UCodeComboBox from '#ustra/nuxt-wijmo/components/u-code-combo-box.vue'
+// import UCodeComboBox from '@ustra/nuxt-wijmo/components/u-code-combo-box.vue'
 
 const comboValue = ref(null)
 </script>

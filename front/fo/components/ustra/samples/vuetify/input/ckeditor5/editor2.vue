@@ -26,9 +26,9 @@
   </VCard>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UCkEditor5 } from '#ustra/nuxt-ckeditor5/components'
-import { useUstraCkEditor5 } from '#ustra/nuxt-ckeditor5/composables'
+import { ref } from '@ustra/nuxt'
+import { UCkEditor5 } from '@ustra/nuxt-ckeditor5/components'
+import { useUstraCkEditor5 } from '@ustra/nuxt-ckeditor5/composables'
 
 // @ts-ignore
 import doc1 from './md/editor2.md'

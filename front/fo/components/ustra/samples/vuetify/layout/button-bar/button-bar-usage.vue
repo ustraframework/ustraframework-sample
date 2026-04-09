@@ -60,7 +60,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 import './style/form.scss'
 
 const title = ref(null)

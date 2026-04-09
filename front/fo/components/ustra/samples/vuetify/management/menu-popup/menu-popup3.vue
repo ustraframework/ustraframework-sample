@@ -30,9 +30,9 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import UVMenuInputBox from '#ustra/nuxt-vuetify/management/components/input/u-v-menu-input-box.vue'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import UVMenuInputBox from '@ustra/nuxt-vuetify/management/components/input/u-v-menu-input-box.vue'
 
 // @ts-ignore
 import doc1 from './md/menu-popup3-1.md'

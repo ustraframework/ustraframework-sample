@@ -11,7 +11,7 @@
   </VCard>
 </template>
 <script lang="tsx" setup>
-import { ref } from '#ustra/nuxt'
+import { ref } from '@ustra/nuxt'
 import RenderPopup from './popup/render-popup.vue'
 
 // @ts-ignore

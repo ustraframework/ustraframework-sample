@@ -6,7 +6,7 @@
   </UstraMain>
 </template>
 <script lang="ts" setup>
-import UstraMain from '#ustra/nuxt-wijmo/management/layouts/ustra-main.vue'
+import UstraMain from '@ustra/nuxt-wijmo/management/layouts/ustra-main.vue'
 
 // onMounted(() => {
 //   history.pushState(null, null, location.href)

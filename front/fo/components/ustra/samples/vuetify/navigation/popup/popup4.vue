@@ -39,9 +39,9 @@
   </v-card>
 </template>
 <script lang="ts" setup>
-import { ref } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
-import { useGlobal } from '#ustra/nuxt/composables'
+import { ref } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
+import { useGlobal } from '@ustra/nuxt/composables'
 
 // @ts-ignore
 import popup6 from './md/popup6.md'

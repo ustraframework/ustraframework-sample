@@ -26,8 +26,8 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, computed } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '#ustra/nuxt-wijmo/components'
+import { ref, computed } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTabPanel, WjTab } from '@ustra/nuxt-wijmo/components'
 import Group from './groups.vue'
 import User from './user.vue'
 

@@ -35,11 +35,11 @@
   </UFieldSet>
 </template>
 <script lang="ts" setup>
-import { ref, defineProps, watch, computed } from '#ustra/nuxt'
-import { UFieldSet, UFieldRow, WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { useWijmoFlexGrid } from '#ustra/nuxt-wijmo/composables'
-import { useUstraCodeValue, useUstraUserDeptName, User } from '#ustra/nuxt/management'
-import { UUserPopup } from '#ustra/nuxt-wijmo/management/components'
+import { ref, defineProps, watch, computed } from '@ustra/nuxt'
+import { UFieldSet, UFieldRow, WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { useWijmoFlexGrid } from '@ustra/nuxt-wijmo/composables'
+import { useUstraCodeValue, useUstraUserDeptName, User } from '@ustra/nuxt/management'
+import { UUserPopup } from '@ustra/nuxt-wijmo/management/components'
 import { useVModel } from '@vueuse/core'
 
 const props = defineProps<{

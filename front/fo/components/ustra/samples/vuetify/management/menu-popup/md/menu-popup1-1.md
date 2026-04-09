@@ -14,5 +14,5 @@
 
 #### Model
 ```typescript
-import { Menu } from '#ustra/nuxt/management'
+import { Menu } from '@ustra/nuxt/management'
 ```

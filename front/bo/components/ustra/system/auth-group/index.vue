@@ -54,12 +54,12 @@
   </UBox>
 </template>
 <script lang="ts" setup>
-import { ref, watch, onMounted, useOnError, provide, inject, shallowRef } from '#ustra/nuxt'
-import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTreeView, WjMenu, WjMenuItem, WjMenuSeparator } from '#ustra/nuxt-wijmo/components'
-import { useExposed } from '#ustra/nuxt/composables'
-import { useWjContextMenu, useWijmoTreeView } from '#ustra/nuxt-wijmo/composables'
-import { UCodeComboBox } from '#ustra/nuxt-wijmo/management/components'
-import { useUstraAuthGroupService, AuthGroup, AuthGroupTreeData } from '#ustra/nuxt/management'
+import { ref, watch, onMounted, useOnError, provide, inject, shallowRef } from '@ustra/nuxt'
+import { UBox, UItem, UFieldSet, UFieldRow, UField, WjTreeView, WjMenu, WjMenuItem, WjMenuSeparator } from '@ustra/nuxt-wijmo/components'
+import { useExposed } from '@ustra/nuxt/composables'
+import { useWjContextMenu, useWijmoTreeView } from '@ustra/nuxt-wijmo/composables'
+import { UCodeComboBox } from '@ustra/nuxt-wijmo/management/components'
+import { useUstraAuthGroupService, AuthGroup, AuthGroupTreeData } from '@ustra/nuxt/management'
 import { Menu as WjMenuControl } from '@grapecity/wijmo.input'
 import Form from './form.vue'
 

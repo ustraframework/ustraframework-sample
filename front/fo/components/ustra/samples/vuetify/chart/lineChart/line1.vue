@@ -5,8 +5,8 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from '#ustra/nuxt'
-import { UMarkdownViewer } from '#ustra/nuxt/components'
+import { reactive } from '@ustra/nuxt'
+import { UMarkdownViewer } from '@ustra/nuxt/components'
 import line1 from './md/line1.md'
 const data = reactive([
   { month: 'Jan', mean: -5.2, high: -0.8, low: -9.7 },

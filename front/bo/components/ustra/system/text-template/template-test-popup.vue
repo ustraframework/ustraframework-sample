@@ -31,9 +31,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, defineProps, defineEmits, watch, reactive } from '#ustra/nuxt'
-import { UBox, UItem, WjFlexGrid, WjFlexGridColumn } from '#ustra/nuxt-wijmo/components'
-import { TextTemplate, useUstraTextTemplateService } from '#ustra/nuxt/management'
+import { ref, defineProps, defineEmits, watch, reactive } from '@ustra/nuxt'
+import { UBox, UItem, WjFlexGrid, WjFlexGridColumn } from '@ustra/nuxt-wijmo/components'
+import { TextTemplate, useUstraTextTemplateService } from '@ustra/nuxt/management'
 import { useVModel } from '@vueuse/core'
 const emits = defineEmits<{
   (e: 'update:modelValue', v: boolean): void
