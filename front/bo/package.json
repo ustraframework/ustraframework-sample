@@ -25,8 +25,8 @@
     "@ustra/nuxt-wijmo": "3.5.0-stable"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "sass-embedded": "^1.99.0",
-    "vite-plugin-compression2": "^2.5.3",
-    "cross-env": "^7.0.3"
+    "vite-plugin-compression2": "^2.5.3"
   }
 }
