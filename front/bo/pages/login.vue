@@ -1,7 +1,7 @@
 <template>
   <div id="login-box">
     <div class="inner">
-      <img src="@ustra/nuxt-wijmo/src/management/resources/img/gsitm.png" style="margin-bottom: 5px" />
+      <img src="@ustra/nuxt-wijmo/management/resources/img/gsitm.png" style="margin-bottom: 5px" />
       <div class="top-text">{{ appTitle }}</div>
       <div class="login-form">
         <UValidationGroup ref="validationGroup">

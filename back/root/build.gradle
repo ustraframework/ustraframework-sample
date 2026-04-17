@@ -41,7 +41,7 @@ subprojects {
     targetCompatibility = JavaVersion.VERSION_17
 
     ext {
-        ustraVersion = '3.5.0-SNAPSHOT'
+        ustraVersion = '3.5.0'
     }
 
 

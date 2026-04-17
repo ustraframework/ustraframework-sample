@@ -124,5 +124,18 @@ export default defineNuxtConfig({
         },
       },
     },
+    i18n: {
+      locales: [
+        { code: 'ko-KR', iso: 'ko-KR' },
+        { code: 'en-US', iso: 'en-US' },
+        { code: 'zh-CN', iso: 'zh-CN' }
+      ],
+      defaultLocale: 'ko-KR',
+      detectBrowserLanguage: {
+        useCookie: false,
+        alwaysRedirect: false,
+        fallbackLocale: 'ko-KR'
+      }
+    },
   },
 })

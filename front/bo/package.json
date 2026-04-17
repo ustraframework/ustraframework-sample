@@ -16,15 +16,15 @@
   "license": "MIT",
   "homepage": "http://guide.ustraframework.kro.kr/",
   "dependencies": {
-    "@pinia/nuxt": "0.5.5",
-    "@ustra/core": "snapshot-3.5.0",
-    "@ustra/h3": "snapshot-3.5.0",
-    "@ustra/nuxt": "snapshot-3.5.0",
-    "@ustra/nuxt-ckeditor5": "snapshot-3.5.0",
-    "@ustra/nuxt-wijmo": "snapshot-3.5.0"
+    "@pinia/nuxt": "^0.11.3",
+    "@ustra/core": "3.5.0-stable",
+    "@ustra/h3": "3.5.0-stable",
+    "@ustra/nuxt": "3.5.0-stable",
+    "@ustra/nuxt-ckeditor5": "3.5.0-stable",
+    "@ustra/nuxt-wijmo": "3.5.0-stable"
   },
   "devDependencies": {
-    "sass-embedded": "1.72.0",
-    "vite-plugin-compression2": "2.2.0"
+    "sass-embedded": "^1.99.0",
+    "vite-plugin-compression2": "^2.5.3"
   }
 }
