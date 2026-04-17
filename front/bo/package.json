@@ -2,7 +2,7 @@
   "engines": {
     "node": "^20.0.0"
   },
-  "packageManager": "4.13.0",
+  "packageManager": "yarn@4.13.0",
   "browserslist": [
     "last 2 version",
     "android >= 4.4",
