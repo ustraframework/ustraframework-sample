@@ -10266,6 +10266,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nuxi@npm:3.33.1":
+  version: 3.33.1
+  resolution: "nuxi@npm:3.33.1"
+  bin:
+    nuxi: bin/nuxi.mjs
+    nuxi-ng: bin/nuxi.mjs
+    nuxt: bin/nuxi.mjs
+    nuxt-cli: bin/nuxi.mjs
+  checksum: 10c0/cf888a94ec391143a24c5f13003efbcc1f74613093eaece347ef2269314cf4269569ab923a773427513e40b132ba07efc03b37c449953679732a639c61fa91ac
+  languageName: node
+  linkType: hard
+
 "nuxt-cache-ssr@npm:1.1.0":
   version: 1.1.0
   resolution: "nuxt-cache-ssr@npm:1.1.0"
@@ -11806,6 +11818,7 @@ __metadata:
     "@ustra/nuxt-ckeditor5": "npm:3.5.0-stable"
     "@ustra/nuxt-wijmo": "npm:3.5.0-stable"
     cross-env: "npm:^7.0.3"
+    nuxi: "npm:3.33.1"
     sass-embedded: "npm:^1.99.0"
     vite-plugin-compression2: "npm:^2.5.3"
   languageName: unknown
