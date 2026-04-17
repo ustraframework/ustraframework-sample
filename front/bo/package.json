@@ -27,6 +27,7 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "sass-embedded": "^1.99.0",
-    "vite-plugin-compression2": "^2.5.3"
+    "vite-plugin-compression2": "^2.5.3",
+    "nuxi": "3.33.1"
   }
 }
