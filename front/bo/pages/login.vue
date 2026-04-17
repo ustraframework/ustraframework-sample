@@ -130,7 +130,7 @@ definePageMeta({
   height: 100%;
   width: 100%;
   background-size: cover;
-  background-image: url(@ustra/nuxt-wijmo/src/management/resources/img/login-background.jpg);
+  background-image: url(@ustra/nuxt-wijmo/management/resources/img/login-background.jpg);
   background-position: center;
   display: flex;
   flex-direction: column;
