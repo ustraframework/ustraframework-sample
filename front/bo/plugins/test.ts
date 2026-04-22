@@ -1,10 +1,10 @@
 export default defineNuxtPlugin(nuxtApp => {
-  console.log('test plugin loaded...')
+  // console.log('test plugin loaded...')
 
   nuxtApp.hook('ustra:plugin:api', (api, $ustra) => {
     api.getAxiosInstance().then(axios => {
       axios.interceptors.request.use(config => {
-        console.log('config', config)
+        // console.log('config', config)
         return config
       })
     })
@@ -12,7 +12,7 @@ export default defineNuxtPlugin(nuxtApp => {
 
   nuxtApp.hook('ustra:plugin:auth', (auth, $ustra) => {
     $ustra.hooks.hook('auth:activated', info => {
-      console.log('auth:activated', info)
+      // console.log('auth:activated', info)
     })
   })
 

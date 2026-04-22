@@ -6,5 +6,5 @@
   </WjAutoComplete>
 </template>
 <script lang="ts" setup>
-import { WjAutoComplete } from '@grapecity/wijmo.vue2.input'
+import { WjAutoComplete } from '@mescius/wijmo.vue2.input'
 </script>

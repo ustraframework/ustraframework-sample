@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   },
   features: {
     inlineStyles: id => {
-      console.log('id', id)
+      // console.log('id', id)
       return true
     },
   },
@@ -130,6 +130,9 @@ export default defineNuxtConfig({
         { code: 'en-US', iso: 'en-US' },
         { code: 'zh-CN', iso: 'zh-CN' }
       ],
+      bundle: {
+        optimizeTranslationDirective: false
+      },
       defaultLocale: 'ko-KR',
       detectBrowserLanguage: {
         useCookie: false,

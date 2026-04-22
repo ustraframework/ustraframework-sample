@@ -19,13 +19,14 @@
   "homepage": "http://guide.ustraframework.kro.kr/",
   "dependencies": {
     "@pinia/nuxt": "0.5.5",
-    "@ustra/core": "3.5.0-stable",
-    "@ustra/h3": "3.5.0-stable",
-    "@ustra/nuxt": "3.5.0-stable",
-    "@ustra/nuxt-ckeditor5": "3.5.0-stable",
-    "@ustra/nuxt-vuetify": "3.5.0-stable",
-    "@ustra/nuxt-wijmo": "3.5.0-stable",
-    "animejs": "3.2.2"
+    "@ustra/core": "3.5.1-stable",
+    "@ustra/h3": "3.5.1-stable",
+    "@ustra/nuxt": "3.5.1-stable",
+    "@ustra/nuxt-ckeditor5": "3.5.1-stable",
+    "@ustra/nuxt-vuetify": "3.5.1-stable",
+    "@ustra/nuxt-wijmo": "3.5.1-stable",
+    "animejs": "3.2.2",
+    "vue-qrcode": "2.2.2"
   },
   "resolutions": {
     "uuid": "11.0.2"

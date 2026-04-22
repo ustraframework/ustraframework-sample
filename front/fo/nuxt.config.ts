@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     },
     build : {
       rollupOptions : {
-        external : [],
+        external : ['vue-qrcode'],
       }
     },
     ssr: {

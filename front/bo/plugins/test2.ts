@@ -1,5 +1,5 @@
 export default defineNuxtPlugin(nuxtApp => {
-  console.log('test plugin2')
+  // console.log('test plugin2')
   $ustra.components.setComponentsOptions('UDaumPostPopup', { apiKey: '41f772e7439076965bd5bb6e6639e245' })
   $ustra.components.setComponentsOptions('responsive', { enabled: true })
 
